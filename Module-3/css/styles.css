@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  padding: 75px 0 105px 0;
+  padding: 75px 0 105px;
 }
 
 .list-link {
@@ -46,14 +46,14 @@ main {
   width: 420px;
   font-size: 14px;
   color: #626262;
-  margin-bottom: 45px;
+  padding-bottom: 75px;
 }
 
 .post:nth-of-type(2n) {
   margin-left: 60px;
 }
 
-.post p:first-of-type {
+span {
   text-transform: uppercase;
   color: #c7c1b6;
   font-family: 'Ubuntu', 'Times New Roman', sans-serif;
@@ -64,26 +64,32 @@ main {
 }
 
 .post p {
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .post h3 {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 40px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .button {
-  width: 164px;
-  height: 60px;
   background-color: transparent;
   border: 1px solid #626262;
   font-size: 20px;
   font-family: inherit;
   color: #626262;
   margin: 0 auto;
-  padding: 0;
+  padding: 16px 34px;
   display: block;
+}
+
+.button:hover {
+  color: #03a9f4;
+}
+
+.button:focus {
+  background: #c7c1b6;
+  color: white;
 }
