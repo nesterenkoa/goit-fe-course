@@ -14,13 +14,10 @@ header {
 }
 
 .list-link li {
+  width: 200px;
   display: inline-block;
   text-transform: uppercase;
-  margin-right: 125px;
-}
-
-.list-link li:last-of-type {
-  margin-right: 0;
+  text-align: center;
 }
 
 .list-link a {
@@ -41,12 +38,15 @@ main {
   font-size: 0;
 }
 
+.block {
+  margin-bottom: 75px;
+}
+
 .post {
   display: inline-block;
   width: 420px;
   font-size: 14px;
   color: #626262;
-  padding-bottom: 75px;
 }
 
 .post:nth-of-type(2n) {
