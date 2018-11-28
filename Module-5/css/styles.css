@@ -1,0 +1,23 @@
+:root {
+  --main-width: 1600px;
+  --container-width: 1110px;
+  --
+
+  --bg-header:#ffffff;
+  --bg-main:#e9f0fd;
+  --bg-footer:#323232;
+
+
+  --color-decorative-activ-elements-:#1abc9c;
+  --bg-activ-price-product-rectangle:#7fd9c7;
+  --color-text-nav:#0f0101;
+  --color-text-title:#515151;
+  --color-text-main:#ffffff;
+  --bg-name-product-rectangle:#323232;
+  --bg-price-product-rectangle:#8c8c8c;
+}
+
+.container {
+  width: var(--container-width);
+  padding: 0 30px;
+}
