@@ -33,6 +33,24 @@ html, body {
 
 .header-additional-info {
   float: left;
+  position: relative;
+  margin-right: 30px;
+}
+
+.header-additional-item {
+  
+}
+
+.header-additional-itemm::after {
+content:'';
+position: absolute;
+right: -12%;
+top: 2;
+height: 6px;
+width: 6px;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+transform: rotate(45deg);
 }
 
 .header-login {
