@@ -37,13 +37,14 @@ img {
   height: auto;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: #0f0101;
 }
 
 .navigation {
   font-family: 'Open Sans', sans-serif;
-  color: #0f0101;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;

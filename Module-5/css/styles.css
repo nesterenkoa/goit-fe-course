@@ -1,7 +1,12 @@
 :root {
   --main-width: 1600px;
   --container-width: 1110px;
-  --
+  --block-product-width:255px;
+  --name-product-rectangle-width:200px;
+  --price-product-rectangle-width:55px;
+
+
+  
 
   --bg-header:#ffffff;
   --bg-main:#e9f0fd;
