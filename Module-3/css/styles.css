@@ -83,13 +83,10 @@ span {
   margin: 0 auto;
   padding: 16px 34px;
   display: block;
+  cursor: pointer;
 }
 
 .button:hover {
   color: #03a9f4;
 }
 
-.button:focus {
-  background: #c7c1b6;
-  color: white;
-}

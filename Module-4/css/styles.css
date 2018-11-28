@@ -4,8 +4,6 @@
   margin: 0;
 }
 
-
-
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -102,7 +100,7 @@ h2:after {
 
 .post:focus,
 .post:hover {
-  box-shadow: #1abc9c 0px 0px 6px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .post a {
@@ -162,7 +160,6 @@ h2:after {
   font-family: 'Open Sans', sans-serif;
   color: #555252;
   margin-bottom: 28px;
-
 }
 
 .info span::after {
