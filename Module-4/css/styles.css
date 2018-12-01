@@ -27,8 +27,7 @@
 }
 
 header {
-  padding-top: 40px;
-  padding-bottom: 105px;
+  padding: 40px 10px 52px;
 }
 
 img {
@@ -37,9 +36,12 @@ img {
   height: auto;
 }
 
-a,
-a:visited {
+a {
+  display: block;
   text-decoration: none;
+}
+
+a:visited {
   color: #0f0101;
 }
 
@@ -49,21 +51,23 @@ a:visited {
   font-size: 14px;
   font-weight: bold;
   list-style: none;
-  padding-top: 1px;
 }
 
 .navigation li {
   float: left;
-}
-
-.navigation li:not(:last-child) {
-  margin-right: 30px;
+  width: 98px;
+  text-align: center;
 }
 
 .navigation a:hover,
 .navigation a:focus {
   color: #1abc9c;
 }
+
+.navigation a {
+  padding: 3px;
+}
+
 
 h2 {
   font-family: 'Roboto', sans-serif;
@@ -86,7 +90,8 @@ h2:after {
 }
 
 .block {
-  padding-bottom: 80px;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
 .post {

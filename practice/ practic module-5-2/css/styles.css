@@ -1,0 +1,130 @@
+:root {
+  --main-color: red;
+  --main--title-size: 56px;
+  --house-height: 100px;
+  --trumpet-height: 40px;
+}
+
+.container {
+  width: 900px;
+  height: 900px;
+  margin: 30px auto;
+  padding: 350px 30px;
+}
+
+.land {
+  position: relative;
+  width: 900px;
+  height: 5px;
+  background: red;
+
+}
+
+.house {
+  position: absolute;
+  bottom: 0;
+  width: 110px;
+  height: 100px;
+  border: 2px solid slateblue;
+  background: rgb(94, 255, 0);
+}
+
+.house-1 {
+  background: rgb(255, 0, 255);
+  right: 0;
+}
+
+.house-2 {
+  left: 50%;
+  background: rgb(200, 255, 0);
+}
+
+.house-3 {
+  left: 0;
+}
+
+.house::after {
+  content: '';
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 0, 0);
+}
+
+.triangl {
+  position: absolute;
+  border: 40px solid transparent;
+  bottom: 100%;
+  left: 0;
+  transform: translatex(20%);
+  border-bottom-color: gold;
+}
+
+.trumpet {
+  width: 55px;
+  height: 70px;
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  background: rgb(255, 153, 0);
+}
+
+.smoke {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  background: rgb(0, 195, 255);
+  bottom: 100%;
+  right: 0;
+  transform: translateY(-30%);
+}
+
+.smoke::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  background: rgb(50, 169, 205);
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 7px;
+}
+
+.house-4 {
+  left: 33%;
+}
+
+.with-smoke::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  background: rgb(0, 195, 255);
+  bottom: 100%;
+  right: 0;
+  transform: translateY(-30%);
+}
+
+.with-smoke::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  background: rgb(50, 169, 205);
+  top: -70px;
+  right: 0;
+}
+
+.pseudo-smoke {
+  position: absolute;
+  bottom: calc(var(--house-height) + var(--trumpet-height) + 10px)
+}
+
+
