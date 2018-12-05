@@ -1,10 +1,9 @@
 :root {
   --main-width: 1600px;
-  --container-width: 1110px;
+  --container-width: 1170px;
   --block-product-width:255px;
   --name-product-rectangle-width:200px;
   --price-product-rectangle-width:55px;
-
 
   
 
@@ -22,7 +21,72 @@
   --bg-price-product-rectangle:#8c8c8c;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   width: var(--container-width);
   padding: 0 30px;
+  margin: 0 auto;
 }
+
+.grab-left {
+  float: left;
+}
+
+.grab-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+header {
+  padding: 40px 10px 46px 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0f0101;
+}
+
+.navigation {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.navigation li {
+  float: left;
+  padding: 0 10px 0;
+  text-align: left;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #1abc9c;
+}
+
+.navigation a {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+

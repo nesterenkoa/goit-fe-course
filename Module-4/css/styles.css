@@ -5,10 +5,10 @@
 }
 
 .container {
-  width: 1170px;
+  width: 1178px;
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 36px;
+  padding-left: 32px;
 }
 
 .grab-left {
@@ -27,7 +27,7 @@
 }
 
 header {
-  padding: 40px 10px 52px;
+  padding: 40px 10px 46px 15px;
 }
 
 img {
@@ -49,14 +49,14 @@ a:visited {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   list-style: none;
 }
 
 .navigation li {
   float: left;
-  width: 98px;
-  text-align: center;
+  padding: 0 10px 0;
+  text-align: left;
 }
 
 .navigation a:hover,
@@ -65,18 +65,21 @@ a:visited {
 }
 
 .navigation a {
-  padding: 3px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 
 
 h2 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 900;
   color: #515151;
   text-transform: uppercase;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
   line-height: 1;
+  letter-spacing: -1px;
 }
 
 h2:after {
@@ -84,18 +87,19 @@ h2:after {
   display: block;
   width: 165px;
   background: #1abc9c;
-  height: 5px;
+  height: 7px;
   text-align: center;
-  margin: 25px auto 0;
+  margin: 26px auto 0;
 }
 
 .block {
   padding-top: 52px;
-  padding-bottom: 52px;
+  padding-bottom: 16px;
 }
 
 .post {
-  font-family: 'Roboto Black', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -150,6 +154,7 @@ h2:after {
   width: 350px;
   float: left;
   margin-right: 30px;
+  color: #555252;
 }
 
 .info:nth-of-type(3n) {
@@ -157,15 +162,15 @@ h2:after {
 }
 
 .info img {
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .info span {
   display: block;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  color: #555252;
-  margin-bottom: 28px;
+  font-weight:600;
+  margin-bottom: 20px;
 }
 
 .info span::after {
@@ -174,21 +179,21 @@ h2:after {
   height: 3px;
   display: block;
   background: #4ec6ab;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .info p {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  color: #555252;
+  font-weight: 400;
   line-height: 1.7;
-  font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  line-height: 26px;
 }
 
 .button {
   font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   border: none;
   padding: 14px 40px;
   color: #f3fbf9;
