@@ -1,11 +1,11 @@
-body{
+body {
   margin: 0;
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-  padding:0 30px;
+  padding: 0 30px;
   box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ body{
 header {
   width: 100%;
   padding: 30px 0 40px;
- }
+}
 
 .logo {
   font-family: 'Roboto', sans-serif;
@@ -37,7 +37,7 @@ header {
   line-height: 1.067;
 }
 
-.logo::first-letter{
+.logo::first-letter {
   color: #1abc9c;
   font-weight: 900;
 }
@@ -64,22 +64,23 @@ a:visited {
 
 .navigation li {
   float: left;
-  width: 100px;
+  width: 96px;
   font-size: 14px;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   line-height: 0.786;
-  text-align:center;
+  letter-spacing: -0.2px;
+  text-align: center;
   margin-right: 2px;
 }
 
-.navigation li:last-child{
+.navigation li:last-child {
   margin-right: 0;
 }
 
 .navigation a,
-.navigation a:visited  {
+.navigation a:visited {
   padding: 4px;
   color: #0f0101;
 }
@@ -89,12 +90,12 @@ a:visited {
   color: #1abc9c;
 }
 
-.products{
+.products {
   padding-top: 52px;
   padding-bottom: 46px;
 }
 
-.products .row:last-child{
+.products .row:last-child {
   margin-bottom: 0;
 }
 
@@ -122,27 +123,27 @@ h2:after {
   background: #1abc9c;
   height: 7px;
   text-align: center;
-  margin: 28px auto 0;
+  margin: 26px auto 0;
 }
 
 .product {
   float: left;
   margin-right: 30px;
-  width: 255px; 
+  width: 255px;
 }
 
 .product:nth-of-type(4n) {
   margin-right: 0;
 }
 
-.product img{
- width:255px;
- height:283px;
+.product img {
+  width: 255px;
+  height: 283px;
 }
 
 .product a {
   display: block;
- }
+}
 
 .product span {
   display: block;
@@ -151,22 +152,22 @@ h2:after {
   box-sizing: border-box;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 17.5px;
 }
 
 .title {
-  width: 200px;
+  width: 203px;
   background: #323232;
 }
 
 .price {
   background: #8c8c8c;
-  width: 55px;
+  width: 52px;
   text-align: center;
 }
-  
+
 
 .product:hover .title,
 .product:focus .title {
@@ -201,7 +202,7 @@ h2:after {
   display: block;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
 }
