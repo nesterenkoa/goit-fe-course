@@ -4,65 +4,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,500,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Module-5</title>
 </head>
 
 <body>
-  <header class="clearfix container">
-    <a href="#" class="logo grab-left">
-      <img src="img/logo.png" alt="logo" width="80" height="22">
-    </a>
+    <header>
 
-    <nav class="grab-right">
-      <ul class="navigation clearfix">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about us</a></li>
-        <li><a href="#">page</a></li>
-        <li><a href="#">shop</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">contact us</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <div class="slider">
-      <ul class="slides">
-        <li class="slide">
-          <img src="img/slider.png" alt="slide">
-          <div class="container slide-content">
-              <h1> AFFORDABLE PARIS TOURS  </h1>
-              <span>CITY TOURS / TOUR TICKETS / TOUR GUIDES</span>
+        <nav class="container clearfix">
+          <a href="#" class="logo grab-left">mart</a>
+    
+          <ul class="navigation grab-right">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">page</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact us</a></li>
+          </ul>
+        </nav>
+
+        <div class="slider">
+            <ul class="slides">
+              <li class="slide">
+                <img src="img/slider.png" alt="slide">
+                <div class="container slide-content">
+                  <h1>Affordable paris tours</h1>
+                  <span>City tours / Tour tickets / Tour guides</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="container slider-controls">
+              <button class="slider-buttton slider-buttton-prev"></button>
+              <button class="slider-buttton slider-buttton-next"></button>
             </div>
-        </li>
-      </ul>
-
-      <div class="container slider-controls">
-        <button class="slider-buttton slider-buttton-prev"></button>
-        
-        <button class="slider-buttton slider-buttton-next"></button>
-      </div>
-    </div>
-
+          </div>
+      </header>
+  <main>
     <div class="hew-collection">
       <h2>new collection</h2>
 
       <div class="row-products container clearfix">
         <div class="product">
           <img src="img/item-1.png" alt="item-1">
-          <a href="#">
+          <div class="product-description">
             <span class="title grab-left">Blue tshirt</span>
             <span class="price grab-right">$26</span>
-          </a>
+          </div>
+
+          <div class="controls">
+            <div class="absolute-centered">
+              <span class="icon icon-heart"></span>
+              <span class="icon icon-arrows"></span>
+              <span class="icon icon-clock"></span>
+              <div class="button clearfix">
+                <span class="icon icon-chart"></span>
+                <span class="text-button">Add to hart </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/item-2.png" alt="item-2">
+          <div class="product-description">
+            <span class="title grab-left">Woman shirt</span>
+            <span class="price grab-right">$31</span>
+          </div>
+
+          <div class="controls">
+            <div class="absolute-centered">
+              <span class="icon icon-heart"></span>
+              <span class="icon icon-arrows"></span>
+              <span class="icon icon-clock"></span>
+              <div class="button clearfix">
+                <span class="icon icon-chart"></span>
+                <span class="text-button">Add to hart </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/item-3.png" alt="item-3">
+          <div class="product-description">
+            <span class="title grab-left">Yellow Tshirt</span>
+            <span class="price grab-right">$21</span>
+          </div>
+
+          <div class="controls">
+            <div class="absolute-centered">
+              <span class="icon icon-heart"></span>
+              <span class="icon icon-arrows"></span>
+              <span class="icon icon-clock"></span>
+              <div class="button clearfix">
+                <span class="icon icon-chart"></span>
+                <span class="text-button">Add to hart </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="img/item-4.png" alt="item-4">
+          <div class="product-description">
+            <span class="title grab-left">Cool lingerie</span>
+            <span class="price grab-right">$56</span>
+          </div>
+
+          <div class="controls">
+            <div class="absolute-centered">
+              <span class="icon icon-heart"></span>
+              <span class="icon icon-arrows"></span>
+              <span class="icon icon-clock"></span>
+              <div class="button clearfix">
+                <span class="icon icon-chart"></span>
+                <span class="text-button">Add to hart </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </main>
 
-</body>
+  <footer>
+    <p class="text-footer"><span>All Rights Reserved © Dokan | Designed</span> <a href="#">ThemenGraph</a> </p>
+  </footer>
 
+</body>
 </html>
