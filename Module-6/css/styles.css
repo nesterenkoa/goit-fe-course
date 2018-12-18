@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  padding: 26px 0;
+}
+
+.logo{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #95e1d3;
+  font-weight: bold;
+  line-height: 1.2;
+}

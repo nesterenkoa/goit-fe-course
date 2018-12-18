@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 40px;
+}
+
+.common-block{
+  width: 1200px;
+  max-width: 100%;
+  background: rgba(136, 255, 0, 0.363);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  color: aliceblue;
+  font-size: 30px;
+ 
+}
+
+.mini-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  min-height: 300px;
+  background: rgb(76, 0, 255);
+  margin-bottom: 20px;
+}
+
+
+.wide-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px; 
+  background: red;
+}
+
+@media (max-widt: 968px) {
+.mini-block{
+  width: 50%;
+}
+
+.wide-block{
+  width: 50%;
+}
+}
