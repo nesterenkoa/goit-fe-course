@@ -162,7 +162,7 @@ main {
   width: 380px;
   height: 470px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .photo-overlay {
@@ -229,7 +229,7 @@ main {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 .teammate-profession {
@@ -266,7 +266,6 @@ footer form {
 footer form input[type="email"] {
   width: 230px;
   height: 40px;
-  color: #f38181;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
   font-style: italic;
@@ -274,6 +273,11 @@ footer form input[type="email"] {
   border: 1px solid #e5e5e5;
   border-right:0;
   box-sizing: border-box;
+}
+
+footer form input[type="email"]::placeholder { 
+  color:#e5e5e5; 
+  font-size: 15px; 
 }
 
 footer form input[type="submit"] {
