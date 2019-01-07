@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Wisdom-Script';
+  src: url('../fonts/Wisdom\ Script\ AI.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'Droid Serif Italic';
+  src: url(../fonts/DroidSerif-Italic.ttf);
+}
+
+@font-face{
+  font-family: 'Roboto Slab';
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Roboto Slab';
+  src: url(../fonts/RobotoSlab-Light.ttf);
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Wisdom-Script';
+  font-size: 26px;
+  color: #fed136;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 484px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  color: #fed136;
+}
+
+/* MAIN */
+
+main {
+  padding: 110px 0;
+}
+
+.title-services {
+  margin: 0 0 8px;
+  text-align: center;
+  color: #222222;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 38px;
+  /* letter-spacing:-1px; */
+}
+
+.sub-title-services{
+  margin: 0 0 75px;
+  text-align: center;
+  font-family: 'Droid Serif Italic';
+  color: #777777;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.services{
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 0 84px;
+}
+
+.service-item{
+  width: 284px;
+  text-align: center;
+  color: #777777;
+}
+.main-text{
+  margin-top: 0;
+  font-family: 'Roboto Slab';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+}
+
+.service-item img{
+  margin-bottom: 18px;
+}
+
+
+.service-item span{
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 11px;
+  letter-spacing: -1px;
+}
