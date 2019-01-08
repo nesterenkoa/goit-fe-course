@@ -27,18 +27,18 @@
   font-weight: bold;
 }
 
-@font-face{
+@font-face {
   font-family: 'Droid Serif Italic';
   src: url(../fonts/DroidSerif-Italic.ttf);
 }
 
-@font-face{
+@font-face {
   font-family: 'Roboto Slab';
   src: url(../fonts/RobotoSlab-Regular.ttf);
   font-weight: 400;
 }
 
-@font-face{
+@font-face {
   font-family: 'Roboto Slab';
   src: url(../fonts/RobotoSlab-Light.ttf);
   font-weight: 300;
@@ -96,7 +96,7 @@ nav {
 /* MAIN */
 
 main {
-  padding: 110px 0;
+  padding: 110px 0 120px;
 }
 
 .title-services {
@@ -110,7 +110,7 @@ main {
   /* letter-spacing:-1px; */
 }
 
-.sub-title-services{
+.sub-title-services {
   margin: 0 0 75px;
   text-align: center;
   font-family: 'Droid Serif Italic';
@@ -119,22 +119,23 @@ main {
   font-weight: 300;
 }
 
-.services{
+.services {
   margin: 0;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 0 0 84px;
+  padding: 0;
 }
 
-.service-item{
+.service-item {
   width: 284px;
   text-align: center;
   color: #777777;
 }
-.main-text{
-  margin-top: 0;
+
+.main-text {
+  margin: 0;
   font-family: 'Roboto Slab';
   font-size: 13px;
   font-weight: 300;
@@ -142,12 +143,12 @@ main {
   letter-spacing: 0.2px;
 }
 
-.service-item img{
+.service-item img {
   margin-bottom: 18px;
 }
 
 
-.service-item span{
+.service-item span {
   display: block;
   font-family: 'Montserrat';
   font-size: 18px;
@@ -155,4 +156,94 @@ main {
   color: #222222;
   margin-bottom: 11px;
   letter-spacing: -1px;
+}
+
+footer {
+  background: #222222;
+  background-image: url(../img/maps-img-op.png);
+  background-repeat: no-repeat;
+  background-position: 109.5% 97%;
+  padding: 100px 0;
+
+}
+
+.title-contact {
+  color: #ffffff;
+  margin: 0 0 14px;
+  font-size: 39px;
+  letter-spacing: -0.3px;
+  font-weight: 600;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.inputs-holder * {
+  border-radius: 4px;
+  border: transparent;
+  color: #bbbbbb;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  padding: 17px 20px;
+  width: 454px;
+
+}
+
+.inputs-holder *:required:focus:valid {
+  outline: 2px solid greenyellow;
+}
+
+.inputs-holder *:required:focus:invalid {
+  outline: 2px solid red;
+}
+
+.inputs-holder {
+  padding: 0;
+  border: 0;
+  margin: 0 0 28px;
+}
+
+.inputs-holder input {
+  margin-bottom: 29px;
+  float: left;
+}
+
+.inputs-holder input:last-child {
+  margin-bottom: 0;
+}
+
+form textarea {
+  height: 214px;
+  resize: none;
+  float: right;
+}
+
+.submit {
+  display: block;
+  width: 240px;
+  padding: 22px 0;
+  background: #fed136;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 0 auto;
 }
