@@ -246,4 +246,5 @@ form textarea {
   font-weight: 500;
   border-radius: 4px;
   margin: 0 auto;
+  cursor: pointer;
 }
