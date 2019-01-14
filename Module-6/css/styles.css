@@ -307,6 +307,7 @@ footer {
 
 footer form {
   font-size: 0;
+  height: 40px;
 }
 
 footer form input[type="email"] {

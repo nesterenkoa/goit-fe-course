@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Wisdom-Script';
-  src: url('../fonts/Wisdom\ Script\ AI.otf');
+  src: url(../fonts/Wisdom/Script/AI.otf);
 }
 
 @font-face {
@@ -59,7 +59,7 @@ a {
 }
 
 nav {
-  padding: 40px 0 0;
+  padding: 40px 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,10 +93,8 @@ nav {
   color: #fed136;
 }
 
-/* MAIN */
-
-main {
-  padding: 110px 0 120px;
+.section-services {
+  padding: 70px 0 120px;
 }
 
 .title-services {
@@ -116,14 +114,14 @@ main {
   font-family: 'Droid Serif Italic';
   color: #777777;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .services {
   margin: 0;
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
 }
@@ -131,7 +129,42 @@ main {
 .service-item {
   width: 284px;
   text-align: center;
-  color: #777777;
+  position: relative;
+  padding-top: 96px;
+}
+
+.service-item:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: no-repeat center;
+}
+
+.item-1:before {
+  background-image: url(../img/icon-basket.png);
+}
+
+.item-2:before {
+  background-image: url(../img/icon-laptop.png);
+}
+
+.item-3:before {
+  background-image: url(../img/icon-locked.png);
+}
+
+.service-item h4 {
+  display: block;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: bold;
+  color: #222222;
+  margin: 0 0 11px;
+  letter-spacing: -1px;
 }
 
 .main-text {
@@ -141,30 +174,19 @@ main {
   font-weight: 300;
   line-height: 21px;
   letter-spacing: 0.2px;
+  color: #777777;
 }
 
 .service-item img {
   margin-bottom: 18px;
 }
 
-
-.service-item span {
-  display: block;
-  font-family: 'Montserrat';
-  font-size: 18px;
-  font-weight: bold;
-  color: #222222;
-  margin-bottom: 11px;
-  letter-spacing: -1px;
-}
-
-footer {
+.section-contact-us {
   background: #222222;
   background-image: url(../img/maps-img-op.png);
   background-repeat: no-repeat;
   background-position: 109.5% 97%;
   padding: 100px 0;
-
 }
 
 .title-contact {
@@ -201,14 +223,13 @@ textarea::placeholder {
   font-weight: 500;
   padding: 17px 20px;
   width: 454px;
-
 }
 
-.inputs-holder *:required:focus:valid {
+.inputs-holder *:required:valid:not(:placeholder-shown):not(:focus) {
   outline: 2px solid greenyellow;
 }
 
-.inputs-holder *:required:focus:invalid {
+.inputs-holder *:required:invalid:not(:placeholder-shown):not(:focus) {
   outline: 2px solid red;
 }
 

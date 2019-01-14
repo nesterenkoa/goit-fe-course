@@ -22,49 +22,49 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <section class="section-services container">
       <h2 class="title-services">Services</h2>
       <h3 class="sub-title-services">Proin iaculis purus consequat sem cure.</h3>
       <ul class="services">
-        <li class="service-item">
-          <img src="img/icon-basket.png" alt="icon-basket">
-          <p class="main-text"> <span>E-Commerce</span>
+        <li class="service-item item-1">
+          <h4>E-Commerce</h4>
+          <p class="main-text">
             Proin iaculis purus consequat sem cure dugni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
             odio in tincidunt.
           </p>
         </li>
 
-        <li class="service-item">
-          <img src="img/icon-laptop.png" alt="icon-laptop">
-          <p class="main-text"> <span>Responsive Web</span>
+        <li class="service-item item-2">
+           <h4>Responsive Web</h4>
+           <p class="main-text">
             Proin iaculis purus consequat sem cure dugni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
             odio in tincidunt.
           </p>
         </li>
 
-        <li class="service-item">
-          <img src="img/icon-locked.png" alt="icon-locked">
-          <p class="main-text"> <span>Web Security</span>
+        <li class="service-item item-3">
+          <h4>Web Security</h4>
+          <p class="main-text">
             Proin iaculis purus consequat sem cure dugni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
             odio in tincidunt.
           </p>
         </li>
       </ul>
-    </main>
+    </section>
 
-    <footer>
+    <section class="section-contact-us">
       <h2 class="title-services title-contact">Contact us</h2>
       <h3 class="sub-title-services">Proin iaculis purus consequat sem cure.</h3>
       <form action="#" class="container">
         <fieldset class="clearfix inputs-holder">
-          <textarea name="message" cols="73" rows="15" placeholder="Your Message *" required></textarea>
-          <input type="text" name="name" placeholder="your name *" required>
-          <input type="email" name="email" placeholder="your e-mail *" required>
+          <textarea name="message" cols="73" rows="15" placeholder="Your Message *" required minlength="5" maxlength="200"></textarea>
+          <input type="text" name="name" placeholder="your name *" required pattern="^[a-zA-Z]+$" minlength="2" maxlength="60">
+          <input type="email" name="email" placeholder="your e-mail *" required> 
           <input type="text" name="subject" placeholder="Subject">
         </fieldset>
         <input type="submit" name="subject" value="Send Message" class="submit">
       </form>
-    </footer>
+    </section>
   </body>
 
 </html>
