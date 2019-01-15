@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Bold.ttf);
@@ -21,27 +22,27 @@ body {
 }
 
 .container {
-  width: 282px;
+  width: 945px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-a {
+a{
   text-decoration: none;
 }
 
 header{
-  height: 542px;
+  height: 700px;
   background: url(../img/promo.png) no-repeat center;
   background-size: cover;
   background-color: black;
   position: relative;
 }
 
-nav {
-  padding: 20px 0;
+nav{
+  padding: 36px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -51,17 +52,6 @@ nav {
   color: #ffffff;
   font-size: 19px;
   letter-spacing: 1.2px;
-  display: none;
-}
-
-.logo-promo{
-  display: block;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 19px;
-  letter-spacing: 1.2px;
-  margin-bottom: 26px;
 }
 
 .button-nav{
@@ -75,9 +65,8 @@ nav {
   border: 2px solid transparent;
   border-radius: 50px;
   cursor: pointer;
+  
 }
-
-nav .button-nav:last-child,
 .button-nav:hover,
 :focus{
   border: 2px solid white;
@@ -85,39 +74,37 @@ nav .button-nav:last-child,
 
 .promo-content{
   position: absolute;
-  width: 100%;
-  top: 53%;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 0 20px 0;
-  box-sizing: border-box;
+  top: 30%;
+  left: 50%;
+  width: 485px;
+  transform: translate(-50%);
 }
 
 .promo-content h1{
+  text-align: center;
   text-transform: uppercase;
-  font-size: 29px;
+  font-size: 50px;
   font-family: 'Montserrat';
-  font-weight: 400;
+  font-weight:600;
   color: #ffffff;
-  margin: 0 0 12px;
+  margin: 0 0 30px;
   letter-spacing: -0.1px;
 }
 
 .promo-sub-text{
+  text-align: center;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 23px;
   font-family: 'Roboto';
   font-weight: 100;
-  margin: 0 0 14px;
+  margin: 0 0 34px;
   letter-spacing: 0.6px;
 }
 .button-promo{
   padding: 9px 20px;
-  width: 100%;
   display: block;
   margin: 0 auto;
   background: #ff4e50;
-  
 }
 
 /* MAIN  */
@@ -130,20 +117,19 @@ main{
   font-weight:600;
   font-size: 21px;
   color: #333333;
-  margin: 0 0 18px;
+  margin: 0 0 30px;
 }
 
-.block-partners {
+.block-partners{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 22px;
 }
 
-.partner {
+.partner{
+  width: 220px;
   text-align: center;
-  width: 196px;
 }
 
 .partner .photo {
@@ -208,10 +194,8 @@ background-image: url(../img/icon-flask.png);
   font-weight: 100;
   font-size: 14px;
   color: #8f8f8f;
-  margin: 0 0 27px;
 }
 .button-choice-of-partners{
-  width: 100%;
   color: #ff4e50;
   display: block;
   border-color: #ff4e50;
@@ -219,56 +203,38 @@ background-image: url(../img/icon-flask.png);
   padding: 10px 28px;
 }
 
-.button-choice-of-partners:hover{
+.button-choice-of-partners:hover,
+:focus{
   color: #ffffff;
   background-color: #ff4e50;
 }
 
-@media (min-width: 768px) {
-  nav {
-    justify-content: space-between;
-  }
-
-  .logo{
-    display: block;
-  }
-
-  .logo-promo{
-    display:none;
-  }
-
-  .promo-content h1{
-    font-size: 52px;
-  }
-
-  .partner {
-    width: 50%;
-  }
-
-  .block-partners {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
+@media (max-width: 945px) {
   .container {
-    width: 492px;
-  }
-
-  .button-promo{
-    width: auto;
+    width: 100%;
   }
 }
 
-@media (min-width: 945px) {
-  .container {
-    width: 945px;
+@media (max-width: 485px) {
+  .promo-content {
+    width: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-partners {
+    flex-wrap: wrap;
   }
   .partner {
-    width: 25%;
+    width: 50%;
+    background: red;
   }
+}
 
-  nav {
-    width: 942px;
-    margin: 0 auto;    
+@media (max-width: 320px) {
+  .partner {
+    width: 100%;
+    background: yellow;
   }
 }
