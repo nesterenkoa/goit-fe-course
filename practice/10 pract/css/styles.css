@@ -1,0 +1,13 @@
+.header-container{
+  width: 90%;
+  margin: 0 auto;
+}
+.header_block{
+  display: flex;
+  justify-content:space-between;
+  width: 1000px;
+}
+
+.header_block_element{
+  height: 200px;
+}
