@@ -21,16 +21,16 @@ body {
 }
 
 .container {
-  width: 282px;
-  margin: 0 auto;
+  margin: 0 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
-header{
+header {
   height: 542px;
   background: url(../img/promo.png) no-repeat center;
   background-size: cover;
@@ -45,89 +45,98 @@ nav {
   align-items: center;
 }
 
-.logo{
+.logo {
   font-family: 'Montserrat';
   font-weight: 500;
   color: #ffffff;
   font-size: 19px;
   letter-spacing: 1.2px;
+}
+
+nav .logo {
   display: none;
 }
 
-.logo-promo{
-  display: block;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 19px;
-  letter-spacing: 1.2px;
+.overlay .logo {
+  display: inline-block;
   margin-bottom: 26px;
 }
 
-.button-nav{
-  background: none;
+.btn {
+  background-color: transparent;
+  padding: 7px 16px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
   font-family: 'Montserrat';
   font-weight: 500;
   color: #ffffff;
   font-size: 14px;
-  padding: 7px 16px;
-  border: none;
-  border: 2px solid transparent;
-  border-radius: 50px;
-  cursor: pointer;
 }
 
-nav .button-nav:last-child,
-.button-nav:hover,
-:focus{
-  border: 2px solid white;
+.btn-transparent {
+  background: transparent;
+  border-color: transparent;
 }
 
-.promo-content{
+.btn-big {
+  padding: 9px 20px;
+  width: 100%;
+}
+
+.btn-filled {
+  background: #ff4e50;
+  border-color: #ff4e50;
+}
+
+.btn-accent {
+  color: #ff4e50;
+  border-color: #ff4e50;
+}
+
+.btn-accent:hover {
+  color: #ffffff;
+  background-color: #ff4e50;
+}
+
+.overlay {
   position: absolute;
   width: 100%;
   top: 53%;
   transform: translateY(-50%);
   text-align: center;
-  padding: 0 20px 0;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
-.promo-content h1{
+.overlay h1 {
   text-transform: uppercase;
   font-size: 29px;
   font-family: 'Montserrat';
-  font-weight: 400;
   color: #ffffff;
   margin: 0 0 12px;
   letter-spacing: -0.1px;
+  white-space: pre-line;
 }
 
-.promo-sub-text{
-  color: #ffffff;
+.promo-sub-text {
+  color: #ffffffbe;
   font-size: 18px;
   font-family: 'Roboto';
   font-weight: 100;
   margin: 0 0 14px;
   letter-spacing: 0.6px;
 }
-.button-promo{
-  padding: 9px 20px;
-  width: 100%;
-  display: block;
-  margin: 0 auto;
-  background: #ff4e50;
-  
-}
 
 /* MAIN  */
-main{
+main {
   padding: 62px 0;
 }
-.main-sub-text{
+
+.main-sub-text {
   text-align: center;
   font-family: 'Montserrat';
-  font-weight:600;
+  font-weight: 600;
   font-size: 21px;
   color: #333333;
   margin: 0 0 18px;
@@ -137,13 +146,15 @@ main{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  min-height: 1000px;
 }
 
 .partner {
   text-align: center;
-  width: 196px;
+  width: 220px;
+  box-sizing: border-box;
 }
 
 .partner .photo {
@@ -151,9 +162,10 @@ main{
   position: relative;
 }
 
-.photo{
+.photo {
   margin: 0 0 12px;
 }
+
 .photo img {
   width: 120px;
   height: 120px;
@@ -172,7 +184,7 @@ main{
   right: -4px;
   bottom: -4px;
   background: no-repeat center;
-  border:4px solid #ffffff ;
+  border: 4px solid #ffffff;
 }
 
 .tag-tv:after {
@@ -180,65 +192,77 @@ main{
   background-image: url(../img/icon-tv.png);
 }
 
-.tag-coffee::after{
+.tag-coffee::after {
   background-color: #1cd7ad;
   background-image: url(../img/icon-coffee.png);
 }
 
-.tag-flask::after{
-background-color:#ffa507;
-background-image: url(../img/icon-flask.png);
+.tag-flask::after {
+  background-color: #ffa507;
+  background-image: url(../img/icon-flask.png);
 }
 
-.tag-aircraft::after{
+.tag-aircraft::after {
   background-color: #4e73db;
   background-image: url(../img/icon-aircraft.png);
 }
 
-.partner-name{
+.partner-name {
   font-family: 'Montserrat';
-  font-weight:600;
+  font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.4px;
   margin: 0 0 16px;
 }
 
-.partner-description{
+.partner-description {
   font-family: 'Roboto';
   font-weight: 100;
   font-size: 14px;
   color: #8f8f8f;
-  margin: 0 0 27px;
-}
-.button-choice-of-partners{
-  width: 100%;
-  color: #ff4e50;
-  display: block;
-  border-color: #ff4e50;
-  margin: 0 auto;
-  padding: 10px 28px;
-}
-
-.button-choice-of-partners:hover{
-  color: #ffffff;
-  background-color: #ff4e50;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
+  header {
+    height: 700px;
+  }
+
   nav {
     justify-content: space-between;
+    margin: 0 48px;
+    padding: 40px 0;
   }
 
-  .logo{
-    display: block;
+  nav .logo {
+    display: initial;
   }
 
-  .logo-promo{
-    display:none;
+  .overlay .logo {
+    display: none;
   }
 
-  .promo-content h1{
-    font-size: 52px;
+  .overlay {
+    top: 49%;
+  }
+
+  .overlay h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 26px;
+  }
+
+  .promo-sub-text {
+    font-size: 24px;
+    margin: 0 0 32px;
+  }
+
+  main {
+    padding: 68px 0;
+  }
+
+  .main-sub-text {
+    margin: 0 0 35px;
   }
 
   .partner {
@@ -248,27 +272,44 @@ background-image: url(../img/icon-flask.png);
   .block-partners {
     flex-direction: row;
     align-items: flex-start;
+    min-height: 635px;
   }
 
   .container {
     width: 492px;
+    margin: 0 auto;
   }
 
-  .button-promo{
+  .btn-big {
     width: auto;
   }
 }
 
-@media (min-width: 945px) {
+@media (min-width: 940px) {
   .container {
-    width: 945px;
+    width: 940px;
   }
-  .partner {
-    width: 25%;
+  
+  nav {
+    width: 100%;
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
-  nav {
-    width: 942px;
-    margin: 0 auto;    
+  .block-partners{
+    min-height: 350px;
   }
+
+  .partner {
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .btn-accent {
+    padding: 9px 28px;
+  }
+  
 }
