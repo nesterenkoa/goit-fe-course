@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-weight: 100;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  background: url(../img/promo.png) no-repeat center;
+  background-size: cover;
+  background-color: black;
+  padding-bottom: 140px;
+}
+
+nav {
+  padding: 20px 0 0;
+  margin-bottom: 110px;
+}
+
+.logo {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: 1.2px;
+}
+
+.button {
+  background-color: transparent;
+  padding: 7px 16px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.button-big {
+  padding: 8px 20px;
+  width: 100%;
+}
+
+.button:focus,
+.button:hover {
+  border-color: #ffffff;
+}
+
+.button-filled {
+  background: #ff4e50;
+  border-color: #ff4e50;
+}
+
+.button-accent {
+  color: #ff4e50;
+  border-color: #ff4e50;
+}
+
+.button-accent:hover {
+  color: #ffffff;
+  background-color: #ff4e50;
+}
+
+.promo .logo {
+  display: inline-block;
+  margin-bottom: 26px;
+}
+
+.promo .title {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  margin: 0 0 12px;
+  letter-spacing: -0.1px;
+  white-space: pre-line;
+}
+
+.promo .sub-title {
+  color: #ffffffbe;
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin: 0 0 16px;
+  letter-spacing: 0.6px;
+}
+
+section {
+  padding: 64px 0;
+}
+
+section .title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 21px;
+  color: #333333;
+  margin: 0 0 18px;
+}
+
+.partners {
+  margin: 0 auto 10px;
+}
+
+.partner {
+  padding-bottom: 24px;
+}
+
+.partner .name,
+.partner .description {
+  margin: 0 auto;
+}
+
+.partner .photo {
+  display: inline-block;
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+}
+
+.with-tag:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: -4px;
+  bottom: -4px;
+  background: no-repeat center;
+  border: 4px solid #ffffff;
+}
+
+.tag-tv:after {
+  background-color: #ff4e50;
+  background-image: url(../img/icon-tv.png);
+}
+
+.tag-coffee::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/icon-coffee.png);
+}
+
+.tag-flask::after {
+  background-color: #ffa507;
+  background-image: url(../img/icon-flask.png);
+}
+
+.tag-aircraft::after {
+  background-color: #4e73db;
+  background-image: url(../img/icon-aircraft.png);
+}
+
+.partner .name {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+
+.partner .description {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-size: 14px;
+  color: #8f8f8f;
+  line-height: 18px;
+}
+
+@media(min-width: 320px) {
+
+  .partner .name,
+  .partner .description {
+    max-width: 218px;
+  }
+}
+
+@media (max-width:767px) {
+  .partner:nth-of-type(1) {
+    order: 1;
+  }
+
+  .partner:nth-of-type(2) {
+    order: 3;
+  }
+
+  .partner:nth-of-type(3) {
+    order: 2;
+  }
+
+  .partner:nth-of-type(4) {
+    order: 4;
+  }
+
+}
+
+@media(min-width: 768px) {
+
+  .container {
+    max-width: 660px;
+    padding: 0;
+  }
+
+  header {
+    padding: 0 48px 234px;
+  }
+
+  header .container {
+    margin: 0 auto;
+  }
+
+  nav {
+    margin-bottom: 140px;
+    padding: 40px 0 0;
+  }
+
+  .promo .title {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 26px;
+  }
+
+  .promo .sub-title {
+    font-size: 24px;
+    margin: 0 0 32px;
+  }
+
+  .button-big {
+    width: auto;
+  }
+
+  .main {
+    padding: 70px 0;
+    max-width: 490px;
+  }
+
+  .main .title {
+    margin: 0 0 35px;
+  }
+
+  .partners {
+    margin-bottom: 40px;
+  }
+
+  .partner {
+    padding-bottom: 54px;
+  }
+
+  .partner:nth-last-of-type(-n+2) {
+    padding-bottom: 0;
+  }
+
+  .button-accent {
+    padding: 9px 28px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container {
+    max-width: 940px;
+  }
+
+  header {
+    padding-bottom: 234px;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto 140px;
+  }
+
+  .partners {
+    margin-bottom: 34px;
+  }
+
+  .partner {
+    padding-bottom: 0;
+    flex-basis: 25%;
+  }
+}
