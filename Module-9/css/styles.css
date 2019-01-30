@@ -33,6 +33,9 @@ header {
 
 nav {
   padding: 20px 0 0;
+}
+
+.controls {
   margin-bottom: 110px;
 }
 
@@ -82,6 +85,11 @@ nav {
   background-color: #ff4e50;
 }
 
+.promo .button-big {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .promo .logo {
   display: inline-block;
   margin-bottom: 26px;
@@ -103,6 +111,7 @@ nav {
   font-family: 'Roboto';
   margin: 0 0 16px;
   letter-spacing: 0.6px;
+  max-width: 75%;
 }
 
 section {
@@ -227,6 +236,15 @@ section .title {
     padding: 0;
   }
 
+  nav {
+    margin-bottom: 140px;
+    padding: 40px 0 0;
+  }
+
+  .controls {
+    margin-bottom: 0;
+  }
+
   header {
     padding: 0 48px 234px;
   }
@@ -235,10 +253,8 @@ section .title {
     margin: 0 auto;
   }
 
-  nav {
-    margin-bottom: 140px;
-    padding: 40px 0 0;
-  }
+  .promo .logo {
+    margin: 0;}
 
   .promo .title {
     font-size: 50px;
