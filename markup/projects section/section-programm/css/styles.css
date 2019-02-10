@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Acrom-ExtraBold';
+  src: url('../fonts/Acrom-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Acrom-Regular';
+  src: url('../fonts/Acrom-Regular.woff') format('woff');
+}
+
+.container {
+  width: 848px;
+  margin: 0 auto;
+}
+
+.modules {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; 
+}
+
+.module {
+  display: flex;
+  width: 32.5%;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.module:not(:nth-of-type(3n)) {
+  margin-right: 1.25%;
+}
+
+.module:nth-last-of-type(-n + 3) {
+  margin-bottom: 0;
+}
+
+.module:nth-of-type(3n):not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.module__number {
+  height: 38px;
+  margin-left: -14px;
+  position: relative;
+  line-height: 35px;
+  font-size: 2.3225rem;
+  font-family: 'Acrom-ExtraBold';
+}
+
+.module__number::after {
+  position: absolute;
+  bottom: -13px;
+  right: 0;
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: coral;
+}
+
+.description-module {
+  width: 75%;
+}
+
+.headline {
+  font-family: 'Acrom-ExtraBold';
+  color: black;
+  font-size: 3.625rem;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+
+.headline_bg {
+  display: inline-block;
+  color: white;
+  background: black;
+  margin: 0 0 5px;
+}
+
+.headline_font-size {
+  font-size: 0.77rem;
+}
+
+.section-course-program__headline {
+  margin-bottom: 56px;
+  text-transform: none;
+}
+
+.description-module__txt {
+  font-family: 'Acrom-Regular';
+  font-size: 0.6575rem;
+  line-height: 15px;
+  margin: 0;
+}

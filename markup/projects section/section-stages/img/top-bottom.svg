@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="31px" viewBox="0 0 7 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="top-bottom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <path d="M3.5,0.5 L3.5,30.5" id="line" stroke="#FD9A44" fill="#FD9A44"></path>
+        <path id="line-decoration" d="M3.5,30.5 L6.5,19.7 L0.5,19.7 L3.5,30.5 Z" stroke="#FD9A44" fill="#FD9A44"></path>
+    </g>
+</svg>
