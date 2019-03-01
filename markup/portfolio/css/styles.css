@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+section{
+    background: linear-gradient(rgba(243, 236, 28, 0.93), rgba(217, 69, 242, 0.88));
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Wisdom-Script';
+    color: #cc36a2;
+    line-height: 84px;
+}
+
+ol{
+    counter-reset: myCounter;
+}
+
+li{
+    list-style: none;
+
+}
+
+li:before {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: #fdff10;
+    background: #cc00a9;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+
+.mart {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #605e5e;
+    text-transform: uppercase;
+    line-height: 1.067;
+}
+
+.mart::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.mart span {
+    text-transform:none;
+}
+
+
+.mogo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #95e1d3;
+    line-height: 0.8;
+}
+
+.golden {
+    font-family: 'Wisdom-Script';
+    font-size: 26px;
+    color: #fed136;
+}
+
+.urlaubsgluck{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+}
