@@ -7,12 +7,14 @@ let total = 0;
 do {
   userInput = prompt('Введите число');
   const isNumber = Number.parseInt(userInput) == userInput;
-  if (userInput != null && isNumber) {
+  if (userInput === null) {
+    break;
+} else if (isNumber) {
     numbers.push(Number.parseInt(userInput))
-  } else if (userInput !== null && !isNumber) {
+  } else if (!isNumber) {
     alert('Введите число!')
   }
-} while (userInput != null);
+} while (true);
 
 console.log(numbers);
 
