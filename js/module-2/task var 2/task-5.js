@@ -12,7 +12,10 @@ const numbers = [1, 3, 17, 5, 9, 14, 8, 14, 34, 18, 26];
 const num = 10;
 const matched = [];
 
-for (let i = 0; i <  numbers.length; i++; )
-
+for (let i = 0; i <  numbers.length; i++) {
+  if (numbers[i] > num) {
+    matched.push(numbers[i])
+  }
+}
 
 console.log(matched); // [17, 14, 14, 32, 18, 26]

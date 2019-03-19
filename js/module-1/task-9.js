@@ -55,6 +55,8 @@ if (userInput == null) {
     case 5:
       alert(text5);
       break;
+    default :
+      console.log('--------')
   }
 }
 

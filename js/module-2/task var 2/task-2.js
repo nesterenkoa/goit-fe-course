@@ -16,7 +16,7 @@ let k = 1;
 console.log(users.length)
 
 
-while (i < users.length, k < = users.length) {
+while (i < users.length, k < users.length) {
   console.log(`${k} - ${users[i]}`);
   i += 1;
   k += 1;
