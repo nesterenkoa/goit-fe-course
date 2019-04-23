@@ -1,0 +1,33 @@
+.gallery{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.images {
+    position: relative;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    display: none;
+    transition: opacity 200ms;
+    left: 0;
+    top: 0;
+}
+
+
+
+img:first-child{
+   opacity: 1;
+}
+
+.showed{
+    opacity: 1;
+    color: ;
+}
