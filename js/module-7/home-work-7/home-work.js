@@ -1,4 +1,13 @@
+'use strict';
 
+
+function createTxtElem({ tag, className = "", text = "" }) {
+  const elem = document.createElement(tag);
+  elem.classList.add(className);
+  elem.textContent = text;
+  
+  return elem;
+}
 
 function createPostCard ({ img, title, text, link }) {
   const movie = document.createElement('div');
@@ -14,23 +23,15 @@ function createPostCard ({ img, title, text, link }) {
   movieBody.classList.add('movie__body');
   movie.appendChild(movieBody);
   
-  const movieTitle = document.createElement('h2');
-  movieTitle.classList.add('movie__title');
-  movieTitle.textContent = title;
-  
+  const movieTitle = createTxtElem({ tag: 'h2', className: 'movie__title', text : title });
   movieBody.appendChild(movieTitle);
   
-  const movieDescription = document.createElement('p');
-  movieDescription.classList.add('movie__description');
-  movieDescription.textContent = text;
+  const movieDescription = createTxtElem({ tag: 'p',className:'movie__description', text: text });
   
   movieBody.appendChild(movieDescription);
   
-  const movieLink = document.createElement('a');
-  movieLink.classList.add('movie__link');
+  const movieLink = createTxtElem({ tag:'a', className:'movie__link', text: link});
   movieLink.setAttribute('href', link);
-  movieLink.textContent = link;
-  
   movieBody.appendChild(movieLink);
   
   return movie;
@@ -64,3 +65,8 @@ const posts = [
 const domElements = createCards(posts);
 const body = document.querySelector('body');
 domElements.forEach(domElement => body.appendChild(domElement));
+
+
+
+
+
