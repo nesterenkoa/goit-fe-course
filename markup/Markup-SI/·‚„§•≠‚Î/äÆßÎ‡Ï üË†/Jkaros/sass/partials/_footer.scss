@@ -1,0 +1,330 @@
+footer {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  margin-top: 50px;
+  background-color: #3a3d40;
+  border-top: 5px solid #2f3235;
+  position: relative;
+  padding-top: 35px;
+  .top {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    .col_1 {
+      display: block;
+      float: left;
+      overflow: hidden;
+      h5 {
+        display: block;
+        text-transform: uppercase;
+        color: #bfbfbf;
+        font-weight: bold;
+        font-family: 'allerregular';
+      }
+      ul {
+        display: block;
+        margin-top: 30px;
+        width: 220px;
+        li {
+          display: block;
+          float: left;
+          width: 100%;
+          margin-top: 18px;
+        &:first-child {
+          margin-top: 0;
+        }
+          p {
+            display: block;
+            font-size: 13px;
+            color: #aeafaf;
+            width: 100%;
+            font-family: 'droid_sansregular';
+            font-weight: bold;
+          }
+          .date {
+            color: #606569;
+            font-size: 11px;
+            display: block;
+            margin-top: 18px;
+            font-family: 'droid_sansregular';
+            font-weight: bold;
+          }
+        }
+          .li_in_col_2 {
+            display: block;
+            position: relative;
+          &:before {
+            display: inline-block;
+            width: 100%;
+            background-image: url('../images/icon_line.png');
+            background-repeat: repeat-x;
+            height: 3px;
+            position: absolute;
+            content: '';
+          }
+          &:after{
+            display: inline-block;
+            width: 100%;
+            background-image: url('../images/icon_line.png');
+            background-repeat: repeat-x;
+            height: 3px;
+            position: absolute;
+            content: '';
+          }
+          p {
+            display: block;
+            font-size: 13px;
+            color: #aeafaf;
+            width: 100%;
+            margin-top: 20px;
+            font-family: 'droid_sansregular';
+            font-weight: bold;
+          }
+          .date {
+            color: #606569;
+            font-size: 11px;
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 20px;
+            font-family: 'droid_sansregular';
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .col_2 {
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin-left: 27px;
+      h5 {
+        display: block;
+        text-transform: uppercase;
+        color: #bfbfbf;
+        font-weight: bold;
+        font-family: 'allerregular';
+      }
+      ul {
+        display: block;
+        margin-top: 30px;
+        width: 220px;
+        li {
+          display: block;
+          margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+          p {
+          display: block;
+          font-size: 13px;
+          color: #aeafaf;
+          width: 100%;
+          font-family: 'droid_sansregular';
+          font-weight: bold;
+          img {
+            display: block;
+            width: 16px;
+            height: 12px;
+            float: left;
+            padding-right: 12px;
+          }
+          a {
+            font-size: 13px;
+            color: #697e8d
+          }
+          }
+        }
+          .li_in_col_2 {
+            display: block;
+            position: relative;
+            margin-top: 33px;
+          &:before {
+            display: inline-block;
+            width: 100%;
+            background-image: url('../images/icon_line.png');
+            background-repeat: repeat-x;
+            height: 3px;
+            position: absolute;
+            content: '';
+          }
+          &:after{
+            display: inline-block;
+            width: 100%;
+            background-image: url('../images/icon_line.png');
+            background-repeat: repeat-x;
+            height: 3px;
+            position: absolute;
+            content: '';
+          }
+            p {
+              display: block;
+              font-size: 13px;
+              color: #aeafaf;
+              width: 100%;
+              padding-top: 20px;
+              padding-bottom: 21px;
+              font-family: 'droid_sansregular';
+              font-weight: bold;
+            img {
+              display: block;
+              width: 16px;
+              height: 12px;
+              float: left;
+              padding-right: 12px;
+            }
+            a {
+              font-size: 13px;
+              color: #697e8d
+            }
+            }
+          }
+        }
+    }
+    .col_3 {
+        display: block;
+        float: left;
+        overflow: hidden;
+        margin-left: 27px;
+        width: 213px;
+        h5 {
+          display: block;
+          text-transform: uppercase;
+          color: #bfbfbf;
+          font-weight: bold;
+          font-family: 'allerregular'
+        }
+        p {
+          display: block;
+          font-size: 13px;
+          margin-top: 30px;
+          color: #aeafaf;
+          font-family: 'droid_sansregular';
+          font-weight: bold;
+        }
+      }
+    .col_4 {
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin-left: 30px;
+      width: 220px;
+        h5 {
+          display: block;
+          text-transform: uppercase;
+          color: #bfbfbf;
+          font-weight: bold;
+          font-family: 'allerregular';
+        }
+        .row_1 {
+          display: block;
+          width: 100%;
+          height: 35px;
+          margin-top: 30px;
+          background-color: #282b2d;
+          float: left;
+          .txt {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #2d3032;
+            border: none;
+          }
+        }
+        .row_2 {
+            display: block;
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            background-color: #282b2d;
+            float: left;
+            .txt {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #2d3032;
+              border: none;
+            }
+          }
+        .row_3 {
+            display: block;
+            width: 100%;
+            height: 140px;
+            margin-top: 10px;
+            background-color: #2d3032;
+            float: left;
+            textarea {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #2d3032;
+              border: none;
+            }
+          }
+        .row_4 {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          float: left;
+          .submit {
+            width: 112px;
+            height: 28px;
+            text-align: center;
+            font-size: 13px;
+            color: white;
+            display: block;
+            border: none;
+            border-radius: 3px;
+            background-image: url('../images/gradient.png');
+            background-repeat: repeat-x;
+          }
+        }
+      }
+  }
+  .bottom {
+    height: 70px;
+    display: block;
+    overflow: hidden;
+    margin-top: 40px;
+    border-top: 1px solid #24272a;
+    background-color: #2f3235;
+    width: 100%;
+    .copy {
+      float: left;
+      line-height: 70px;
+      color: #aeafaf;
+      font-size: 13px;
+      font-family: 'droid_sansregular';
+      font-weight: bold;
+      a {
+        color: #86acc4;
+      }
+    }
+    .soc {
+      float: right;
+      margin: 22px 0 0 0;
+      li {
+        float: left;
+        margin: 0 6px 0 0;
+        width: 25px;
+        height: 25px;
+      &:last-child {
+          margin: 0;
+        }
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          margin: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

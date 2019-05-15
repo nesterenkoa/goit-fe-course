@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'bebasregular';
+	src: url('../fonts/bebas-webfont.eot');
+	src: url('../fonts/bebas-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bebas-webfont.woff') format('woff'),
+		url('../fonts/bebas-webfont.ttf') format('truetype'),
+		url('../fonts/bebas-webfont.svg#bebasregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_TradeGothic-BoldCondTwenty';
+	src: url('../fonts/TradeGothic-BoldCondTwenty.eot');
+	src: url('../fonts/TradeGothic-BoldCondTwenty.woff') format('woff'),
+		url('../fonts/TradeGothic-BoldCondTwenty.ttf') format('truetype'), 
+		url('../fonts/TradeGothic-BoldCondTwenty.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'source_sans_proregular';
+	src: url('../fonts/source-sans-pro.regular-webfont.eot');
+	src: url('../fonts/source-sans-pro.regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/source-sans-pro.regular-webfont.woff') format('woff'),
+		url('../fonts/source-sans-pro.regular-webfont.ttf') format('truetype'),
+		url('../fonts/source-sans-pro.regular-webfont.svg#source_sans_proregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'allerbold';
+	src: url('../fonts/aller_std_bd-webfont.eot');
+	src: url('../fonts/aller_std_bd-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/aller_std_bd-webfont.woff') format('woff'),
+		url('../fonts/aller_std_bd-webfont.ttf') format('truetype'),
+		url('../fonts/aller_std_bd-webfont.svg#allerbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'source-sans-pro-extralight';
+	src: url('../fonts/source-sans-pro.extralight.eot');
+	src: url('../fonts/source-sans-pro.extralight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/source-sans-pro.extralight.woff') format('woff'),
+		url('../fonts/source-sans-pro.extralight.ttf') format('truetype'),
+		url('../fonts/source-sans-pro.extralight.svg#source-sans-pro.extralight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

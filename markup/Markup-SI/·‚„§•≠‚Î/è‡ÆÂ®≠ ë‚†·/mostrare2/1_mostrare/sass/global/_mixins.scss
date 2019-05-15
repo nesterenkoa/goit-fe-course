@@ -1,0 +1,48 @@
+@mixin transition-treatment_1 {
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@mixin transition-treatment_2 {
+	-webkit-transition: all 400ms linear;
+	        transition: all 400ms linear;
+}
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -ms-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+@mixin display-block($dblock) {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin vertical-align{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName}  {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}

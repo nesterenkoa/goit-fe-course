@@ -1,0 +1,32 @@
+.jurnal_main_content {
+  display: block;
+  overflow: hidden; }
+  .jurnal_main_content .fotoColi {
+    margin: 26px 0 0 28px; }
+  .jurnal_main_content .vestibulum p {
+    color: #f2f2f2;
+    font-size: 14px;
+    margin: 28px 0 0 28px;
+    width: 639px; }
+  .jurnal_main_content ul {
+    margin: 26px 0 0 29px; }
+  .jurnal_main_content li {
+    float: left; }
+  .jurnal_main_content li:nth-child(2) {
+    margin-left: 21px; }
+  .jurnal_main_content li:nth-child(3) {
+    margin-left: 17px; }
+  .jurnal_main_content li:last-child {
+    margin-left: 18px; }
+  .jurnal_main_content p {
+    font-size: 14px;
+    color: #848484; }
+    .jurnal_main_content p img {
+      margin-right: 7px; }
+    .jurnal_main_content p a {
+      color: #f39c12; }
+  .jurnal_main_content .border {
+    width: 623px;
+    height: 1px;
+    background-color: #505050;
+    margin: 73px 0 0 27px; }

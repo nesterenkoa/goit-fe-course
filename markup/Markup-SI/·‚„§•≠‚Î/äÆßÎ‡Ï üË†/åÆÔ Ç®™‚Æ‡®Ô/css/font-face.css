@@ -1,0 +1,109 @@
+ @font-face {
+    font-family: 'Corbel';
+    src: url('../fonts/Corbel.eot');
+    src: url('../fonts/Corbel.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Corbel.woff') format('woff'),
+         url('../fonts/Corbel.ttf') format('truetype'),
+         url('../fonts/Corbel.svg#Corbel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: local("Tahoma"), local("TahomaRegular"),
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.eot');
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.woff') format('woff'),
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.ttf') format('truetype'),
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.svg#Tahoma-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  
+	font-family: 'qiber';
+  
+	src: url("../fonts/qiber.eot");
+  
+	src: url("../fonts/qiber.eot?#iefix") format("embedded-opentype"), url("../fonts/qiber.otf") format("opentype"); 
+}
+
+@font-face {
+  
+	font-family: 'Pequena';
+  
+	src: url("../fonts/Pequena.eot");
+  
+	src: url("../fonts/Pequena.eot?#iefix") format("embedded-opentype"), url("../fonts/Pequena.woff2") format("woff2"), url("../fonts/Pequena.woff") format("woff"), url("../fonts/Pequena.ttf") format("truetype"), url("../fonts/Pequena.svg#Pequena") format("svg");
+  
+	font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  
+	font-family: 'NarzissPro';
+  
+	src: url("../fonts/NarzissProCyrillic.eot");
+  
+	src: url("../fonts/NarzissProCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/NarzissProCyrillic.woff2") format("woff2"), url("../fonts/NarzissProCyrillic.woff") format("woff"), url("../fonts/NarzissProCyrillic.ttf") format("truetype"), url("../fonts/NarzissProCyrillic.svg#NarzissProCyrillic") format("svg");
+  
+	font-weight: normal;
+  
+	font-style: normal; 
+}
+
+@font-face {
+  
+	font-family: 'DaxlineSC';
+  
+	src: url("../fonts/DaxlineScOffcPro-Black.eot");
+  
+	src: url("../fonts/DaxlineScOffcPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/DaxlineScOffcPro-Black.woff2") format("woff2"), url("../fonts/DaxlineScOffcPro-Black.woff") format("woff"), url("../fonts/DaxlineScOffcPro-Black.ttf") format("truetype"), url("../fonts/DaxlineScOffcPro-Black.svg#DaxlineScOffcPro-Black") format("svg");
+  
+	font-weight: 900;
+  
+	font-style: normal; 
+}
+
+@font-face {
+  
+	font-family: 'daxlineoffcproblack';
+  
+	src: url("../fonts/Daxlineoffcproblack.eot");
+  
+	src: url("../fonts/Daxlineoffcproblack.eot?#iefix") format("embedded-opentype"), url("../fonts/Daxlineoffcproblack.woff2") format("woff2"), url("../fonts/Daxlineoffcproblack.woff") format("woff"), url("../fonts/Daxlineoffcproblack.ttf") format("truetype");
+ 
+ 	font-weight: normal;
+  
+font-style: normal; 
+}
+
+@font-face {
+  
+	font-family: 'daxlineoffcprobold';
+  
+	src: url("../fonts/Daxlineoffcprobold.eot");
+  
+	src: url("../fonts/Daxlineoffcprobold.eot?#iefix") format("embedded-opentype"), url("../fonts/Daxlineoffcprobold.woff2") format("woff2"), url("../fonts/Daxlineoffcprobold.woff") format("woff"), url("../fonts/Daxlineoffcpro-bold.ttf") format("truetype");
+  
+	font-weight: normal;
+  
+	font-style: normal; 
+}
+
+@font-face {
+  
+	font-family: 'daxlineoffcpro';
+  
+	src: url("../fonts/Daxlineoffcpro.eot");
+  
+	src: url("../fonts/Daxlineoffcpro.eot?#iefix") format("embedded-opentype"), url("../fonts/Daxlineoffcpro.woff2") format("woff2"), url("../fonts/Daxlineoffcpro.woff") format("woff"), url("../fonts/Daxlineoffcpro.ttf") format("truetype");
+  
+	font-weight: normal;
+  
+	font-style: normal; 
+}
+

@@ -1,0 +1,31 @@
+.menu{
+	display: block;
+	overflow: hidden;
+	ul {
+		display: block;
+		overflow: hidden;
+		li { 
+			margin-bottom: 6px;
+			a {
+				color: #fff;
+				font-size: 15,44px;
+				text-transform: uppercase;	
+			}
+			a:hover {
+				color: #f39c12;
+			}
+			a:active {
+				color: #f39c12;
+			}
+		}
+		li:nth-child(5) {
+			margin-top: 25px;
+		}
+		li:nth-child(6) {
+			margin-bottom: 25px;
+		}
+		li:nth-child(7) {
+			margin-bottom: 0px;
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.picture{
+  @include breakpoint(mobile){
+    display: block;
+  }
+  .main{
+    float: left;
+    .t1, .t2, .t3{
+      @include breakpoint(mobile){
+        margin-bottom: 4px;
+      }
+    }
+    &.little{
+    width: 536px;
+    height: 332px;
+    @include breakpoint(mobile){
+      width: 100%;
+      height: auto;
+      margin-bottom: 6px;
+      display: block;
+      }
+    }
+  }
+  .picture-right{
+    float: right;
+    width: 196px;
+    @include breakpoint(mobile){
+      float: none;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    img{
+      float: left;
+    }
+    .box{
+      display: block;
+      width: 83px !important;
+      margin: 5px 0 19px 52px;
+      @include breakpoint(mobile){
+        float: left;
+        margin: 5px 0 0 10px;
+      }
+    }
+    .pp-price{
+      font-weight: 700;
+      margin: 0 0 0 0;
+      padding: 20px 0 0 0;
+      @include breakpoint(mobile){
+        float: left;
+        width: 50%!important;
+        margin-left: 10px;
+      }
+      .bold{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 0 20px;
+      }
+    }
+    .right{
+      text-align: right;
+      float: right!important;
+      width: 56px!important;
+      margin: 20px 44px 40px 0!important;
+      cursor: pointer;
+      @include breakpoint(mobile){
+        margin: 24px 36px 0 0!important;
+      }
+    }
+    .right-img{
+      position: absolute;
+      right: 0;
+      top: 244px;
+      @include breakpoint(mobile){
+        right: 12px;
+        top: 342px;
+      }
+    }
+  }
+  .tabs{
+    float: right;
+    #menu-tabs{
+      display: block;
+      width: 146px;
+      margin: 0;
+      @include breakpoint(mobile){
+        width: 100%;
+      }
+      li{
+        cursor: pointer;
+        @include breakpoint(mobile){
+          float: left;
+          width: 104px;
+          &:not(:last-child){
+            margin: 0 4px 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+.tabsearch{
+  margin: 0!important;
+  float: right;
+  li{
+    text-decoration: underline;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    color: #502b0b;
+    cursor: pointer;
+    &:first-child{
+      @include breakpoint(mobile){
+        margin-left: 110px!important;
+      }
+    }
+      @include breakpoint(mobile){
+      float: left!important;
+      margin: 0 0 0 20px!important;
+    }
+    &.active{
+      text-decoration: none;
+      color: #333333;
+    }
+  }
+}

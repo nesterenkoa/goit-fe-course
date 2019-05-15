@@ -1,0 +1,55 @@
+.tabs-content {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin-top: 30px;
+	.left {
+		width: 40%;
+		float: left;
+		display: block;
+		overflow: hidden;
+		margin: 0 0 0px 0;
+	}
+	.right {
+		width: 60%;
+		display: block;
+		overflow: hidden;
+		float: right;
+		h3 {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			font-size: 17px;
+			font-weight: 700;
+			margin:0 0 15px 30px;
+			color: #555555;
+		}
+		.text1 {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			font-size: 15px;
+			font-weight: 400;
+			margin: 0 0 30px 30px;
+			color: #555555;
+		}
+		.text2 {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			font-size: 15px;
+			font-weight: 400;
+			margin: 0 0 30px 30px;
+			color: #555555;
+		}
+		li {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			font-size: 15px;
+			font-weight: 400;
+			margin: 7px 7px 5px 30px;
+			color: #555555;
+		}
+ 	}
+}

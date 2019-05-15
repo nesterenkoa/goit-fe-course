@@ -1,0 +1,200 @@
+#main {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  #main .our_service {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px; }
+    #main .our_service h2 {
+      display: block;
+      color: #6f6f6f;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'allerregular'; }
+    #main .our_service p {
+      display: block;
+      font-size: 20px;
+      color: #6f6f6f;
+      text-align: center;
+      margin-top: 25px;
+      font-weight: lighter;
+      font-family: 'allerregular'; }
+  #main .staff {
+    display: block;
+    position: relative;
+    margin-top: 50px; }
+    #main .staff .line {
+      display: inline-block;
+      background-image: url("../images/line.png");
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 3px; }
+    #main .staff h2 {
+      display: block;
+      font-weight: bold;
+      color: #717171;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      font-family: 'allerregular'; }
+    #main .staff p {
+      display: block;
+      font-size: 20px;
+      color: #6f6f6f;
+      text-align: center;
+      margin-top: 25px;
+      font-weight: lighter;
+      font-family: 'allerregular'; }
+    #main .staff ul {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 35px;
+      margin-bottom: 50px; }
+      #main .staff ul li {
+        display: block;
+        float: left;
+        width: 312px;
+        height: 250px;
+        margin-right: 12px; }
+        #main .staff ul li:nth-child(3) {
+          margin-right: 0px; }
+        #main .staff ul li:nth-child(4) {
+          margin-top: 12px; }
+        #main .staff ul li:nth-child(5) {
+          margin-top: 12px; }
+        #main .staff ul li:nth-child(6) {
+          margin-right: 0px;
+          margin-top: 12px; }
+        #main .staff ul li img {
+          width: 100%;
+          height: 100%; }
+  #main .latest-blog {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 50px; }
+    #main .latest-blog h2 {
+      display: block;
+      font-weight: bold;
+      color: #717171;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      font-family: 'allerregular'; }
+    #main .latest-blog p {
+      display: block;
+      font-size: 20px;
+      color: #6f6f6f;
+      text-align: center;
+      margin-top: 25px;
+      font-weight: lighter;
+      font-family: 'allerregular'; }
+    #main .latest-blog ul {
+      display: block;
+      overflow: hidden;
+      margin-top: 30px; }
+      #main .latest-blog ul li {
+        display: block;
+        float: left;
+        width: 50%; }
+        #main .latest-blog ul li:nth-child(3) {
+          margin-top: 45px; }
+        #main .latest-blog ul li:nth-child(4) {
+          margin-top: 45px; }
+        #main .latest-blog ul li .date_mounth {
+          display: block;
+          float: left;
+          background-color: #e4e4e4;
+          border-radius: 50%;
+          width: 55px;
+          height: 55px; }
+          #main .latest-blog ul li .date_mounth p.date {
+            color: #a0a0a0;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: bold;
+            font-size: 17px;
+            display: block;
+            padding-top: 6px;
+            font-family: 'allerregular'; }
+          #main .latest-blog ul li .date_mounth p.mounth {
+            display: block;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 16px;
+            margin: 0;
+            font-family: 'allerregular'; }
+      #main .latest-blog ul .text {
+        display: block;
+        overflow: hidden; }
+        #main .latest-blog ul .text h5 {
+          display: block;
+          font-weight: bold;
+          padding-left: 15px;
+          color: #a1a1a1;
+          font-family: 'allerregular'; }
+        #main .latest-blog ul .text p {
+          font-size: 13px;
+          color: #a1a1a1;
+          display: block;
+          text-align: left;
+          margin-top: 15px;
+          padding-left: 15px;
+          font-family: 'droid_sansregular';
+          font-weight: lighter; }
+        #main .latest-blog ul .text .link_p {
+          font-size: 11px;
+          color: lightblue;
+          display: block;
+          text-align: left;
+          margin-top: 15px;
+          padding-left: 15px;
+          font-family: 'droid_sansregular';
+          font-weight: lighter; }
+        #main .latest-blog ul .text a {
+          cursor: pointer; }
+  #main .our_customers {
+    display: block;
+    margin-top: 50px;
+    position: relative;
+    width: 100%; }
+    #main .our_customers h2 {
+      display: block;
+      font-weight: bold;
+      color: #717171;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      font-family: 'allerregular'; }
+    #main .our_customers p {
+      display: block;
+      font-size: 20px;
+      color: #6f6f6f;
+      text-align: center;
+      margin-top: 25px;
+      font-weight: lighter;
+      font-family: 'allerregular'; }
+    #main .our_customers ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 45px; }
+      #main .our_customers ul li {
+        display: block;
+        float: left; }
+      #main .our_customers ul a {
+        cursor: pointer; }

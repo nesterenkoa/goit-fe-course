@@ -1,0 +1,9 @@
+.end {
+  display: block;
+  overflow: hidden; }
+  .end p {
+    font-size: 12px;
+    font-family: Myriad Pro Regular;
+    margin: 36px 0 20px 0px;
+    color: #a8a8a8;
+    width: 178px; }

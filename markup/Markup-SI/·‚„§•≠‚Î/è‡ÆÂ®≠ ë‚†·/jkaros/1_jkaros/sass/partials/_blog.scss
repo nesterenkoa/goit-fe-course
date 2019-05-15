@@ -1,0 +1,91 @@
+.blog{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	margin: 0 0 0 0;
+	h2 {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+		color: #555555;
+	}
+	p {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		font-size: 20px;
+		font-weight: 400;
+		text-align: center;
+		color: #555555;
+		margin: 20px 0 30px 0;
+	}
+	ul {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+	li {
+		display: inline-block;
+		overflow: hidden;
+		width: 478px;
+		margin: 0px 0 0 0;	
+		.date {
+			float: left;
+			background: #ececec;
+			height: 55px;
+			width: 55px;
+			border-radius: 50px;
+			text-align: center;
+			margin: 0 0 0px 0;
+			padding: 0px 0 0 0;
+			.day {
+				display: block;
+				overflow: hidden;
+				font-size: 24px;
+				font-weight: 400;
+				margin-top: 7px;
+				color: #555555;
+			}
+			.month {
+				display: block;
+				overflow: hidden;
+				font-size: 13px;
+				font-weight: 500;
+				margin: -35px 3px 0 0;
+				color: #555555;
+			}
+		}
+		.text {
+			float: right;
+			width: 410px;
+			margin-bottom: 25px;
+			h4 {
+				display: block;
+				overflow: hidden;
+				width: 100%;
+				font-size: 17px;
+				font-weight: 700;
+				color: #555555;
+			}
+			p {
+				display: block;
+				overflow: hidden;
+				width: 100%;
+				text-align: left;
+				font-size: 15px;
+				color: #555555;
+				margin: 10px 0 10px 0; 
+			}
+			.bottom {
+				display: block;
+				overflow: hidden;
+				margin-bottom: 20px;
+				font-size: 13px;
+			}
+		}
+	}
+}

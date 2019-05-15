@@ -1,0 +1,211 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1;">
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	$('#nav ul  a').click(function(e) {
+			e.preventDefault();
+			$('#nav .active').removeClass('active');
+			$(this).addClass('active');
+			var tab=$(this).attr('href');
+			$('.range').not(tab).css({'display':'none'});
+			$(tab).fadeIn(400);
+			});
+	});
+	</script>
+	<title>Mostra</title>
+</head>
+
+<body>
+		<div id="header">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png"/></a>
+			</div>
+			<div class="info">
+				<p>For Additional Information, Contact Us!</p>
+				<p>info@memostra.com</p>
+			</div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Chothing</a></li>
+				<li><a href="#">Shoes</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Perfumes</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<div class="social">
+					<a href="#"><img src="images/mail.png" alt=""></a>
+					<a href="#"><img src="images/fb.png" alt=""></a>
+				</div>
+
+			</ul>
+		</div>
+		<div class="banner">
+			<h4>Welcome to Mostra!</h4>
+			<p>Quality Products - Great Prices!</p>
+			<div class="check">
+				<a href="#">Check It Out!</a>
+			</div>
+		</div>
+		<div class="tabs">
+			<ul>
+				<li><a href="#">All Categories</a></li>
+				<li><a href="#">Men</a></li>
+				<li><a href="#">Women</a></li>
+			</ul>
+			<form class="search" action="index.html" method="post">
+					<input type="text" name="" value="" placeholder="Browse Products">
+					<input type="submit" name="" value="Search">
+			</form>
+			</div>
+			<div class="range"  id="tab1">
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods1.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods2.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods3.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods5.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>RA001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods6.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods4.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE002</span></p></a>
+				</div>
+			</div>
+
+
+			<div class="range" id="tab2">
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods2.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods1.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods3.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods6.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods4.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods5.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>RA001</span></p></a>
+				</div>
+			</div>
+
+
+			<div class="range" id="tab3">
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods6.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods2.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Hollister</p>
+					<img src="images/goods3.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>HO002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods1.png" alt="">
+					<p >Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE001</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Abercrombie & Fitch</p>
+					<img src="images/goods4.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>AE002</span></p></a>
+				</div>
+				<div class="section">
+					<a href="#"><p>Ralph Lauren</p>
+					<img src="images/goods5.png" alt="">
+					<p>Price: <span class="price">US $65</span></p>
+					<p>COD: <span>RA001</span></p></a>
+				</div>
+
+			</div>
+			<ul id="nav">
+				<li><a href="#">« Previous</a></li>
+				<li>
+					<ul>
+						<li><a href="#tab1" class="active">1</a></li>
+						<li><a href="#tab2">2</a></li>
+						<li><a href="#tab3">3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Next »</a></li>
+			</ul>
+
+			<div id="footer">
+				<p>Copyright ©2010 Me Mostra. All Rights Reserved.</p>
+				<p>Website Designed and Developed by <a href="#">Dellustrations</a></p>
+				<ul>
+					<li><a href="#">Home |</a></li>
+					<li><a href="#">About Amostras |</a></li>
+					<li><a href="#">About Amostras |</a></li>
+					<li><a href="#">Contat Us</a></li>
+				</ul>
+			</div>
+</body>
+</html>

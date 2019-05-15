@@ -1,0 +1,103 @@
+.statistic {
+  display: block;
+  overflow: hidden; }
+  .statistic h3 {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: Myriad Pro Regular;
+    margin-top: 41px;
+    margin-left: 31px;
+    color: #f2f2f2; }
+  .statistic .row {
+    display: block;
+    overflow: hidden;
+    width: 90%; }
+  .statistic .row1 {
+    width: 441px;
+    height: 44px;
+    margin-top: 25px;
+    margin-left: 31px;
+    margin-bottom: 18px;
+    background-color: #f39c12;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+    float: left; }
+    .statistic .row1 p {
+      float: left;
+      line-height: 44px;
+      font-size: 14px;
+      margin-left: 16px; }
+    .statistic .row1 .row11 {
+      z-index: 20;
+      position: absolute;
+      width: 140px;
+      height: 44px;
+      background-color: #202020;
+      border-radius: 6px;
+      margin-left: 431px; }
+      .statistic .row1 .row11 p {
+        float: left;
+        line-height: 44px;
+        font-size: 14px;
+        margin-left: 91px;
+        color: #f2f2f2; }
+  .statistic .row2 {
+    width: 491px;
+    height: 44px;
+    margin-top: 25px;
+    margin-left: 31px;
+    margin-bottom: 18px;
+    background-color: #f39c12;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+    float: left; }
+    .statistic .row2 p {
+      float: left;
+      line-height: 44px;
+      font-size: 14px;
+      margin-left: 16px; }
+    .statistic .row2 .row22 {
+      z-index: 30;
+      position: absolute;
+      width: 90px;
+      height: 44px;
+      background-color: #202020;
+      border-radius: 6px;
+      margin-left: 481px; }
+      .statistic .row2 .row22 p {
+        float: left;
+        line-height: 44px;
+        font-size: 14px;
+        margin-left: 41px;
+        color: #f2f2f2; }
+  .statistic .row3 {
+    width: 351px;
+    height: 44px;
+    margin-top: 25px;
+    margin-left: 31px;
+    margin-bottom: 18px;
+    background-color: #f39c12;
+    border-radius: 6px;
+    z-index: 10;
+    position: relative;
+    float: left; }
+    .statistic .row3 p {
+      float: left;
+      line-height: 44px;
+      font-size: 14px;
+      margin-left: 16px; }
+    .statistic .row3 .row33 {
+      z-index: 20;
+      position: absolute;
+      width: 230px;
+      height: 44px;
+      background-color: #202020;
+      border-radius: 6px;
+      margin-left: 341px p;
+        margin-left-float: left;
+        margin-left-line-height: 44px;
+        margin-left-font-size: 14px;
+        margin-left-margin-left: 91px;
+        margin-left-color: #f2f2f2; }

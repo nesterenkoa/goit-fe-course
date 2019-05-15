@@ -1,0 +1,20 @@
+.contact {
+  display: block;
+  overflow: hidden;
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    float: left;
+    margin: 62px 0 0 125px;
+  }
+  .line {
+    width: 583px;
+    height: 5px;
+    background-color: #ffffff;
+    z-index: 10;
+    margin: 76px 0 0px 330px;
+    position: absolute;
+    float: left;
+  }
+}

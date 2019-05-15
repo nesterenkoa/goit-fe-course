@@ -1,0 +1,17 @@
+.slider {
+  display: block;
+  margin:0 auto;
+  border-top: 1px solid black;
+  position: relative;
+  .bxslider {
+    display: block;
+    width: 100%;
+    height: 450px !important;
+    margin-top: 50px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

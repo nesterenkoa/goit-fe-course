@@ -1,0 +1,17 @@
+#main {
+	overflow:hidden;
+	display:block;
+	width:100%;
+	position: relative;
+	z-index: 0;
+	background-color: #63baa9;
+	.atilog {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		img {
+			display: block;
+			overflow: hidden;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+#footer {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0;
+	background: #3a3d40;	
+	margin: 50px 0 0 0;	
+	border-color: #24272a;
+	border-style: solid;
+	border-top-width: 5px;
+	input {
+		height: 25px;
+		width: 219px;
+		background-color:#282B2D;
+		color: #fff;
+		margin:0 0 10px 0;
+		border-color: #282b2d;
+		border: none;
+	}
+	textarea {
+		background-color:#282B2D;
+		border-color: #282B2D;
+		color: #fff; 
+	}
+	button {
+		background-color:#7494a8;
+		border-color: #7494a8;
+		color: #fff;
+		width: 100px;
+		height: 30px;
+		margin-top: 10px; 
+		color: #fff;
+		border-radius: 5px;
+	}
+	a{
+		color: #7494a8;
+	}
+}

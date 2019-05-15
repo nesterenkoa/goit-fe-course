@@ -1,0 +1,15 @@
+/*@media (min-width: 1218px) and (max-width: 10000px) {}*/
+#wrapper .layout {
+  margin: 0 auto;
+  position: relative;
+  width: 978px; }
+
+#wrapper #main {
+  display: block;
+  overflow: hidden;
+  width: 100%; }
+
+#wrapper #content {
+  display: block;
+  overflow: hidden;
+  width: 100%; }

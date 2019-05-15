@@ -1,0 +1,25 @@
+#content{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	.portfolio{
+	display: block;
+	overflow: hidden;
+		h2 {
+			color: #ffffff;
+			float: left;
+			font-size: 30px;
+			margin: 62px 0 0 130px;
+			width: 278px;
+			height: 88px;
+			font-family: Myriad Pro Regular;
+		}
+	}
+	.line {	
+		width: 563px;
+		height: 5px;
+		background-color: #ffffff; 
+		line-height: 177px;
+		margin: 76px 0 0px 330px;
+	}
+}

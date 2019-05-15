@@ -1,0 +1,205 @@
+#main {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  .staff {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    .line {
+      display: inline-block;
+      background-image: url('../images/line.png');
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 3px;
+    }
+    h2 {
+      display: block;
+      font-weight: bold;
+      color: #717171;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+      font-family: 'allerregular';
+    }
+    p {
+      display: block;
+      font-size: 20px;
+      color: #6f6f6f;
+      text-align: center;
+      margin-top: 25px;
+      font-weight:lighter;
+      font-family: 'allerregular';
+    }
+    ul {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 35px;
+      margin-bottom: 50px;
+      li {
+        display: block;
+        float: left;
+        width: 312px;
+        height: 250px;
+        margin-right: 12px;
+      &:nth-child(3) {
+        margin-right: 0px;
+      }
+      &:nth-child(4) {
+        margin-top: 12px;
+      }
+      &:nth-child(5) {
+        margin-top: 12px;
+      }
+      &:nth-child(6) {
+        margin-right: 0px;
+        margin-top: 12px;
+      }
+        img {
+          width: 100%;
+          height: 100%
+        }
+      }
+    }
+  }
+  .latest-blog {
+      display: block;
+      width: 100%;
+      position: relative;
+      margin-top: 50px;
+      h2 {
+        display: block;
+        font-weight: bold;
+        color: #717171;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        font-family: 'allerregular';
+      }
+      p {
+        display: block;
+        font-size: 20px;
+        color: #6f6f6f;
+        text-align: center;
+        margin-top: 25px;
+        font-weight:lighter;
+        font-family: 'allerregular';
+      }
+      ul {
+        display: block;
+        overflow: hidden;
+        margin-top: 30px;
+        li {
+          display: block;
+          float: left;
+          width: 50%;
+        &:nth-child(3) {
+          margin-top: 45px;
+        }
+        &:nth-child(4) {
+          margin-top: 45px;
+        }
+          .date_mounth {
+            display: block;
+            float: left;
+            background-color: #e4e4e4;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            p.date {
+              color: #a0a0a0;
+              text-transform: uppercase;
+              margin: 0;
+              font-weight: bold;
+              font-size: 17px;
+              display: block;
+              padding-top: 6px;
+              font-family: 'allerregular';
+            }
+            p.mounth {
+              display: block;
+              color: #a0a0a0;
+              text-transform: uppercase;
+              font-weight: lighter;
+              font-size: 16px;
+              margin: 0;
+              font-family: 'allerregular';
+            }
+          }
+        }
+          .text {
+            display: block;
+            overflow: hidden;
+            h5 {
+              display: block;
+              font-weight: bold;
+              padding-left: 15px;
+              color: #a1a1a1;
+              font-family: 'allerregular';
+            }
+            p {
+              font-size: 13px;
+              color: #a1a1a1;
+              display: block;
+              text-align: left;
+              margin-top: 15px;
+              padding-left: 15px;
+              font-family: 'droid_sansregular';
+              font-weight: lighter;
+            }
+            .link_p {
+              font-size: 11px;
+              color: lightblue;
+              display: block;
+              text-align: left;
+              margin-top: 15px;
+              padding-left: 15px;
+              font-family: 'droid_sansregular';
+              font-weight: lighter;
+            }
+            a {
+              cursor: pointer;
+            }
+          }
+        }
+    }
+  .our_customers {
+      display: block;
+      margin-top: 50px;
+      position: relative;
+      width: 100%;
+      h2 {
+        display: block;
+        font-weight: bold;
+        color: #717171;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        font-family: 'allerregular';
+      }
+      p {
+        display: block;
+        font-size: 20px;
+        color: #6f6f6f;
+        text-align: center;
+        margin-top: 25px;
+        font-weight:lighter;
+        font-family: 'allerregular';
+      }
+      ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 45px;
+        li {
+          display: block;
+          float: left;
+        }
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+}

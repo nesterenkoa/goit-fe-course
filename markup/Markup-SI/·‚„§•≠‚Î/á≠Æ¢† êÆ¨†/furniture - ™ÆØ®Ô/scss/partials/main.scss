@@ -1,0 +1,56 @@
+#main{
+  width: 100%;
+  @include breakpoint(tablet){
+    overflow: hidden;
+    /*sidebar hamburger*/
+    .hamburger{
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -icab-transition: all 0.3s ease-in-out;
+      -khtml-transition: all 0.3s ease-in-out;
+      &.active{
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -icab-transform: rotate(90deg);
+        -khtml-transform: rotate(90deg);
+        .h-line{
+          &:first-child{
+            width: 10px;
+            margin-left: 5px;
+          }
+          &:nth-child(2){
+            width: 16px;
+            margin-left: 2px;
+          }
+          &:last-child{
+          }
+        }
+      }
+      .h-line{
+        width: 20px;
+        height: 4px;
+        background: #be0028;
+        display: block;
+        margin: 0 0 3px 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -icab-transition: all 0.3s ease-in-out;
+        -khtml-transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

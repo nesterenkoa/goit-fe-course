@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'TWCent-light';
+    src: url('../fonts/twentiethcenturylightlatin1.eot');
+    src: url('../fonts/twentiethcenturylightlatin1.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/twentiethcenturylightlatin1.woff') format('woff'),
+         url('../fonts/twentiethcenturylightlatin1.ttf') format('truetype'),
+         url('../fonts/twentiethcenturylightlatin1.svg#twentiethcenturylightlatin1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TWCent-Medium';
+    src: url('../fonts/twentiethcenturymediumlatin1.eot');
+    src: url('../fonts/twentiethcenturymediumlatin1.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/twentiethcenturymediumlatin1.woff') format('woff'),
+         url('../fonts/twentiethcenturymediumlatin1.ttf') format('truetype'),
+         url('../fonts/twentiethcenturymediumlatin1.svg#twentiethcenturymediumlatin1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TWCent-MedCond';
+    src: url('../fonts/twentiethcenturymediumcondensedlatin1.eot');
+    src: url('../fonts/twentiethcenturymediumcondensedlatin1.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/twentiethcenturymediumcondensedlatin1.woff') format('woff'),
+         url('../fonts/twentiethcenturymediumcondensedlatin1.ttf') format('truetype'),
+         url('../fonts/twentiethcenturymediumcondensedlatin1.svg#twentiethcenturymediumcondensedlatin1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TWCent-Semibold';
+    src: url('../fonts/twentiethcenturysemiboldlatin1.eot');
+    src: url('../fonts/twentiethcenturysemiboldlatin1.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/twentiethcenturysemiboldlatin1.woff') format('woff'),
+         url('../fonts/twentiethcenturysemiboldlatin1.ttf') format('truetype'),
+         url('../fonts/twentiethcenturysemiboldlatin1.svg#twentiethcenturysemiboldlatin1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

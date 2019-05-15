@@ -1,0 +1,61 @@
+#header{
+  display: block;
+  width: 100%;
+  height: 32px;
+  background: #a4785a;
+  border-radius: 9px 9px 0 0;
+  -webkit-border-radius: 9px 9px 0 0;
+  -moz-border-radius: 9px 9px 0 0;
+  -ms-border-radius: 9px 9px 0 0;
+  -o-border-radius: 9px 9px 0 0;
+  -khtml-border-radius: 9px 9px 0 0;
+  -icab-border-radius: 9px 9px 0 0;
+  margin: 7px 0 0 0;
+  overflow: hidden;
+  .left{
+    height: 100%;
+    float: left;
+    margin: 0 0 0 18px;
+    li{
+      float: left;
+      margin: 0 5px 0 0;
+      color: #ffffff;
+      p{
+        line-height: 30px;
+      }
+      a{
+        color: #ffffff;
+        text-decoration: underline;
+        line-height: 32px;
+      }
+    }
+  }
+  #nav{
+    height: 100%;
+    float: right;
+    li{
+      float: right;
+      padding: 0 16px;
+      cursor: pointer;
+      &:hover{
+        background: #f0d5c3;
+        a{
+          color: #502b0b;
+        }
+      }
+      a{
+        line-height: 32px;
+        color: #ffffff;
+      }
+    }
+    li:not(:last-child){
+      border-left: 1px solid #b59179;
+    }
+    li:not(:first-child){
+      border-right: 1px solid #98755c;
+      &:hover{
+        border-right: 1px solid #f0d5c3;
+      }
+    }
+  }
+}

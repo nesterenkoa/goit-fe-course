@@ -1,0 +1,50 @@
+.single_comments{
+	display: block;
+	overflow: hidden;
+	h3 {
+		font-size: 21px;
+		color: #f39c12;
+		text-transform: uppercase;
+		margin: 55px 0 34px 29px;
+	}
+	.firstComments {
+		display: block;
+		overflow: hidden;
+		width: 645px;
+		img {
+			float: left;
+			margin: 0 21px 74px 30px;
+		}
+		h6 {
+			font-size: 14px;
+			color: #f2f2f2;
+			a {
+				color: #f39c12;
+			}
+		}
+		p {
+			color: #f2f2f2;
+			margin-top: 9px;
+		}
+	}
+	.secondComments {
+		display: block;
+		overflow: hidden;
+		width: 645px;
+		img {
+			float: left;
+			margin: 0 21px 25px 30px;
+		}
+		h6 {
+			font-size: 14px;
+			color: #f2f2f2;
+			a {
+				color: #f39c12;
+			}
+		}
+		p {
+			color: #f2f2f2;
+			margin-top: 9px;
+		}
+	}
+}

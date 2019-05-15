@@ -1,0 +1,501 @@
+
+html {-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+input, textarea, select {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+}
+ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*:focus {outline: none;}
+input::-webkit-input-placeholder{color:#bebebe;}
+input:focus::-webkit-input-placeholder{color:#bebebe;}
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {font: 35px sans-serif;}
+h2 {font: 25px sans-serif;}
+h3 {font: 23px sans-serif;}
+h4 {font: 21px sans-serif;}
+h5 {font: 18px sans-serif;}
+h6 {font: 16px sans-serif;}
+p {}
+strong {}
+/**********************************************************              PC - LARGE             *************************************************/
+/*@media (min-width: 1218px) and (max-width: 10000px) {}*/
+/* wrapper */
+#wrapper {
+	display:block;
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color: #ffffff; 
+}
+#header {
+	width:100%;
+	display:block;
+	position:relative;
+	background-color: #00a99d; 
+	text-align: center;
+	height: 195px;
+}
+
+.layout {
+	margin:0 auto;
+	position:relative;
+	width:1170px;
+}
+
+#header h2{
+	font-weight: 700;
+	font-size: 19px;
+	font-family: Roboto;
+	color: #fcf9f9;
+	text-transform: uppercase;
+	padding: 32px 0 17px 0;
+}
+
+#header h1{
+	font-weight: 700;
+	font-size: 23px;
+	font-family: Roboto;
+	color: #fcf9f9;
+	text-transform: uppercase;
+	
+}
+
+#header ul{
+	display: block;
+	overflow: hidden;
+	margin: 22px 100px 0 100px;
+}
+
+#header ul li{
+	display: inline-block;
+	overflow: hidden;
+	width: 33%;
+}
+
+#header ul li img{
+	display: inline-block;
+	overflow: hidden;
+}
+
+#header ul li p{
+	display: inline-block;
+	overflow: hidden;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #fcf9f9;
+	padding: 0 0 0 12px;
+}
+
+#main {
+	overflow:hidden;
+	display:block;
+	width:100%;
+	position: relative;
+	z-index: 0;
+}
+
+#content{
+	display: block;
+	overflow: hidden;
+}
+
+#content .what_you_now{
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	text-align: justify;
+	margin: 17px 0 33px 0;
+}
+
+#content .what_you_now .text{
+	font-weight: 400;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #050505;
+	padding: 0 22px 0 0 ;
+	float: left;
+	width: 74.5%;
+	line-height: 1.75;
+}
+
+#content .what_you_now .text p .bold{
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #050505;
+}
+#content .what_you_now form{
+	float: right;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#content .what_you_now form #text1{
+	display: block;
+	overflow: hidden;
+	height: 38px;
+	width: 260px;
+	border: 2px solid #00a99d;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #787873;
+	padding: 20px 0 0 10px;
+	margin: 0 0 4px 0;
+}
+
+#content .what_you_now form #text2{
+	display: block;
+	overflow: hidden;
+	height: 38px;
+	width: 260px;
+	border: 2px solid #00a99d;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #787873;
+	padding: 20px 0 0 10px;
+	margin: 0 0 4px 0;
+}
+
+#content .what_you_now form #text3{
+	display: block;
+	overflow: hidden;
+	height: 38px;
+	width: 260px;
+	border: 2px solid #00a99d;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #787873;
+	padding: 20px 0 0 10px;
+	margin: 0 0 4px 0;
+
+}
+
+#content .what_you_now form .submit{
+	display: block;
+	overflow: hidden;
+	height: 62px;
+	width: 274px;
+	border: none;
+	background-color: #e8d005; 
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #050505;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#content .psychologists{
+	display: block;
+	overflow: hidden;
+}
+
+#content .psychologists .four{
+	float: left;
+	overflow: hidden;
+	width: 24.57%;
+}
+
+#content .psychologists .four .foto{
+	display: block;
+	overflow: hidden;
+	background-color: #00a99d; 
+	margin: 0 0 5px 0;
+	
+}
+
+#content .psychologists .four .foto img{
+	width: 276px;
+	height: 290px;
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	margin: 0 0 8px 0;
+}
+
+#content .psychologists .four .foto h2{
+	text-align: center;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	color: #fdfdfb;
+	text-transform: uppercase;
+
+}
+
+#content .psychologists .four .foto p{
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	font-style: italic; 
+	font-family: Roboto;
+	color: #fdfdfb;
+	margin: 0 0 9px 0;
+}
+
+#content .psychologists .four:nth-child(2) {
+	margin: 0 6px 0 6px;
+}
+
+#content .psychologists .four:nth-child(3){
+	margin: 0 6px 0 0;
+}
+
+#content .psychologists .four h3{
+	font-weight: 700;
+	font-size: 16px;
+	font-family: Roboto;
+	color: #030303;
+	margin: 0;
+}
+
+#content .psychologists .four p{
+	font-weight: 400;
+	font-size: 16px;
+	font-family: Roboto;
+	color: #030303;
+}
+
+#content .timing{
+	display: block;
+	overflow: hidden;
+	background-color: #00a99d; 
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fcfcfa;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	margin: 10px 0 0 0;
+}
+
+#content .left{
+	float: left;
+	overflow: hidden;
+	width: 21.29%;
+	margin: 36px 7px 0 0;
+}
+
+#content .left img:nth-child(2){
+	margin: 42px 0 42px 0;
+}
+
+#content table{
+	float: left;
+	overflow: hidden;
+	width: 56.03%;
+	margin: -6px 0 0 0;
+}
+
+#content table td{
+	border: 6px solid #00a99d;
+	height: 38px;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	line-height: 38px;
+}
+
+#content table td:nth-child(1n){
+	width: 36.95%;
+	text-align: center;
+}
+
+#content table td:nth-child(2n){
+	width: 63.04%;
+	text-align: left;
+	padding: 0 0 0 12px;
+}
+#content .right{
+	float: left;
+	overflow: hidden;
+	width: 21.29%;
+	margin: 36px 0 0 7px;
+}
+
+#content .right img:nth-child(2){
+	margin: 43px 0 43px 0;
+}
+
+#content .sponsors{
+	display: block;
+	overflow: hidden;
+	background-color: #00a99d; 
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fcfcfa;
+	font-weight: 700;
+	font-size: 17px;
+	font-family: Roboto;
+	margin: 15px 0 0 0;
+}
+
+
+#content ul.lable{
+	display: block;
+	overflow: hidden;
+	height: 225px;
+	line-height: 225px;
+	text-align: center;
+	
+}
+
+#content ul.lable li{
+	float: left;
+	overflow: hidden;
+	width: 20%;
+	vertical-align: middle;
+	
+	margin: 0;
+}
+
+#content ul.lable li img{
+	vertical-align: middle;
+}
+
+#footer {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0;
+}
+
+#footer .contacts{
+	display: block;
+	overflow: hidden;
+	height: 161px;
+	background-color: #00a99d; 
+}
+
+#footer .contacts ul {
+	margin: 23px 0 0 0;
+	display: block;
+	overflow: hidden;
+}
+
+#footer .contacts ul li{
+	font-weight: 700;
+	font-size: 19px;
+	font-family: Roboto;
+	color: #fdfdfd;
+	width: 22.07%;
+	float: left;
+	overflow: hidden;
+}
+
+#footer .contacts ul li:first-child{
+	margin: 0 0 0 84px;
+	width: 5%;
+}
+
+#footer .contacts ul li:nth-child(2){
+	margin: 0;
+	width: 19.13%;
+}
+
+#footer .contacts ul li:nth-child(3){
+	margin: 0 0 0 73px;
+	width: 4%;
+}
+
+#footer .contacts ul li:nth-child(4){
+	margin: 0;
+	width: 12%;
+}
+
+
+#footer .contacts ul li:last-child{
+	margin: 0 0 0 115px;
+	width: 19.13%;
+}
+
+#footer .social{
+	display: block;
+	overflow: hidden;
+	background-color: #ffffff; 
+	text-align: center;
+	width: 100%;
+	height: 158px;
+	line-height: 158px;
+	
+}
+
+#footer .social a{
+	display: inline-block;
+	overflow: hidden;
+	margin: 22px 23px 0 0;
+
+}
+
+#footer .social a:last-child{
+	margin: 0;
+}
+/****************************************************************              PC              ***************************************************/
+@media (min-width: 978px) and (max-width: 1217px) {}
+/****************************************************************              TABLET              ***********************************************/
+@media (min-width: 768px) and (max-width: 977px) {
+	.layout {
+		margin:0 auto;
+		position:relative;
+		width:768px;
+	}
+}
+/****************************************************************              MOBILE              ***********************************************/
+@media (min-width: 320px) and (max-width:767px) {
+	.layout {
+		width:100%;
+		padding:0;
+	}
+}

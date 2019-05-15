@@ -1,0 +1,45 @@
+.jurnal_main_content2{
+	display: block;
+	overflow: hidden;
+	.fotoColi {
+		margin: 26px 0 0 28px;
+	}
+	.vestibulum {
+		p {
+			color: #f2f2f2;
+			font-size: 14px;
+			margin: 28px 0 0 28px;
+			width: 639px;
+		}
+	}
+	ul {
+		margin: 26px 0 0 29px;
+	}
+	li {
+		float: left;
+	}
+	li:nth-child(2) {
+		margin-left: 21px;
+	}
+	li:nth-child(3) {
+		margin-left: 17px;
+	}
+	li:last-child {
+		margin-left: 18px;
+	}
+	p {
+		font-size: 14px;
+		color: #848484;
+		img {
+			margin-right: 7px;
+		}
+		a {
+			color: #f39c12;
+		}
+	}
+	.border {
+		width: 623px;
+		height: 1px;
+		background-color: #505050;
+	}
+}
