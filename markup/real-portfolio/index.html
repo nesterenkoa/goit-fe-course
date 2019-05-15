@@ -2,9 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <title>Portfolio</title>
 </head>
 <body>
-$END$
+<section class="block-greeting">
+  <div class="block-greeting-overlay"></div>
+  <div class="info">
+    <span class="info-span">Здравствуйте, меня зовут <span class="info-name">Анна Нестеренко </span> и я </span>
+    <h1 class="info-h1">
+      верстаю сайты
+    </h1>
+    <span class="info-span">#ПростиГосподи</span>
+  </div>
+  <a class="scroll" href="#about me">
+    <span class="arrow fa fa-chevron-down"></span>
+  </a>
+</section>
+
+<header class="header">
+  <nav class="nav container" id="nav">
+    <a class="logo" href="#">Anna&BeSta</a>
+
+
+    <ul class="navigation">
+      <li><a class="navigation-item text-design" href="#">greeting </a></li>
+      <li><a class="navigation-item text-design" href="#about me">about me </a></li>
+      <li><a class="navigation-item text-design" href="#">resume </a></li>
+      <li><a class="navigation-item text-design" href="#portfolio">portfolio </a></li>
+      <li><a class="navigation-item text-design" href="#">contact </a></li>
+    </ul>
+  </nav>
+  <div class="line"></div>
+</header>
+
+<main>
+  <section class="wrapper" id="about me">
+    <div class="container">
+      <h2 class="wrapper-h2">немного обо мне</h2>
+
+      <div class="about-me">
+        <img src="img/img-about-me.png" alt="img-about-me" class="img-about-me">
+
+        <div class="about-me-description">
+          <p class="main-text">
+            У меня есть кот Bestik (потому что лучший). И мы с ним верстаем сайты,вернее он спит, а я верстаю.
+          </p>
+          <p class="main-text">
+            Мы с ним закончили курс front-end разработки, получили навыки кросс-браузерной и кросс-платформенной,
+            а также адаптивной верстки.
+          </p>
+          <p class="main-text">
+            В моем <a href="#portfolio" class="link-portfolio">portfolio</a> Вы можете найти примеры работ, выполненных при помощи
+            таких инструментов, как:
+          </p>
+
+          <ul class="tool-list">
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/html.png" alt="html"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/css.png" alt="css"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/js.png" alt="js"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/bootstrap%20(1).png" alt="bootstrap%20"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/sass.png" alt="sass"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/sublime.png" alt="sublime"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/webstorm.png" alt="webstorm"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/githab.svg" alt="githab"></li>
+            <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio wrapper" id="portfolio">
+    <h2 class="wrapper-h2">portfolio</h2>
+
+    <div class="gallery container">
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-4/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-04.png" alt="work-1">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+        </ul>
+        <span class="decor-text"> #float</span>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-5/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-05.png" alt="work-2">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+        </ul>
+        <span class="decor-text"> #float</span>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-6/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-06.png" alt="work-3">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+        </ul>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-7/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-07.png" alt="work-4">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/githab.svg" alt="githab"></li>
+        </ul>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-8/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-08.png" alt="work-5">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/photoshop.png" alt="photoshop"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/githab.svg" alt="githab"></li>
+        </ul>
+        <span class="decor-text"> #Responsive</span>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-9/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-09.png" alt="work-6">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/githab.svg" alt="githab"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="http://wordyblend.com/wp-content/uploads/2017/03/bootstrap-solid.jpg" alt="bootstrap%20"></li>
+        </ul>
+        <span class="decor-text"> #Responsive #PixelPerfect</span>
+      </a>
+
+      <a class="gallery-item" href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-10/">
+        <div class="gallery-item-overlay">
+          <img  class="gallery-img" src="img/homework-10.png" alt="work-7">
+        </div>
+
+        <ul class="tool-list">
+          <li class="tool-list-item"><img class="tool-list-img" src="img/html.png" alt="html"></li>
+          <li class="tool-list-item"><img class="tool-list-img" src="img/css.png" alt="css"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/flex.png" alt="flex"></li>
+          <li class="tool-list-item"> <img class="tool-list-img" src="img/githab.svg" alt="githab"></li>
+
+        </ul>
+        <span class="decor-text">#BEM #SVG #Retina</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!--<section class="container wrapper works " id ="portfolio">-->
+    <!--<h2 class="wrapper-h2">мои работы</h2>-->
+    <!--<p class="wrapper-description">-->
+      <!--No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.-->
+    <!--</p>-->
+
+    <!--<ul class="skills gallery-works">-->
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-4/">-->
+          <!--<img src="img/homework-04.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-5/">-->
+          <!--<img src="img/homework-05.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-6/">-->
+          <!--<img src="img/homework-06.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-7/">-->
+          <!--<img src="img/homework-07.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-8/">-->
+          <!--<img src="img/homework-08.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+
+      <!--<li class="skill-gallery">-->
+        <!--<a href="https://nesterenkoa.github.io/goit-fe-course/markup/Module-10/">-->
+          <!--<img src="img/homework-10.png" class="img-works">-->
+        <!--</a>-->
+      <!--</li>-->
+    <!--</ul>-->
+
+  <!--</section>-->
+</main>
 </body>
 </html>

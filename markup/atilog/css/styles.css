@@ -1,0 +1,148 @@
+body,html{
+    margin: 0;
+}
+
+.container{
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.header{
+    background:#2d2d2d;
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width:42%;
+    padding: 40px 0 10px;
+    margin-left: 12%;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navigation-link:hover{
+    color: #f7671d;
+}
+
+/*Main*/
+.main{
+    background: #63baa9;
+}
+
+.atilog{
+    background-image: url("../images/atilog.png");
+    background-size: cover;
+    background-position: center;
+    height: 465px;
+}
+
+.portfolio{
+    padding: 50px 0 70px;
+
+}
+
+.headline{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    margin:0 0 70px;
+}
+
+.headline:after{
+    display: inline-flex;
+    flex: 1;
+    background: white;
+    content: "";
+    margin-left: 55px;
+    height: 3px;
+}
+
+.portfolio-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    background:white;
+    height: 123px;
+    width: 32%;
+    margin: 0 1.3% 1.3% 0;
+    padding:22px;
+    box-sizing: border-box;
+}
+
+.portfolio-list-item:first-of-type {
+    min-width:65.5%;
+    min-height: 250px;
+    background:#f7671d;
+}
+
+.portfolio-list-item:nth-of-type(2) {
+    height: 250px;
+}
+
+.portfolio-list-item:nth-of-type(3n+2) {
+    margin-right: 0;
+}
+
+.list-item-number{
+    color: #f7671d;
+    font-size: 24px;
+
+}
+.list-item-text{
+    color: #4e4d4d;
+    font-size: 12px;
+    margin: 0;
+}
+
+.list-item-text{
+    color: #4e4d4d;
+}
+
+.portfolio-list-item:first-of-type .list-item-text {
+    color: white;
+    line-height:  21px;
+}
+
+.portfolio-list-item:first-of-type .list-item-text:first-of-type {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+
+}
+
+/*footer* */
+
+.footer{
+    background: #303646 url("../images/nout.png") no-repeat right top;
+    padding: 70px 0 0;
+}
+
+
+
+
+/*.list-item-text{*/
+    /*margin-top: 0;*/
+/*}*/
+/*.list-item-text:first-of-type{*/
+    /*text-transform: uppercase;*/
+/*}*/
