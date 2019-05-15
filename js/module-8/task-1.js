@@ -16,7 +16,7 @@
 //
 //
 // ______________________________________________________________________________________________
-// /*
+// /* task 2
 //   Даны 2 инпута, абзац и кнопка. По нажатию на кнопку
 //   получите числа которые бьудут введены в инпуты и запишите их сумму в span.result.
 // */
@@ -29,4 +29,26 @@
 // };
 //
 //
-// btn.addEventListener('click', plus);
+// // btn.addEventListener('click', plus);
+// _____________________________________________________________________________
+/* task -4
+
+
+  Есть форма с набором радиокнопок. Пользователь выбирает вариант ответа,
+  после чего нажимает кнопку "Submit" и происходит отправка формы.
+  
+  При отправке формы:
+    - не должна перезагружаться страница
+    - необходимо получить выбранную опцию и вывести в параграф с классом .result
+*/
+
+function submit(event) {
+  event.preventDefault();
+  
+  const input  = document.querySelector("input:checked");
+  const result  = document.querySelector(".result");
+  result.innerText = `Result: ${input.value}`;
+}
+
+const btn  = document.querySelector(".btn");
+btn.addEventListener('click', submit);

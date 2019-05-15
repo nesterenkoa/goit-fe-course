@@ -146,4 +146,4 @@ function collectInputData (inputs) {
 console.log (collectInputData (input));
 
 _______________________________________________________________________________________________
-task-6
+
