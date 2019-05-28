@@ -2,10 +2,16 @@
 
 class Stopwatch {
   constructor(container) {
-    container.classList.add('stopwatch-style');
+    this._container = container;
+    this._createClock();
+    this.reset();
+  }
+  
+  _createClock() {
+    this._container.classList.add('stopwatch-style');
     const clock = document.createElement('div');
     clock.classList.add('clock');
-    
+  
     this.hours = document.createElement('span');
     this.hours.classList.add('time');
     clock.appendChild(this.hours);
@@ -21,11 +27,11 @@ class Stopwatch {
     this.milliseconds = document.createElement('span');
     this.milliseconds.classList.add('time');
     clock.appendChild(this.milliseconds);
-    container.appendChild(clock);
-    
+    this._container.appendChild(clock);
+  
     const controlPanel = document.createElement('div');
     controlPanel.classList.add('control-panel');
-    
+  
     this.startBtn = document.createElement('button');
     this.startBtn.innerHTML = 'start';
     this.startBtn.classList.add('control-btn');
@@ -43,14 +49,12 @@ class Stopwatch {
     this.resetBtn.classList.add('control-btn');
     this.resetBtn.addEventListener('click', this.reset);
     controlPanel.appendChild(this.resetBtn);
-    
-    container.appendChild(controlPanel);
-    
+  
+    this._container.appendChild(controlPanel);
+  
     this.dashboard = document.createElement('ul');
     this.dashboard.classList.add('dashboard');
-    container.appendChild(this.dashboard);
-    
-    this.reset();
+    this._container.appendChild(this.dashboard);
   }
   
   reset = () => {
@@ -69,7 +73,7 @@ class Stopwatch {
   
   start = () => {
     if (!this.active) {
-      // каждые 100 миллисекунд вызываем функцию this.tick
+      this._lastTick = Date.now();
       this.timer = setInterval(this._tick, 100);
       this.startBtn.innerHTML = 'pause';
     } else {
@@ -88,8 +92,9 @@ class Stopwatch {
   
   
   _tick = () => {
-    // функция которая вызывается каждые 100 миллисекунд и изменяет значения на табло таймера
-    this.time += 100;
+    const timestamp = Date.now();
+    this.time += timestamp - this._lastTick;
+    this._lastTick = timestamp;
     const current = this._parseTime(this.time);
     this.hours.innerHTML = current.hours;
     this.minutes.innerHTML = current.minutes;
