@@ -50,8 +50,8 @@ class AdminPanel {
           this._disableEditMode(e.target.dataset.id);
           break;
         case 'delete':
-          this._api.removeUser(e.target.dataset.id);
-          this._fetchUsers();
+          this._api.removeUser(e.target.dataset.id)
+            .then(() => this._fetchUsers());
           break;
       }
     });
@@ -63,59 +63,65 @@ class AdminPanel {
       this._addUsersList();
     }
 
+    this._users = {};
     this._api.getAllUsers().then(users => {
       this._list.innerHTML = '';
       users.forEach(user => {
-        const li = document.createElement('li');
-        li.innerHTML = `${user.name}, age: ${user.age} `;
-        li.setAttribute('data-id', user.id);
+        const userNode = {};
+        userNode.li = document.createElement('li');
+        userNode.li.innerHTML = `${user.name}, age: ${user.age} `;
+        userNode.li.setAttribute('data-id', user.id);
 
-        const editBtn = document.createElement('button');
-        editBtn.innerHTML = 'Edit';
-        editBtn.setAttribute('data-action', 'edit');
-        editBtn.setAttribute('data-id', user.id);
-        li.appendChild(editBtn);
+        userNode.editBtn = document.createElement('button');
+        userNode.editBtn.innerHTML = 'Edit';
+        userNode.editBtn.setAttribute('data-action', 'edit');
+        userNode.editBtn.setAttribute('data-id', user.id);
+        userNode.li.appendChild(userNode.editBtn);
+  
+        userNode.cancelBtn = document.createElement('button');
+        userNode.cancelBtn.innerHTML = 'Cancel';
+        userNode.cancelBtn.setAttribute('data-action', 'cancel');
+        userNode.cancelBtn.setAttribute('hidden', 'true');
+        userNode.cancelBtn.setAttribute('data-id', user.id);
+        userNode.li.appendChild(userNode.cancelBtn);
 
-        const deleteBtn = document.createElement('button');
-        deleteBtn.innerHTML = 'Delete';
-        deleteBtn.setAttribute('data-action', 'delete');
-        deleteBtn.setAttribute('data-id', user.id);
-        li.appendChild(deleteBtn);
+        userNode.deleteBtn = document.createElement('button');
+        userNode.deleteBtn.innerHTML = 'Delete';
+        userNode.deleteBtn.setAttribute('data-action', 'delete');
+        userNode.deleteBtn.setAttribute('data-id', user.id);
+        userNode.li.appendChild(userNode.deleteBtn);
         
-        this._list.appendChild(li);
+        this._list.appendChild(userNode.li);
+        this._users[user.id] = userNode;
       });
     })
   }
   
   _enableEditMode(id) {
-    const listItems = this._container.querySelectorAll('li[data-id]');
-    listItems.forEach(item => {
-      const id = item.getAttribute('data-id');
-      this._disableEditMode(id);
-    });
+    const userIds = Object.keys(this._users);
+    userIds.forEach(id => this._disableEditMode(id));
 
-    const li = this._container.querySelector(`li[data-id="${id}"]`);
+    const li = this._users[id].li;
     li.classList.add('editable');
-    this._addEditForm(li, id);
-    const editBtn = li.querySelector('button[data-action="edit"]');
-    editBtn.innerHTML = 'Cancel';
-    editBtn.setAttribute('data-action', 'cancel');
+    this._addEditForm(id);
+    this._users[id].editBtn.setAttribute('hidden', 'true');
+    this._users[id].cancelBtn.removeAttribute('hidden');
   }
   
   _disableEditMode(id) {
-    const li = this._container.querySelector(`li[data-id="${id}"]`);
+    const li = this._users[id].li;
     li.classList.remove('editable');
-    const form = li.querySelector('form');
+    const form = this._users[id].form;
     if (!form) {
       return false;
     }
     li.removeChild(form);
-    const cancelBtn = li.querySelector('button[data-action="cancel"]');
-    cancelBtn.innerHTML = 'Edit';
-    cancelBtn.setAttribute('data-action', 'edit');
+    this._users[id].form = null;
+    this._users[id].editBtn.removeAttribute('hidden');
+    this._users[id].cancelBtn.setAttribute('hidden', 'true');
   }
   
-  _addEditForm(parent, id) {
+  _addEditForm(id) {
     this._api.getUserById(id).then( user => {
       const form = document.createElement('form');
       form.classList.add('edit-form');
@@ -142,7 +148,8 @@ class AdminPanel {
       });
       form.appendChild(submitBtn);
   
-      parent.append(form);
+      this._users[id].form = form;
+      this._users[id].li.appendChild(this._users[id].form);
     })
   }
 }
