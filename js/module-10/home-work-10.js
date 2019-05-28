@@ -2,24 +2,25 @@ class AdminPanel {
   constructor(container, url) {
     this._container = container;
     this._api = new API(url);
+    this._users = {};
     this._addCreateUserForm();
     this._addUsersList();
-    this._fetchUsers();
+    this.fetchUsers();
   }
   
   _addCreateUserForm() {
-    this._form = document.createElement('form');
-    this._form.setAttribute('action', '#');
+    const form = document.createElement('form');
+    form.setAttribute('action', '#');
     
     const nameInput = document.createElement('input');
     nameInput.setAttribute('placeholder', 'name');
     nameInput.setAttribute('required', 'true');
-    this._form.appendChild(nameInput);
+    form.appendChild(nameInput);
     
     const ageInput = document.createElement('input');
     ageInput.setAttribute('placeholder', 'age');
     ageInput.setAttribute('required', 'true');
-    this._form.appendChild(ageInput);
+    form.appendChild(ageInput);
     
     const submit = document.createElement('button');
     submit.innerHTML = 'Create';
@@ -29,14 +30,14 @@ class AdminPanel {
       }
       this._api.addUser(nameInput.value, ageInput.value)
         .then(() => {
-          this._fetchUsers();
+          this.fetchUsers();
           nameInput.value = '';
           ageInput.value = '';
         });
     });
-    this._form.appendChild(submit);
+    form.appendChild(submit);
     
-    this._container.appendChild(this._form);
+    this._container.appendChild(form);
   }
   
   _addUsersList() {
@@ -51,14 +52,14 @@ class AdminPanel {
           break;
         case 'delete':
           this._api.removeUser(e.target.dataset.id)
-            .then(() => this._fetchUsers());
+            .then(() => this.fetchUsers());
           break;
       }
     });
     this._container.appendChild(this._list);
   }
   
-  _fetchUsers() {
+  fetchUsers = () => {
     if (!this._list) {
       this._addUsersList();
     }
@@ -69,17 +70,22 @@ class AdminPanel {
       users.forEach(user => {
         const userNode = {};
         userNode.li = document.createElement('li');
-        userNode.li.innerHTML = `${user.name}, age: ${user.age} `;
-        userNode.li.setAttribute('data-id', user.id);
+        
+        userNode.span = document.createElement('span');
+        userNode.span.classList.add('user-info');
+        userNode.span.innerHTML = `${user.name}, age: ${user.age} `;
+        userNode.li.appendChild(userNode.span);
 
         userNode.editBtn = document.createElement('button');
         userNode.editBtn.innerHTML = 'Edit';
+        userNode.editBtn.classList.add('btn', 'btn-edit');
         userNode.editBtn.setAttribute('data-action', 'edit');
         userNode.editBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.editBtn);
   
         userNode.cancelBtn = document.createElement('button');
         userNode.cancelBtn.innerHTML = 'Cancel';
+        userNode.cancelBtn.classList.add('btn', 'btn-cancel');
         userNode.cancelBtn.setAttribute('data-action', 'cancel');
         userNode.cancelBtn.setAttribute('hidden', 'true');
         userNode.cancelBtn.setAttribute('data-id', user.id);
@@ -87,6 +93,7 @@ class AdminPanel {
 
         userNode.deleteBtn = document.createElement('button');
         userNode.deleteBtn.innerHTML = 'Delete';
+        userNode.deleteBtn.classList.add('btn', 'btn-delete');
         userNode.deleteBtn.setAttribute('data-action', 'delete');
         userNode.deleteBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.deleteBtn);
@@ -95,7 +102,7 @@ class AdminPanel {
         this._users[user.id] = userNode;
       });
     })
-  }
+  };
   
   _enableEditMode(id) {
     const userIds = Object.keys(this._users);
@@ -138,18 +145,18 @@ class AdminPanel {
       form.appendChild(ageInput);
       
       const submitBtn = document.createElement('button');
-      submitBtn.innerHTML = 'Submit';
+      submitBtn.innerHTML = 'Save';
       submitBtn.addEventListener('click', () => {
         if (!nameInput.value || !ageInput.value) {
           return false;
         }
         this._api.updateUser(id, { name: nameInput.value, age: ageInput.value })
-          .then(() => this._fetchUsers());
+          .then(() => this.fetchUsers());
       });
       form.appendChild(submitBtn);
   
       this._users[id].form = form;
-      this._users[id].li.appendChild(this._users[id].form);
+      this._users[id].li.insertBefore(this._users[id].form, this._users[id].span);
     })
   }
 }
@@ -204,3 +211,4 @@ class API {
 }
 
 const panel = new AdminPanel(document.querySelector('.container'), 'https://test-users-api.herokuapp.com');
+// setInterval(panel.fetchUsers, 5000);
