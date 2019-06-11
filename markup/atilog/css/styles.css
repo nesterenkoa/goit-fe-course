@@ -134,15 +134,118 @@ body,html{
 
 .footer{
     background: #303646 url("../images/nout.png") no-repeat right top;
-    padding: 70px 0 0;
+    padding: 70px 0 30px;
 }
 
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
 
+.decorative-header{
+    color: #d1751a;
+    font-size: 14px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
 
+.decorative-header:after{
+    display: inline-flex;
+    flex: 1;
+    background: #4e4d4d;
+    content: "";
+    margin-left:25px;
+    height: 1px;
+}
 
-/*.list-item-text{*/
-    /*margin-top: 0;*/
-/*}*/
-/*.list-item-text:first-of-type{*/
-    /*text-transform: uppercase;*/
-/*}*/
+.form{
+    display: flex;
+    flex-direction: column;
+    color: #868686;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-input{
+    width: 230px;
+    margin-bottom: 10px;
+}
+
+.form-text{
+    width: 460px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.submit{
+    background: #f7671d;
+    width: 82px;
+    padding: 3px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    border: none;
+    align-self: flex-end;
+
+}
+
+.decorative-header-color{
+    color: #0f0101;
+    margin-bottom: 18px;
+}
+
+.icons{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 18px;
+
+}
+
+.social-network-vk{
+    background-image: url("../images/vk.png") ;
+}
+
+.social-network-fb{
+    background-image: url("../images/facebook.png");
+}
+.social-network-in{
+    background-image: url("../images/in.png");
+}
+
+.contact-information{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #4e4d4d;
+}
+
+.contact-information .icons{
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+@media (min-width:530px) {
+    .portfolio-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-list-item  {
+        width: 65.5%;
+        margin-right: 0;
+    }
+
+    .portfolio-list-item:nth-of-type(2){
+        height: 123px;
+    }
+}
+

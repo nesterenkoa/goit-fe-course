@@ -3,11 +3,18 @@
   margin: 40px 0;
 }
 
-.form *{
-  height: 20px;
-  margin-right: 10px;
+.form {
   margin-bottom: 20px;
+}
 
+.form input {
+  width: 100px;
+}
+
+.form > * {
+  height: 30px;
+  margin-right: 10px;
+  box-sizing: border-box;
 }
 
 .nameInput::placeholder{
@@ -16,20 +23,6 @@
 
 .ageInput::placeholder{
   color:#7fd9c7 ;
-}
-
-.btn-create {
-  font-size: 15px;
-  height: 26px;
-  background: #fed136;
-  border-color: #660099;
-  color:#660099;
-}
-
-.btn-create:hover{
-  background: #660099;
-  border-color: #fed136;
-  color: #fed136;
 }
 
 .editable .user-info {
@@ -53,22 +46,46 @@
 
 .list-item{
   border: 1px solid  #8f8f8f;
-  border-radius: 5%;
+  border-radius: 5px;
   background: #fbf9e4;
   padding: 10px;
+  margin-bottom: 5px;
 }
 
 .user-info{
   margin-right: 10px;
+  width: 40%;
+  display: inline-block;
+  overflow-wrap: break-word;
 }
 
 .btn {
   font-size: 17px;
-  padding: 10px 15px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
   color: white;
-  border-radius: 60px;
-
+  outline: none;
 }
+
+.btn * {
+  pointer-events: none;
+  outline: none;
+}
+
+.btn-create {
+  font-size: 15px;
+  background: #fed136;
+  border-color: #660099;
+  color:#660099;
+}
+
+.btn-create:hover{
+  background: #660099;
+  border-color: #fed136;
+  color: #fed136;
+}
+
 .btn-edit{
   background: #4de24a;
 }
@@ -96,7 +113,6 @@
   color: #d1751a;
 }
 .btn-save{
-  height: 35px;
   background: #1abc9c;
 }
 

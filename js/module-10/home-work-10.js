@@ -21,6 +21,9 @@ class AdminPanel {
     
     const ageInput = document.createElement('input');
     ageInput.setAttribute('placeholder', 'Age');
+    ageInput.setAttribute('min', 0);
+    ageInput.setAttribute('max', 150);
+    ageInput.setAttribute('type', 'number');
     ageInput.setAttribute('required', 'true');
     ageInput.classList.add('ageInput');
     form.appendChild(ageInput);
@@ -97,7 +100,7 @@ class AdminPanel {
         userNode.li.appendChild(userNode.cancelBtn);
 
         userNode.deleteBtn = document.createElement('button');
-        userNode.deleteBtn.innerHTML =' <i class="fa fa-trash"</i>Delete';
+        userNode.deleteBtn.innerHTML ='<i class="fa fa-trash"</i>Delete';
         userNode.deleteBtn.classList.add('btn', 'btn-delete');
         userNode.deleteBtn.setAttribute('data-action', 'delete');
         userNode.deleteBtn.setAttribute('data-id', user.id);
@@ -196,23 +199,23 @@ class API {
   }
   
   getAllUsers() {
-    return this._request('GET', 'users/')
+    return this._request('GET', 'users/').catch(err => alert(err));
   };
   
   getUserById(id) {
-    return this._request('GET', `users/${id}`)
+    return this._request('GET', `users/${id}`).catch(err => alert(err));
   };
   
   addUser(name, age) {
-    return this._request('POST','users/', { name: name, age: age })
+    return this._request('POST','users/', { name: name, age: age }).catch(err => alert(err));
   };
   
   updateUser(id, user) {
-    return this._request('PUT', `users/${id}`, user)
+    return this._request('PUT', `users/${id}`, user).catch(err => alert(err));
   };
   
   removeUser(id) {
-    return this._request('DELETE', `users/${id}`)
+    return this._request('DELETE', `users/${id}`).catch(err => alert(err));
   };
 }
 
