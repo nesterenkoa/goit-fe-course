@@ -11,19 +11,23 @@ class AdminPanel {
   _addCreateUserForm() {
     const form = document.createElement('form');
     form.setAttribute('action', '#');
+    form.classList.add('form');
     
     const nameInput = document.createElement('input');
-    nameInput.setAttribute('placeholder', 'name');
+    nameInput.setAttribute('placeholder', 'Name');
     nameInput.setAttribute('required', 'true');
+    nameInput.classList.add('nameInput');
     form.appendChild(nameInput);
     
     const ageInput = document.createElement('input');
-    ageInput.setAttribute('placeholder', 'age');
+    ageInput.setAttribute('placeholder', 'Age');
     ageInput.setAttribute('required', 'true');
+    ageInput.classList.add('ageInput');
     form.appendChild(ageInput);
     
     const submit = document.createElement('button');
     submit.innerHTML = 'Create';
+    submit.classList.add('btn-create', 'fa', 'fa-address-book');
     submit.addEventListener('click', () => {
       if (!nameInput.value || !ageInput.value) {
         return false;
@@ -36,12 +40,12 @@ class AdminPanel {
         });
     });
     form.appendChild(submit);
-    
     this._container.appendChild(form);
   }
   
   _addUsersList() {
     this._list = document.createElement('ul');
+    this._list.classList.add('list');
     this._list.addEventListener('click', e => {
       switch (e.target.dataset.action) {
         case 'edit':
@@ -57,6 +61,7 @@ class AdminPanel {
       }
     });
     this._container.appendChild(this._list);
+    
   }
   
   fetchUsers = () => {
@@ -70,7 +75,7 @@ class AdminPanel {
       users.forEach(user => {
         const userNode = {};
         userNode.li = document.createElement('li');
-        
+        userNode.li.classList.add('list-item');
         userNode.span = document.createElement('span');
         userNode.span.classList.add('user-info');
         userNode.span.innerHTML = `${user.name}, age: ${user.age} `;
@@ -78,22 +83,22 @@ class AdminPanel {
 
         userNode.editBtn = document.createElement('button');
         userNode.editBtn.innerHTML = 'Edit';
-        userNode.editBtn.classList.add('btn', 'btn-edit');
+        userNode.editBtn.classList.add('btn', 'btn-edit', 'fa', 'fa-paint-brush');
         userNode.editBtn.setAttribute('data-action', 'edit');
         userNode.editBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.editBtn);
   
         userNode.cancelBtn = document.createElement('button');
         userNode.cancelBtn.innerHTML = 'Cancel';
-        userNode.cancelBtn.classList.add('btn', 'btn-cancel');
         userNode.cancelBtn.setAttribute('data-action', 'cancel');
         userNode.cancelBtn.setAttribute('hidden', 'true');
         userNode.cancelBtn.setAttribute('data-id', user.id);
+        userNode.cancelBtn.classList.add('btn', 'btn-cancel', 'fa', 'fa-times');
         userNode.li.appendChild(userNode.cancelBtn);
 
         userNode.deleteBtn = document.createElement('button');
         userNode.deleteBtn.innerHTML = 'Delete';
-        userNode.deleteBtn.classList.add('btn', 'btn-delete');
+        userNode.deleteBtn.classList.add('btn', 'btn-delete', 'fa', 'fa-trash');
         userNode.deleteBtn.setAttribute('data-action', 'delete');
         userNode.deleteBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.deleteBtn);
@@ -131,7 +136,7 @@ class AdminPanel {
   _addEditForm(id) {
     this._api.getUserById(id).then( user => {
       const form = document.createElement('form');
-      form.classList.add('edit-form');
+      form.classList.add('edit-form', 'form');
       form.setAttribute('action', '#');
       
       const nameInput = document.createElement('input');
@@ -146,6 +151,7 @@ class AdminPanel {
       
       const submitBtn = document.createElement('button');
       submitBtn.innerHTML = 'Save';
+      submitBtn.classList.add('btn', 'btn-save', 'fa', 'fa-floppy-o');
       submitBtn.addEventListener('click', () => {
         if (!nameInput.value || !ageInput.value) {
           return false;
