@@ -26,8 +26,8 @@ class AdminPanel {
     form.appendChild(ageInput);
     
     const submit = document.createElement('button');
-    submit.innerHTML = 'Create';
-    submit.classList.add('btn-create', 'fa', 'fa-address-book');
+    submit.innerHTML = '<i class="fa fa-address-book"</i>Create';
+    submit.classList.add('btn-create');
     submit.addEventListener('click', () => {
       if (!nameInput.value || !ageInput.value) {
         return false;
@@ -82,23 +82,23 @@ class AdminPanel {
         userNode.li.appendChild(userNode.span);
 
         userNode.editBtn = document.createElement('button');
-        userNode.editBtn.innerHTML = 'Edit';
-        userNode.editBtn.classList.add('btn', 'btn-edit', 'fa', 'fa-paint-brush');
+        userNode.editBtn.innerHTML = '<i class="fa fa-paint-brush"</i>Edit';
+        userNode.editBtn.classList.add('btn', 'btn-edit');
         userNode.editBtn.setAttribute('data-action', 'edit');
         userNode.editBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.editBtn);
   
         userNode.cancelBtn = document.createElement('button');
-        userNode.cancelBtn.innerHTML = 'Cancel';
+        userNode.cancelBtn.innerHTML = '<i class="fa fa-times"</i>Cancel';
         userNode.cancelBtn.setAttribute('data-action', 'cancel');
         userNode.cancelBtn.setAttribute('hidden', 'true');
         userNode.cancelBtn.setAttribute('data-id', user.id);
-        userNode.cancelBtn.classList.add('btn', 'btn-cancel', 'fa', 'fa-times');
+        userNode.cancelBtn.classList.add('btn', 'btn-cancel');
         userNode.li.appendChild(userNode.cancelBtn);
 
         userNode.deleteBtn = document.createElement('button');
-        userNode.deleteBtn.innerHTML = 'Delete';
-        userNode.deleteBtn.classList.add('btn', 'btn-delete', 'fa', 'fa-trash');
+        userNode.deleteBtn.innerHTML =' <i class="fa fa-trash"</i>Delete';
+        userNode.deleteBtn.classList.add('btn', 'btn-delete');
         userNode.deleteBtn.setAttribute('data-action', 'delete');
         userNode.deleteBtn.setAttribute('data-id', user.id);
         userNode.li.appendChild(userNode.deleteBtn);
@@ -150,8 +150,8 @@ class AdminPanel {
       form.appendChild(ageInput);
       
       const submitBtn = document.createElement('button');
-      submitBtn.innerHTML = 'Save';
-      submitBtn.classList.add('btn', 'btn-save', 'fa', 'fa-floppy-o');
+      submitBtn.innerHTML = '<i class="fa fa-floppy-o"</i>Save';
+      submitBtn.classList.add('btn', 'btn-save');
       submitBtn.addEventListener('click', () => {
         if (!nameInput.value || !ageInput.value) {
           return false;

@@ -19,7 +19,8 @@
 }
 
 .btn-create {
- height: 26px;
+  font-size: 15px;
+  height: 26px;
   background: #fed136;
   border-color: #660099;
   color:#660099;
@@ -30,7 +31,6 @@
   border-color: #fed136;
   color: #fed136;
 }
-
 
 .editable .user-info {
   display: none;
@@ -63,6 +63,7 @@
 }
 
 .btn {
+  font-size: 17px;
   padding: 10px 15px;
   color: white;
   border-radius: 60px;
