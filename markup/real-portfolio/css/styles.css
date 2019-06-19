@@ -226,7 +226,7 @@ body{
     width: 30px;
     height: 30px;
     position: relative;
-    margin: 0  auto 40px;
+    margin: 0  auto 25px;
 }
 
 
@@ -272,9 +272,10 @@ body{
 
 .about-me-description{
     width: 85%;
-    font-size: 2.5vw;
+    font-size: 20px;
     font-family:"Raleway-ThinItalic",sans-serif;
-    line-height: 3vw;
+    line-height: 33px;
+    font-weight: 100;
 }
 
 .main-text{
@@ -291,17 +292,15 @@ body{
 
 
 .tool-list{
-
     margin: 0;
     padding: 0;
     list-style: none;
 
 }
 
-.tool-list-item {
+.tool-list-item{
     display: inline-block;
 }
-
 
 .tool-list-img {
     width: 8vw;
@@ -332,7 +331,7 @@ body{
     box-sizing: border-box;
     box-shadow: -2px 6px 19px 0 rgba(0,0,0,0.46);
     position: relative;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .gallery-item:last-of-type{
@@ -512,10 +511,13 @@ body{
         font-size: 19px;
         line-height: 33px;
     }
+    .tool-list{
+    width: 76%;
+    }
 
     .tool-list-img {
-        width: 70px;
-        height: 75px;
+        width: 80px;
+        height: 80px;
     }
 }
 
