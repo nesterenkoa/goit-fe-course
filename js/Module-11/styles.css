@@ -1,0 +1,50 @@
+.form {
+  float: left;
+}
+
+.heading{
+  margin-top: 0;
+}
+.form-list{
+  list-style: none;
+  padding:0;
+}
+
+.btn{
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.submitBtn{
+  background: #fed136;
+  margin-right: 10px;
+}
+
+.resetBtn {
+  background: #a70ec6;
+}
+
+.list {
+  float: right;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  width: 30%;
+
+}
+
+.list img {
+  max-width: 100%;
+}
+
