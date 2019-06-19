@@ -263,6 +263,7 @@ body{
 }
 
 .img-about-me {
+    display: none;
     width: 40vw;
     height: 60vw;
     padding-right: 2%;
@@ -270,12 +271,10 @@ body{
 }
 
 .about-me-description{
-    width: 40vw;
+    width: 85%;
     font-size: 2.5vw;
     font-family:"Raleway-ThinItalic",sans-serif;
-    background-color: rgba(255, 255, 255, 1);
     line-height: 3vw;
-
 }
 
 .main-text{
@@ -283,7 +282,7 @@ body{
 }
 
 .main-text:last-of-type{
-    margin:0 0 8px;
+    margin:0 0 18px;
 }
 
 .link-portfolio{
@@ -306,7 +305,7 @@ body{
 
 .tool-list-img {
     width: 8vw;
-    height: 6vw;
+    height: 8vw;
     object-fit: contain;
 
 }
@@ -471,6 +470,10 @@ body{
     .navigation {
         display: flex;
     }
+    
+    .img-about-me{
+        display: block;
+    }
 }
 
 @media (min-width: 750px) {
@@ -505,7 +508,8 @@ body{
     }
 
     .about-me-description {
-        font-size: 22px;
+        width: 55%;
+        font-size: 19px;
         line-height: 33px;
     }
 
