@@ -395,16 +395,16 @@ body{
     font-family:'decor';
 }
 
-.social-icons{
-    background: red;
-    padding: 20px;
 
+.social-icons{
+    background-color: red;
+    padding: 10px;
 }
 
 .list-social-icons {
     list-style: none;
     display: flex;
-    width: 50vw;
+    width: 67vw;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0;
@@ -421,17 +421,32 @@ body{
 
 
  .contacts{
-     padding: 30px;
-     background: black;
-     color: white;
+     padding: 10px;
+     background-color: black;
  }
 
- .contact-phone{
+ .contacts-wrapper{
      display: flex;
+     justify-content: center;
      align-items: center;
+     margin: 0 0 10px;
+ }
+
+ .contacts-wrapper:last-of-type{
      margin: 0;
  }
 
+.fas{
+    font-size: 25px;
+    color: red;
+    margin-right: 10px;
+}
+
+.contact{
+    color: white;
+    font-size: 13px;
+
+}
 
 
 @keyframes opacity{
@@ -468,7 +483,9 @@ body{
        width: 50vw;
        height: 60vw;
    }
-
+    .contacts-wrapper{
+        justify-content: flex-end;
+    }
 }
 
 
