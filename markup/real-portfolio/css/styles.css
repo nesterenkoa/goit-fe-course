@@ -107,6 +107,7 @@ body{
     transform: translate(-50%);
     border: 2px solid red ;
     overflow: hidden;
+    outline: none;
 }
 
 .scroll:hover {
@@ -180,6 +181,7 @@ body{
     padding: 2px;
     cursor: pointer;
     background: none;
+    outline: none;
 }
 
 .menu-hamburger:hover{
@@ -393,8 +395,35 @@ body{
     font-family:'decor';
 }
 
+.social-icons{
+    background: red;
+    padding: 20px;
+
+}
+
+.list-social-icons {
+    list-style: none;
+    display: flex;
+    width: 40vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0;
+}
 
 
+ .social-icons-link{
+     color: white;
+     font-size: 30px;
+ }
+
+ .social-icons-link:hover{
+     color: black;
+ }
+
+ .contacts{
+     padding: 30px;
+     background: black;
+ }
 
 @keyframes opacity{
     0%{opacity:0;}
@@ -430,6 +459,7 @@ body{
        width: 50vw;
        height: 60vw;
    }
+
 }
 
 
@@ -473,7 +503,12 @@ body{
     .img-about-me{
         display: block;
     }
+
+    .list-social-icons{
+        width: 23%;
+    }
 }
+
 
 @media (min-width: 750px) {
 
@@ -511,6 +546,7 @@ body{
         font-size: 19px;
         line-height: 33px;
     }
+
     .tool-list{
     width: 76%;
     }
@@ -518,6 +554,10 @@ body{
     .tool-list-img {
         width: 80px;
         height: 80px;
+    }
+
+    .list-social-icons{
+        width: 16%;
     }
 }
 
