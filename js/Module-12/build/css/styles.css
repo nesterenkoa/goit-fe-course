@@ -1,0 +1,17 @@
+.form {
+  padding: 5px;
+}
+
+.list {
+
+}
+
+.list-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.list-item:nth-child(even) {
+  background: aliceblue;
+}

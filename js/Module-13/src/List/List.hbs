@@ -1,0 +1,19 @@
+{{#if records}}
+<p>List: </p>
+{{/if}}
+<ol class="list">
+  {{#each records}}
+    <li class="list-item">
+      <div>
+        <a href="{{./url}}">{{./url}}</a>
+        <button data-action="delete" data-url="{{./url}}">Remove</button>
+      </div>
+      {{#if ./image}}
+        <img src={{./image}} alt="capture" />
+      {{/if}}
+      {{#if ./description}}
+        <p> {{./description}}</p>
+      {{/if}}
+    </li>
+  {{/each}}
+</ol>
