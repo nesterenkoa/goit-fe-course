@@ -36,7 +36,7 @@ export default class {
       }
       Promise.all([
         this.listBookmarks.call(this),
-        request('GET', `http://api.linkpreview.net/?key=${token}&q=${url}`).catch((err) => { console.log(err)})
+        request('GET', `https://api.linkpreview.net/?key=${token}&q=${url}`).catch((err) => { console.log(err)})
       ]).then(([bookmarks, metaInfo]) => {
         const list = bookmarks || [];
         const alreadyExists = !!list.find(bookmark => bookmark.url === url);

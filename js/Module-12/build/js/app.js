@@ -323,7 +323,7 @@ function () {
           return false;
         }
 
-        Promise.all([_this.listBookmarks.call(_this), request('GET', "http://api.linkpreview.net/?key=".concat(token, "&q=").concat(url))["catch"](function (err) {
+        Promise.all([_this.listBookmarks.call(_this), request('GET', "https://api.linkpreview.net/?key=".concat(token, "&q=").concat(url))["catch"](function (err) {
           console.log(err);
         })]).then(function (_ref) {
           var _ref2 = _slicedToArray(_ref, 2),
