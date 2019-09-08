@@ -39,11 +39,20 @@ html {
 
 .block-greeting {
   height: 726px;
-  background-size: cover;
   position: relative;
-  background: url("../img/tour-k12-hero-desk.jpg") no-repeat top center;
-  background-attachment: fixed;
 }
+.block-greeting:before {
+  height: 726px;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background:url("../img/tour-k12-hero-desk.jpg") no-repeat top center;
+}
+
 
 .block-greeting-overlay {
   background: url("../img/pattern.png");
@@ -105,6 +114,7 @@ html {
   border: 2px solid red;
   overflow: hidden;
   outline: none;
+
 }
 
 .scroll:hover {
@@ -113,8 +123,8 @@ html {
 
 .arrow {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: red;
   animation: timing 1.5s infinite linear;
@@ -144,6 +154,10 @@ html {
   height: 1px;
   width: 100%;
   content: "";
+}
+
+.main {
+  background: #fff;
 }
 
 .nav {
@@ -440,6 +454,7 @@ html {
 .decor-text {
   font-family: 'decor';
   font-size: 3.5vw;
+  color: #0043b2;
 }
 
 .social-icons {
@@ -450,16 +465,19 @@ html {
 .list-social-icons {
   list-style: none;
   display: flex;
-  width: 67vw;
+  width: 66vw;
   margin: 0 auto;
   justify-content: space-between;
   padding: 0;
+
 }
 
 .fab {
   color: white;
-  font-size: 40px;
+  font-size: 41px;
+  overflow: hidden;
 }
+
 
 .fab:hover {
   color: black;
@@ -509,19 +527,21 @@ html {
 
 @keyframes timing {
   0% {
-    top: 0;
+    transform: translateY(-100%);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
   100% {
-    top: 80%;
+    transform: translateY(100%);
     opacity: 0;
   }
 }
 
 @media (min-width: 550px) {
+
   .wrapper-heading {
     font-size: 3vw;
   }
@@ -694,3 +714,11 @@ html {
     width: 25%;
   }
 }
+
+@supports ((position:sticky) or (position:-webkit-sticky)){
+  .header{
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
