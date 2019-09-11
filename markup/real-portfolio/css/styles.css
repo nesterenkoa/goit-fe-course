@@ -41,6 +41,7 @@ html {
   height: 726px;
   position: relative;
 }
+
 .block-greeting:before {
   height: 726px;
   background-size: cover;
@@ -396,7 +397,7 @@ html {
   margin-bottom: 10%;
 }
 
-.gallery-item:last-of-type {
+.gallery-item:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
 
