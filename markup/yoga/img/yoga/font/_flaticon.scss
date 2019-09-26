@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fimanager:before {
+    display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-001-guru:before { content: "\f100"; }
+.flaticon-002-yoga:before { content: "\f101"; }
+.flaticon-003-yoga:before { content: "\f102"; }
+.flaticon-004-yoga:before { content: "\f103"; }
+.flaticon-005-yoga:before { content: "\f104"; }
+.flaticon-006-yoga:before { content: "\f105"; }
+.flaticon-007-yoga:before { content: "\f106"; }
+.flaticon-008-yoga:before { content: "\f107"; }
+.flaticon-009-yoga:before { content: "\f108"; }
+.flaticon-010-yoga:before { content: "\f109"; }
+.flaticon-011-yoga:before { content: "\f10a"; }
+.flaticon-012-yoga:before { content: "\f10b"; }
+.flaticon-013-yoga:before { content: "\f10c"; }
+.flaticon-014-yoga:before { content: "\f10d"; }
+.flaticon-015-yoga:before { content: "\f10e"; }
+.flaticon-016-yoga:before { content: "\f10f"; }
+.flaticon-017-yoga:before { content: "\f110"; }
+.flaticon-018-yoga:before { content: "\f111"; }
+.flaticon-019-lotus-position:before { content: "\f112"; }
+.flaticon-020-yoga:before { content: "\f113"; }
+.flaticon-021-yoga:before { content: "\f114"; }
+.flaticon-022-yoga:before { content: "\f115"; }
+.flaticon-023-yoga:before { content: "\f116"; }
+.flaticon-024-yoga:before { content: "\f117"; }
+.flaticon-025-yoga:before { content: "\f118"; }
+.flaticon-026-yoga:before { content: "\f119"; }
+.flaticon-027-yoga-ball:before { content: "\f11a"; }
+.flaticon-028-lotus-flower:before { content: "\f11b"; }
+.flaticon-029-levitation:before { content: "\f11c"; }
+.flaticon-030-strap:before { content: "\f11d"; }
+.flaticon-031-balancing:before { content: "\f11e"; }
+.flaticon-032-chakra:before { content: "\f11f"; }
+.flaticon-033-yoga-mat:before { content: "\f120"; }
+.flaticon-034-enneagram:before { content: "\f121"; }
+.flaticon-035-incense:before { content: "\f122"; }
+.flaticon-036-hot-stones:before { content: "\f123"; }
+.flaticon-037-sport-clothes:before { content: "\f124"; }
+.flaticon-038-sport-clothes:before { content: "\f125"; }
+.flaticon-039-namaste:before { content: "\f126"; }
+.flaticon-040-sahasrara:before { content: "\f127"; }
+.flaticon-041-ajna:before { content: "\f128"; }
+.flaticon-042-vishuddha:before { content: "\f129"; }
+.flaticon-043-manipura:before { content: "\f12a"; }
+.flaticon-044-svadhishthana:before { content: "\f12b"; }
+.flaticon-045-muladhara:before { content: "\f12c"; }
+.flaticon-046-smartphone:before { content: "\f12d"; }
+.flaticon-047-laptop:before { content: "\f12e"; }
+.flaticon-048-jump-rope:before { content: "\f12f"; }
+.flaticon-049-chest-expander:before { content: "\f130"; }
+.flaticon-050-sneakers:before { content: "\f131"; }
+
+$font-Flaticon-001-guru: "\f100";
+$font-Flaticon-002-yoga: "\f101";
+$font-Flaticon-003-yoga: "\f102";
+$font-Flaticon-004-yoga: "\f103";
+$font-Flaticon-005-yoga: "\f104";
+$font-Flaticon-006-yoga: "\f105";
+$font-Flaticon-007-yoga: "\f106";
+$font-Flaticon-008-yoga: "\f107";
+$font-Flaticon-009-yoga: "\f108";
+$font-Flaticon-010-yoga: "\f109";
+$font-Flaticon-011-yoga: "\f10a";
+$font-Flaticon-012-yoga: "\f10b";
+$font-Flaticon-013-yoga: "\f10c";
+$font-Flaticon-014-yoga: "\f10d";
+$font-Flaticon-015-yoga: "\f10e";
+$font-Flaticon-016-yoga: "\f10f";
+$font-Flaticon-017-yoga: "\f110";
+$font-Flaticon-018-yoga: "\f111";
+$font-Flaticon-019-lotus-position: "\f112";
+$font-Flaticon-020-yoga: "\f113";
+$font-Flaticon-021-yoga: "\f114";
+$font-Flaticon-022-yoga: "\f115";
+$font-Flaticon-023-yoga: "\f116";
+$font-Flaticon-024-yoga: "\f117";
+$font-Flaticon-025-yoga: "\f118";
+$font-Flaticon-026-yoga: "\f119";
+$font-Flaticon-027-yoga-ball: "\f11a";
+$font-Flaticon-028-lotus-flower: "\f11b";
+$font-Flaticon-029-levitation: "\f11c";
+$font-Flaticon-030-strap: "\f11d";
+$font-Flaticon-031-balancing: "\f11e";
+$font-Flaticon-032-chakra: "\f11f";
+$font-Flaticon-033-yoga-mat: "\f120";
+$font-Flaticon-034-enneagram: "\f121";
+$font-Flaticon-035-incense: "\f122";
+$font-Flaticon-036-hot-stones: "\f123";
+$font-Flaticon-037-sport-clothes: "\f124";
+$font-Flaticon-038-sport-clothes: "\f125";
+$font-Flaticon-039-namaste: "\f126";
+$font-Flaticon-040-sahasrara: "\f127";
+$font-Flaticon-041-ajna: "\f128";
+$font-Flaticon-042-vishuddha: "\f129";
+$font-Flaticon-043-manipura: "\f12a";
+$font-Flaticon-044-svadhishthana: "\f12b";
+$font-Flaticon-045-muladhara: "\f12c";
+$font-Flaticon-046-smartphone: "\f12d";
+$font-Flaticon-047-laptop: "\f12e";
+$font-Flaticon-048-jump-rope: "\f12f";
+$font-Flaticon-049-chest-expander: "\f130";
+$font-Flaticon-050-sneakers: "\f131";
