@@ -69,7 +69,7 @@ body{
 .mate{
   display: none;
   width: 10px;
-  height: 143px;
+  height: 165px;
   background: url("../img/yoga-flat.svg");
   background-size: cover;
   position: absolute;
@@ -110,11 +110,11 @@ body{
   position: absolute;
   z-index: 1;
   top: -7%;
-  left: -30px;
+  left: -37px;
   background: url("../img/yoga-bulk.svg") no-repeat;
   background-size: contain;
-  width: 100px;
-  height: 150px;
+  width: 108px;
+  height: 173px;
 }
 
 .mate:after{
@@ -123,11 +123,11 @@ body{
   position: absolute;
   z-index: 2;
   bottom: 3%;
-  left: -26px;
+  left: -33px;
   background: url("../img/yoga-round.svg") no-repeat;
   background-size: contain;
-  width: 66px;
-  height: 66px;
+  width: 74px;
+  height: 74px;
 }
 
 .mobile-navigation{
@@ -149,7 +149,7 @@ body{
   padding-left: 22px;
   position: relative;
   font-size: 17px;
-  width: 70px;
+  width: 80px;
 }
 
 
@@ -717,7 +717,7 @@ body{
     width: 10px;
   }
   100% {
-    width: 150px;
+    width: 165px;
   }
 }
 
