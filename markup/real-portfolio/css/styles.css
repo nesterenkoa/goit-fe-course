@@ -646,7 +646,7 @@ html {
     height: 45vw;
   }
 
-  .gallery-item:nth-last-child(-n+2) {
+  .gallery-item:last-child{
     margin-bottom: 0;
   }
 
@@ -710,6 +710,10 @@ html {
 
   .gallery-item:nth-of-type(2n+1) {
     transform: rotate(-7deg);
+  }
+
+  .gallery-item:nth-last-child(-n+3){
+    margin-bottom: 0;
   }
 
   .list-social-icons {
