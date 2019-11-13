@@ -82,7 +82,7 @@ body{
 .menu-hamburger-input:checked ~ .mate {
   display: block;
   animation-name: grow;
-  animation-duration: 4000ms;
+  animation-duration: 2000ms;
   animation-fill-mode: forwards;
 }
 
@@ -356,7 +356,7 @@ body{
 }
 
 .wrapper{
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .background-post-2{
@@ -569,7 +569,7 @@ body{
 .text-yoga-class{
   color: #6d6d6d;
   font-size: 5vw;
-  margin: 0 0 5vw;
+  margin: 0 0 2.5vw;
   font-family: "fivosans-medium";
 }
 
@@ -1057,7 +1057,7 @@ body{
   }
 
   .text-yoga-class{
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .footer-info{
