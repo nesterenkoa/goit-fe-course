@@ -159,6 +159,7 @@ html {
 
 .main {
   background: #fff;
+  overflow: hidden;
 }
 
 .nav {
