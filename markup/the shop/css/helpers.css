@@ -1,0 +1,39 @@
+.flex-1 {
+  flex: 1;
+}
+
+
+  @media (min-width: 760px){
+  /* скрытый на планшетах */
+  .hidden-on-tablet {
+    display: none;
+  }
+  /* видимый на планшетах */
+  .visible-on-tablet {
+    display: initial;
+  }
+}
+
+@media(min-width: 1920px) {
+  /* скрытый на компьютерах */
+  .hidden-on-desktop {
+    display: none;
+  }
+  /* видимый на компьютерах */
+  .visible-on-desktop {
+    display: initial;
+  }
+}
+
+
+/*@media (mшx-width: 1920px) {*/
+  /*!* скрытый на телефонах и планшетах *!*/
+  /*.hidden-on-mobile {*/
+    /*display: none;*/
+  /*}*/
+  /*!* видимый на телефонах и планшетах *!*/
+  /*.visible-on-mobile {*/
+    /*display: initial;*/
+  /*}*/
+/*}*/
+

@@ -1,0 +1,326 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.background-black{
+  background: black;
+}
+
+.controls-panel {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  height: 35px;
+  padding-right: 10px;
+
+}
+
+.general-controls{
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  color: #aaaaaa;
+  font-size: 10px;
+}
+
+.dropdown:nth-of-type(1){
+  display: none;
+}
+
+.dropdown input {
+  display: none;
+}
+
+.dropdown label {
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.dropdown label:hover{
+  color: white;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-right: 5px;
+}
+
+.dropdown-icon {
+  margin-left: 6px;
+}
+
+.dropdown input:checked ~ .dropdown-menu {
+  display: block;
+}
+
+.dropdown input:checked ~ * {
+  background-color: #333;
+}
+
+.dropdown-menu-item {
+  padding: 8px 10px;
+}
+
+.dropdown-menu-item.active {
+  display: none;
+}
+
+.dropdown-menu-item:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.advertising{
+  display: none;
+  margin: 0;
+  line-height: 37px;
+  font-size: 10px;
+}
+
+.cart{
+  line-height: 37px;
+  position: relative;
+  font-size: 11px;
+}
+
+
+.cart::before{
+  display: block;
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon-cart.png") center no-repeat ;
+  background-color:#404040;
+  border-radius: 50%;
+}
+
+.account-controls{
+  display: none;
+  width: 282px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-controls-item{
+  color: #aaaaaa;
+  text-decoration: none;
+  line-height: 37px;
+  font-size: 11px;
+  position: relative;
+  cursor: pointer;
+}
+
+.account-controls-item:before{
+  display: block;
+  content: " ";
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 8px;
+  background-color: #4f4f4f;
+}
+
+.account-controls li:first-of-type .account-controls-item:before {
+  display: none;
+}
+
+.account-controls-item:hover{
+  color: white;
+}
+
+.account-controls-item:hover:after{
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #aaaaaa;
+}
+
+.heading{
+  position: relative;
+}
+
+.logo{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+  padding: 20px 26px;
+}
+
+.tools {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool {
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;;
+  padding:0 15px 0 15px;
+}
+
+.tool:first-child{
+  border: none;
+}
+
+/*.tool:before{*/
+  /*display: block;*/
+  /*content: '';*/
+  /*position: absolute;*/
+  /*width: 1px;*/
+  /*height: 30px;*/
+  /*background:#e3e2e0;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+/*}*/
+
+/*.tool:nth-of-type(1):before{*/
+  /*display: none;*/
+/*}*/
+
+.menu,
+.search,
+.tool .cart{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.menu{
+  font-size: 30px;
+
+}
+
+.search{
+  position: relative;
+
+}
+.search:before{
+  display: block;
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 14px;
+  background: url("../images/icon-search.png") no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tool .cart,
+.search{
+  padding-left: 25px;
+}
+
+.tool .cart{
+  display: none;
+}
+
+.tool .cart:before{
+  background-color: #000000;
+  left: -10px;
+}
+
+
+/*меню для дестопа*/
+
+.navigation{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #282828;
+}
+
+
+
+
+
+
+
+@media (min-width: 760px){
+
+  .advertising{
+    display: block;
+  }
+
+  .tool{
+    border-right: none;
+  }
+
+  .tool .cart{
+    display: block;
+  }
+}
+
+@media(min-width: 1920px){
+  .container{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .account-controls{
+    display: flex;
+  }
+
+  .logo{
+    padding: 38px 30px;
+  }
+
+  .navigation{
+    display: flex;
+  }
+}
+
+@media (max-width: 1920px){
+  .relative-mobile {
+    position: relative;
+  }
+
+  .tools {
+    justify-content: unset;
+  }
+
+}
