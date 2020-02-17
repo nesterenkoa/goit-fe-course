@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'indieFlower-Regular';
+  src: url("../fonts/Indie_Flower/indieFlower-Regular.ttf");
+  font-weight: bold;
+}
+
+
+
+@font-face {
+  font-family: 'Proxima-Nova';
+  src: url("../fonts/Proxima-Nova.otf");
+  font-weight: bold;
+}
+
+.wrapper{
+  background: url("../img/background.png");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu{
+  width: 220px;
+  border: 1px solid black;
+  border-radius: 7px;
+  background: #393e4a;
+  overflow: hidden;
+  box-shadow: 0 0 5px #4a4e5a;
+}
+
+.menu-item{
+  border-bottom: 1px solid black;
+  border-top: 1px solid #4a4e5a;
+}
+
+.menu-item:last-of-type{
+  border-bottom: none;
+}
+
+.menu-item:hover{
+  background: rgb(167,91,41) linear-gradient(rgb(126,69,31), rgb(167,91,41) 80%);
+  /*background: #2c3039 linear-gradient(#2c3039, #21272f);*/
+  /*box-shadow: 0 0 0 1px #323232 inset, 0 1px 1px #393e4a;*/
+}
+
+.menu-item:hover .menu-title{
+  color: white;
+}
+
+.button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 11px;
+}
+
+.menu-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 10px  11px 40px ;
+  box-sizing: border-box;
+  font-family:'Proxima-Nova';
+  color:#c9d1e3;
+  position: relative;
+  text-shadow: 1px 1px 2px black;
+}
+
+.menu-title:before{
+  display: block;
+  position: absolute;
+  left: 9px;
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.icon-profile:before{
+  background: url("../img/icon-profile.png") no-repeat center;
+}
+
+.icon-messages:before{
+  background: url("../img/icon-messages.png") no-repeat center;
+}
+
+.icon-settings:before{
+  background: url("../img/icon-set.png") no-repeat center;
+}
+
+.icon-of:before{
+  background: url("../img/icon-of.png") no-repeat center;
+}
+
+.counter{
+  text-align: center;
+  /*min-width: 20px;*/
+  /*min-height: 12px;*/
+  background: #595f6e;
+  border-top: 1px solid #767c8a;
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: #a8c2d8;
+  font-size: 11px;
+  font-family: "OpenSansCondensed";
+  box-shadow: 0 1px 2px #2c3039;
+}
+
+.dropdown-list{
+  padding-left: 40px;
+  background: #21272f;
+  box-shadow: inset 0 0 2px 2px rgba(30,33,39,1);
+
+}
+
+.dropdown-list-item{
+  color: #798ea1;
+  text-shadow: 1px 1px 2px black;
+  font-size: 13px;
+  padding: 6px 0;
+  position: relative;
+}
+
+.dropdown-list-item:hover{
+  color: white;
+}
+
+.dropdown-list-item:before{
+  display: block;
+  content: "";
+  position: absolute;
+  left: -23px;
+  top:50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 7px;
+  background: url("../img/icon-arroy.png") no-repeat center;
+}
