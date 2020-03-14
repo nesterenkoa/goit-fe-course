@@ -648,9 +648,9 @@ html {
     height: 45vw;
   }
 
-  .gallery-item:last-child{
-    margin-bottom: 0;
-  }
+  /*.gallery-item:nth-last-child(-n+2){*/
+    /*margin-bottom: 0;*/
+  /*}*/
 
 }
 
@@ -714,7 +714,7 @@ html {
     transform: rotate(-7deg);
   }
 
-  .gallery-item:nth-last-child(-n+3){
+  .gallery-item:last-child{
     margin-bottom: 0;
   }
 
