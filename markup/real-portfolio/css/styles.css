@@ -64,7 +64,7 @@ html {
 
 .info {
   color: white;
-  font-size: 3vw;
+  font-size: 4.5vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -271,7 +271,7 @@ html {
 
 .wrapper {
   width: 95%;
-  padding: 5% 0 0;
+  padding: 7% 0 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -281,7 +281,7 @@ html {
   font-family: "BadScript-Regular", sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   text-align: center;
   margin: 0 0 7px;
 }
@@ -349,7 +349,7 @@ html {
 }
 
 .main-text:last-of-type {
-  margin: 0 0 18px;
+  margin: 0 0 24px;
 }
 
 .link-portfolio {
@@ -362,15 +362,16 @@ html {
   list-style: none;
 }
 
-.tool {
-  display: inline-block;
+#about .tools{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.tool-img {
-  width: 8vw;
-  height: 8vw;
+#about .tool-img {
+  width: 21vw;
+  height: 14vh;
   object-fit: contain;
-
 }
 
 /*section 2*/
@@ -406,6 +407,7 @@ html {
   transform: rotate(-4deg);
 }
 
+
 .gallery-item:before {
   background: url("../img/pin.png") no-repeat center;
   position: absolute;
@@ -418,6 +420,51 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.section-best-project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/*.section-best-project .about-me-description{*/
+  /*width: 90%;*/
+/*}*/
+
+.section-best-project .gallery-item{
+  margin-bottom: 50px;
+  transform: none;
+}
+
+.best-project-list-tool{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.best-project-list-tool .fa-code:before{
+  vertical-align: middle;
+}
+
+.list-tool-nuxt{
+  color: rgb(0, 197, 142);
+}
+
+.list-tool-huroku{
+  color: #9E7CC1;
+}
+
+.list-tool-bootstrap{
+  color: #7952b3;
+}
+.list-tool-bootstrap span{
+  color: rgb(0, 197, 142);
+}
+
+  /*.best-project-list-tool{*/
+  /*text-align: center;*/
+/*}*/
 
 .gallery-item-overlay {
   height: 78%;
@@ -446,7 +493,11 @@ html {
 .gallery-item .tool-img {
   width: 40px;
   height: 40px;
+  object-fit: contain;
+}
 
+.gallery-item .tool{
+  margin-right: 4px;
 }
 
 .decor-text {
@@ -480,6 +531,20 @@ html {
 .fab:hover {
   color: black;
 }
+
+.title-best-project{
+  color: red;
+  text-align: center;
+  margin:0 0 60px;
+  font-family: "BadScript-Regular", sans-serif;
+  letter-spacing: 2px;
+  font-size:5vw;
+}
+
+.title-best-project span {
+  color: #1ad4b5;
+}
+
 
 /*footer*/
 
@@ -540,8 +605,12 @@ html {
 
 @media (min-width: 550px) {
 
-  .wrapper-heading {
-    font-size: 3vw;
+  /*.wrapper-heading {*/
+    /*font-size: 3vw;*/
+  /*}*/
+
+  .tool {
+    margin-bottom: 10px;
   }
 
   .gallery-item {
@@ -549,8 +618,13 @@ html {
     height: 70vw;
   }
 
-  .gallery-item .tool-img{
-    margin-bottom: 5px;
+  .section-best-project .gallery-item {
+    height: 86vw;
+    width: 85vw;
+  }
+
+  .section-best-project .about-me-description{
+  width: 70%;
   }
 
   .decor-text{
@@ -560,9 +634,17 @@ html {
 
 @media (min-width: 650px) {
 
+  .wrapper-heading {
+  font-size: 3vw;
+  }
+
   .gallery-item {
     width: 50vw;
     height: 60vw;
+  }
+  .section-best-project .gallery-item {
+    height: 76vw;
+    width: 75vw;
   }
 
   .contacts-wrapper {
@@ -571,6 +653,9 @@ html {
 
   .decor-text{
     font-size: 15px;
+  }
+  .title-best-project{
+    font-size:4vw;
   }
 }
 
@@ -616,16 +701,20 @@ html {
     display: flex;
   }
 
-  .wrapper-heading {
-    font-size: 2vw;
-  }
-
   .wrapper-content-img {
     display: block;
   }
 
+  #about .tool-img {
+    width: 14vw;
+  }
+
   .list-social-icons {
     width: 45%;
+  }
+  .section-best-project .gallery-item {
+    height: 63vw;
+    width: 63vw;
   }
 }
 
@@ -633,6 +722,19 @@ html {
 
   .container {
     width: 90%;
+  }
+
+  .wrapper-heading {
+    font-size: 2vw;
+  }
+
+  .title-best-project {
+    font-size: 3.5vw;
+  }
+
+  #about .tool-img {
+    width: 10vw;
+    height: 10vh;
   }
 
   .gallery {
@@ -648,10 +750,16 @@ html {
     height: 45vw;
   }
 
+  .section-best-project .gallery-item {
+    height: 86vw;
+    width: 85vw;
+  }
   /*.gallery-item:nth-last-child(-n+2){*/
-    /*margin-bottom: 0;*/
+  /*margin-bottom: 0;*/
   /*}*/
-
+  .title-best-project{
+    margin-bottom: 80px;
+  }
 }
 
 
@@ -661,72 +769,100 @@ html {
     letter-spacing: 2px;
   }
 
-  .wrapper-content-img {
-    width: 343px;
-    height: 503px;
-  }
+.wrapper-content-img {
+  width: 343px;
+  height: 503px;
+}
 
-  .about-me-description {
-    width: 55%;
-    font-size: 23px;
-    line-height: 40px;
-  }
+.about-me-description {
+  width: 55%;
+  font-size: 23px;
+  line-height: 40px;
+}
 
-  .tools {
-    width: 76%;
-  }
+#about .tools {
+justify-content: flex-start;
+}
 
-  .tool-img {
-    width: 80px;
-    height: 80px;
-  }
+.tool-img {
+  width: 80px;
+  height: 80px;
+}
 
-  .list-social-icons {
-    width: 35%;
+.list-social-icons {
+  width: 35%;
+}
+.section-best-project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-best-project .about-me-description{
+  width: 40%;
+}
+
+.section-best-project .gallery-item {
+  width: 45vw;
+  height: 45vw;
+}
+
+.best-project-description{
+  width: 38vw;
+}
+  .title-best-project {
+    font-size: 25px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 1100px) {
-  .container {
-    width: 85%;
-  }
+/*.container {*/
+  /*width: 85%;*/
+/*}*/
 
-  .wrapper-heading {
-    font-size: 20px;
-  }
+.wrapper-heading {
+  font-size: 20px;
+}
 
-  .wrapper-content-img {
-    width: 343px;
-    height: 503px;
-    padding-right: 55px;
-  }
+.wrapper-content-img {
+  width: 343px;
+  height: 503px;
+  padding-right: 55px;
+}
 
-  .main-text:last-of-type {
-    margin: 0 0 25px;
-  }
+.main-text:last-of-type {
+  margin: 0 0 25px;
+}
 
-  .gallery-item {
-    width: 30%;
-    height: 30vw;
-  }
+.gallery-item {
+  width: 30%;
+  height: 30vw;
+}
 
-  .gallery-item:nth-of-type(2n+1) {
-    transform: rotate(-7deg);
-  }
+.gallery-item:nth-of-type(2n+1) {
+  transform: rotate(-7deg);
+}
 
-  .gallery-item:last-child{
-    margin-bottom: 0;
-  }
+.section-best-project .gallery-item {
+  width: 40vw;
+  height: 40vw;
+  transform: none;
+}
 
-  .list-social-icons {
-    width: 25%;
-  }
+.gallery-item:last-child{
+  margin-bottom: 0;
+}
+
+.list-social-icons {
+  width: 25%;
+}
 }
 
 @supports ((position:sticky) or (position:-webkit-sticky)){
-  .header{
-    position: -webkit-sticky;
-    position: sticky;
-  }
+.header{
+  position: -webkit-sticky;
+  position: sticky;
+}
 }
 
