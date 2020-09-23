@@ -69,6 +69,7 @@
 
 .drawer{
     width: 20%;
+    margin-right: 20px;
 }
 
 .menu{
@@ -97,33 +98,79 @@
     font-size: 16px;
 }
 
-.menu-item:hover a{
+.menu-item  a .fas{
+    color: #0e9ae3;
+    margin-right: 6px;
+}
+.menu-item:hover  a{
     color: #ff6f41;
 }
 
-.menu-item img{
-    width: 20px;
-    color: #0e9ae3;
-
+.menu-item:hover  i{
+    color: #ff6f41;
 }
 
 .content{
     flex: 1;
+    padding-top: 23px;
+    position: relative;
+}
+
+.content .d-flex{
+    margin-bottom: 38px;
 }
 
 .content-title{
-    padding: 25px 0;
+    padding:  0 0  20px 0;
     margin: 0;
     color: #666363;
     font-size: 24px;
+}
+.btn-create{
+    color: #0e9ae3;
+    padding: 8px;
+    background: transparent;
+    border: 1px solid #d7d6d6;
+    border-radius: 3px;
+    outline: none;
+}
+.btn-create:hover{
+    color: #ff6f41;
+    background: #e3e2e2;
+    transition: 0.4ms;
+}
+.divider:after {
+    content: '';
+    position: absolute;
+    top:76px;
+    width: 100%;
+    height: 1px;
+    background: #f5f2f2;
 }
 
 .form{
     margin-bottom: 20px;
 }
 
+.form input{
+    outline: none;
+    padding: 4px;
+    border: 1px solid #d7d6d6;
+    border-radius: 3px;
+
+}
+.form input:focus  {
+    border: 1px solid #ff6f41;
+    outline: none;
+}
+
+.form label{
+    color: #ff6f41;
+}
+
+
 .wrapper-table{
-    height: 600px;
+    height: 47vh;
     overflow-y: scroll;
 }
 
