@@ -1,0 +1,39 @@
+#stream-container .stream-big-img-meile { max-width: 1200px;margin: 0 auto; text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+#stream-container{
+  .stream-big-img-meile{
+    padding: 60px 100px;
+    .stream-big-img-title{
+      padding-bottom: 30px;
+      font-family: HelveticaNeueCyr;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 102%;
+      text-align: center;
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+#stream-container.small-pc.tablet{
+  .stream-big-img-meile{
+    padding:60px 50px ;
+    .stream-big-img-title{
+      padding-bottom: 30px;
+    }
+  }
+}
+
+
+#stream-container.small-pc.tablet.mobile{
+  .stream-big-img-meile{
+    padding:20px;
+    .stream-big-img-title{
+      font-size: 25px;
+      padding-bottom: 15px;
+    }
+  }
+}

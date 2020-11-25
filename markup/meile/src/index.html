@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+  <title>Rich-content</title>
+  <style>
+    #stream-container,#stream-container*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+  </style>
+</head>
+<body>
+
+<div id="stream-container">
+
+  @@include('./templates/logo.html',{
+  "style": {
+   "bg":"#1F1F1F",
+  },
+    "feature_img": {
+      "path": "images/img.logo.png"
+    }
+  })
+
+  @@include('./templates/hero.html',{
+    "title": {
+      "text": "Отдельно стоящий холодильник С DailyFresh и FlexiLight для долгого хранения и безупречного освещения",
+      "fontWeight":"normal",
+      "color":"#1F1F1F"
+    },
+    "feature_img": {
+      "path": "images/img-h.png"
+    },
+    "style": {
+      "bg": "#F0F0EE"
+    }
+  })
+
+  @@include('./templates/bullits.html', {
+    "title": {
+      "text":"Холодильник KS 28423 D ed/cs",
+      "font_Weight":"normal",
+      "color":"#1F1F1F"
+    },
+    "bullits": [
+      {
+        "text":"Большая вместимость и регулируемая влажность DailyFresh",
+        "fontWeight":"normal",
+        "color":"#1F1F1F"
+      },
+      {
+        "text":"Регулируемая подсветка стеклянных полок — FlexiLight",
+        "fontWeight":"normal",
+        "color":"#1F1F1F"
+      },
+      {
+        "text":"Превосходная экономичность и безупречная свежесть — A+++",
+        "fontWeight":"normal",
+        "color":"#1F1F1F"
+      },
+      {
+        "text":"Дверные полки можно мыть в посудомоечной машине ComfortClean",
+        "fontWeight":"normal",
+        "color":"#1F1F1F"
+      }
+    ],
+    "style": {
+      "bg": "#F0F0EE"
+    }
+  })
+
+
+  @@include('./templates/grid.html', {
+  "grids": [
+    {
+      "title": {
+        "text":"Освещение FlexiLight",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Новые светодиодные светильники FlexiLight, расположенные на переднем торце стеклянных полок, не только обеспечивают безбликовое освещение камеры, но и могут свободно перемещаться и быть размещены на любом уровне. Поэтому, как бы много продуктов ни хранилось в холодильнике, они никогда не будут загораживать свет. Светильники FlexiLight можно устанавливать, там где они нужны больше всего.",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path": "images/img-2.png"
+      }
+    },
+    {
+      "title": {
+       "text":"Зона DailyFresh",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text":"Просторный выдвижной ящик в холодильном отделении вмещает много свежих продуктов питания. Регулируемое отверстие помогает поддерживать необходимый уровень влажности, благодаря чему фрукты и овощи существенно дольше остаются свежими и хрустящими. ",
+        "color": "black",
+        "weight": "300"
+      },
+      "image":{
+        "path": "images/img-3.png"
+      }
+    },
+    {
+      "title": {
+        "text":"Покрытие ComfortClean",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Прозрачные дверные полочки Miele ComfortClean изготовлены из высококачественного пластика SAN и устойчивы к царапинам, воздействию химических веществ и температуры. Все дверные полочки техники серий K 10000 и K 30000 легко и гигиенично моются в посудомоечной машине (при температуре до 55 °С). Поэтому их больше не нужно отмывать вручную. ",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path":"images/img-4.png"
+      }
+    },
+    {
+      "title": {
+        "text": "Система динамического охлаждения DynaCool",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Правильные условия хранения продуктов и вина — это не только определённая температура, но ещё и соответствующая влажность. Miele использует систему динамического охлаждения: встроенный вентилятор обеспечивает циркуляцию воздуха, благодаря чему температура и влажность распределяются оптимальным образом.",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path":"images/img-5.png"
+      }
+    },
+    {
+      "title": {
+        "text":"Механизм Click2open",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Холодильно-морозильные приборы Miele с механизмом Click2open открываются особенно легко и элегантно. Специальное устройство помогает преодолеть низкое давление в холодильнике, благодаря чему прибор легко открывается. Механизм Click2open незаметно исчезает в дверце, оставляя больше места для нового дизайна.",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path":"images/img-6.png"
+      }
+    },
+    {
+      "title": {
+        "text": "Система SoftClose",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Аккуратно закрывающиеся дверцы холодильников и морозильных камер с доводчиком: SoftClose — передовая система закрывания, разработанная компанией Miele. При угле менее 30° дверца закрывается автоматически. Система SoftClose закрывает двери настолько мягко, что бутылки на дверных полочках не звенят. ",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path":"images/img-7.png"
+      }
+    },
+    {
+      "title": {
+        "text":"Приложение Miele@mobile¹",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Некоторые бытовые приборы Miele могут быть интегрированы в систему «Умный дом». Эти приборы Вы можете узнать по символу Miele@home. ",
+        "color": "black",
+        "weight": "300"
+      },
+      "image": {
+        "path": "images/img-8.png"
+      },
+      "disclaimer": {
+        "text": "¹Доступно для мобильных устройств (информацию о минимальных требованиях см.в магазине приложений), всё холодильно-морозильное оборудование требует дополнительных компонентов Miele@home. Изображения приведены для примера "
+      }
+    },
+    {
+      "title": {
+      "text": "Фильтр Active AirClean",
+        "color": "black",
+        "weight": "300"
+      },
+      "description": {
+        "text": "Продукты должны храниться в прохладном месте без запахов. Это верно и для хранения вина. У Miele есть решение — фильтр Active AirClean. Инновационная технология использования активного угля и природного хитозана позволяет устранить в холодильной камере практически все запахи. Фильтр быстро и легко устанавливается и сразу же начинает работать. ",
+        "color": "black",
+        "weight": "300"
+      },
+      "image":{
+        "path": "images/img-9.png"
+      }
+    }
+  ],
+  "styles": {
+    "bg": "#F0F0EE"
+  }
+})
+
+
+  @@include('./templates/big-img.html',{
+  "title": {
+  "text": "Габариты",
+  "fontWeight":"300",
+  "color":"black"
+  },
+  "image": {
+  "img": "images/img-big.png"
+  },
+  "styles": {
+  "bg": "#F0F0EE"
+  }
+  })
+
+
+  @@include('./templates/gallery.html', {
+  "title": {
+  "text":"Дизайн",
+  "fontWeight":"300",
+  "color":"black"
+  },
+  "gallery": [
+  { "image":"images/img.gallery-1.png" },
+  { "image":"images/img.gallery-2.png" },
+  { "image":"images/img.gallery-3.png" },
+  { "image":"images/img.gallery-4.png" }
+  ],
+  "style": {
+  "bg": "#F0F0EE"
+  }
+  })
+
+  @@include('./templates/disclaimer.html', {
+  "disclaimer": {
+  "text":"* Вышеприведенные изображения характеристик и функций носят информационный характер и могут отличаться в зависимости от конкретной модели. ",
+  "fontWeight":"300",
+  "color":"black"
+  },
+  "style": {
+  "bg": "#F0F0EE"
+  }
+  })
+
+  @@include('./templates/footer.html', {
+  "style": {
+  "bg": "#4B4B4B",
+  }
+  })
+
+<!--  @@loop("./templates/controller.html", "data.json")-->
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div class="stream-gallery-meile"style="background: @@style.bg">
+    <div class="stream-gallery-title" style="color:@@title.color;  font-weight: @@title.fontWeight;">@@title.text</div>
+    <div class="stream-gallery-list">
+      @@for (var i = 0; i < gallery.length; i++){
+          <div class="stream-gallery-list-item">
+            <img src="`+gallery[i].image+`" alt="meile">
+         </div>
+      }
+    </div>
+</div>

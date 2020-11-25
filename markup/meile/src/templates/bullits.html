@@ -1,0 +1,15 @@
+<div class="stream-bullits-meile" style="background:@@style.bg">
+  <div class="stream-bullits-title" style="color:@@title.color;font-weight:@@title.font_Weight;">
+    @@title.text
+  </div>
+  <div class="stream-bullits-list">
+    @@for (var i = 0; i < bullits.length; i++) {
+    <div
+        class="stream-bullits-item"
+        style="color:bullits[i].color; font-weight:bullits[i].fontWeight;"
+    >
+      `+bullits[i].text+`
+    </div>
+    }
+  </div>
+</div>

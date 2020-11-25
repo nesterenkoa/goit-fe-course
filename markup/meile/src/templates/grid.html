@@ -1,0 +1,25 @@
+<div class="stream-grid-meile" style="background: @@styles.bg">
+    @@for (var i = 0; i < grids.length; i++) {
+  <div class="stream-grid">
+    <div class="stream-grid-info">
+      <div class="stream-grid-title" style="color:@@title.color; font-weight:@@title.weight" >
+        `+grids[i].title.text+`
+      </div>
+      <div class="stream-grid-description" style="color:@@description.color; font-weight:@@description.weight">
+        `+grids[i].description.text+`
+      </div>
+      `+(grids[i].disclaimer !== undefined
+      ? `<div class="stream-grid-disclaimer" style="color: white; font-weight: 300">
+      `+grids[i].disclaimer.text+`
+    </div>`
+      : ``
+      )+`
+    </div>
+    <div class="stream-grid-img">
+      <img src="`+grids[i].image.path+`" alt="meile">
+    </div>
+  </div>
+    }
+</div>
+
+

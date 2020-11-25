@@ -1,0 +1,91 @@
+#stream-container .stream-bullits-meile {max-width: 1200px;margin: 0 auto; text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+#stream-container{
+  .stream-bullits-meile{
+    padding: 30px 100px 50px;
+    .stream-bullits-title{
+      font-family: HelveticaNeueCyr;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 102%;
+      text-align: center;
+      position: relative;
+      margin-bottom: 60px;
+      &:after{
+        content: "";
+        width: 200px;
+        height: 5px;
+        display: block;
+        background: #F59B00;
+        position: absolute;
+        bottom:-20px;
+        left: 50%;
+        transform:translate(-50%);
+      }
+    }
+     .stream-bullits-list{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: stretch;
+
+       .stream-bullits-item{
+         width: 21%;
+         font-size: 16px;
+         font-family: HelveticaNeueCyr;
+         font-style: normal;
+         line-height: 160%;
+         position: relative;
+         &:before{
+           content: "";
+           display: block;
+           position: absolute;
+           background: #1F1F1F;
+           width: 6px;
+           height: 6px;
+           border-radius: 50%;
+           left: -15px;
+           top: 5px;
+           transform: translate(-50%, 50%);
+         }
+         }
+       }
+     }
+  }
+
+
+#stream-container.small-pc.tablet{
+  .stream-bullits-meile {
+    padding:30px 50px 50px ;
+  }
+}
+
+#stream-container.small-pc.tablet.mobile{
+  .stream-bullits-meile{
+    padding: 20px;
+    .stream-bullits-title{
+      margin-bottom: 40px;
+      font-size: 18px;
+      &:after{
+        width: 156px;
+        height: 2px;
+      }
+    }
+    .stream-bullits-list{
+      text-align: left;
+      padding-left: 30px;
+      margin: auto;
+      max-width: 450px;
+
+      .stream-bullits-item{
+        width:100%;
+        font-size: 13px;
+        margin-bottom: 10px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

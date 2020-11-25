@@ -1,0 +1,18 @@
+#stream-container .stream-disclaimer-meile {max-width: 1200px;margin: 0 auto; text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+#stream-container {
+  .stream-disclaimer-meile {
+    padding: 30px 100px;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+  }
+}
+
+#stream-container.small-pc.tablet {
+  .stream-disclaimer-meile {
+    padding:30px 20px;
+  }
+}

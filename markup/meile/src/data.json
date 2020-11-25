@@ -1,0 +1,14 @@
+[
+  {
+    "template": "test.html",
+    "content" : {
+      "title" : "Hello!"
+    }
+  },
+  {
+    "template": "test2.html",
+    "content" : {
+      "text" : "lorem item"
+    }
+  }
+]

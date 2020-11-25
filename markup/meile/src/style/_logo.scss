@@ -1,0 +1,19 @@
+#stream-container .stream-logo-meile {max-width: 1200px;margin: 0 auto; text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+#stream-container {
+  .stream-logo-meile {
+      .stream-logo-img {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+
+        .stream-logo-img img {
+          display: block;
+        }
+    }
+  }
+}
+
+
+
+
