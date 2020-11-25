@@ -1,0 +1,7 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-logo-wrap-akzonobel {padding-bottom: 14px;}
+#stream-container.small-pc.tablet.mobile .stream-logo-wrap-akzonobel .stream-logo-img {margin-left: 50px;}
+#stream-container .stream-logo-wrap-akzonobel .stream-logo-img {margin-left: 100px;width: 100px;}
+№stream-container .stream-logo-wrap-akzonobel .stream-logo-img img {width: 100%;display: block;}

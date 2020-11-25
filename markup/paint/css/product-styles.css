@@ -1,0 +1,10 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-product .stream-product-content{padding-top: 60px;}
+#stream-container .stream-product-title{font-family: Arial;font-style: normal;font-weight: bold;font-size: 50px;text-align: center;color: #102A63;margin: 0 auto;padding-bottom: 30px;width: 71%;}
+#stream-container .stream-product img {width: 100%;display: block;}
+#stream-container .stream-product .stream-product-content .stream-product-subtitle {text-align:center;color: #102A63;margin: 0 auto;padding-bottom: 30px;width: 70%;font-family: Arial;font-style: normal;font-weight: normal;font-size: 20px;line-height: 24px;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content {padding-top:30px;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-product-title {font-size: 27px;width: 95%;padding-bottom: 15px;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-product-subtitle{font-size: 14px;width: 95%;}
