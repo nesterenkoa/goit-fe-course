@@ -1,0 +1,434 @@
+@font-face {
+	font-family: 'LG Smart';
+	src: url("../fonts/LGSmartRegular__W.eot");
+	src: url("../fonts/LGSmartRegular__W.eot?#FooAnything") format("embedded-opentype"), url("../fonts/LGSmartRegular__W.woff") format("woff"), url("../fonts/LGSmartRegular__W.ttf") format("truetype"), url("../fonts/LGSmartRegular__W.svg#LGFontRegular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LG Smart';
+	src: url("../fonts/LGSmartLight__W.eot");
+	src: url("../fonts/LGSmartLight__W.eot?#FooAnything") format("embedded-opentype"), url("../fonts/LGSmartLight__W.woff") format("woff"), url("../fonts/LGSmartLight__W.ttf") format("truetype"), url("../fonts/LGSmartLight__W.svg#LGFontLight") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LG Smart';
+	src: url("../fonts/LGSmartSemiBold__W.eot");
+	src: url("../fonts/LGSmartSemiBold__W.eot?#FooAnything") format("embedded-opentype"), url("../fonts/LGSmartSemiBold__W.woff") format("woff"), url("../fonts/LGSmartSemiBold__W.ttf") format("truetype"), url("../fonts/LGSmartSemiBold__W.svg#LGFontMedium") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LG Smart';
+	src: url("../fonts/LGSmartBold__W.eot");
+	src: url("../fonts/LGSmartBold__W.eot?#FooAnything") format("embedded-opentype"), url("../fonts/LGSmartBold__W.woff") format("woff"), url("../fonts/LGSmartBold__W.ttf") format("truetype"), url("../fonts/LGSmartBold__W.svg#LGFontMedium") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LG Smart';
+	src: url("../fonts/LGSmartRegularItalic__W.eot");
+	src: url("../fonts/LGSmartRegularItalic__W.eot?#FooAnything") format("embedded-opentype"), url("../fonts/LGSmartRegularItalic__W.woff") format("woff"), url("../fonts/LGSmartRegularItalic__W.woff2") format("woff2"), url("../fonts/LGSmartRegularItalic__W.ttf") format("truetype"), url("../fonts/LGSmartRegularItalic__W.svg#LGFontMedium") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lemon Tuesday';
+	src: url("../fonts/Lemon_Tuesday.eot");
+	src: url("../fonts/Lemon_Tuesday.eot?#FooAnything") format("embedded-opentype"), url("../fonts/Lemon_Tuesday.woff") format("woff"), url("../fonts/Lemon_Tuesday.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$lg: #a50034;
+
+.signature-form-page {
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		-webkit-text-size-adjust: none;
+	}
+	font-family: "LG Smart", open-sans;
+	max-width: 1176px;
+	margin: 0 auto;
+
+	.title-style{
+		font-weight: normal;
+		font-style: normal;
+		font-size: 28px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		color: black;
+		line-height: 200%;
+		text-align: center;
+	}
+
+	.subtext-style{
+		font-weight: normal;
+		font-style: normal;
+		font-size: 16px;
+		color: black;
+		text-align: center;
+		line-height: 140%;
+		margin-bottom: 10px;
+	}
+
+	.page-wrapper-img-lg{
+		width: 100%;
+		margin-bottom: 30px;
+			img{
+				display: block;
+				width: 100%;
+			}
+		.logo-mobile{
+			display: none;
+		}
+	}
+	.modal-results {
+		display: none;
+		background: #F8F8F8;
+		text-align: center;
+		padding: 49px 0 45px;
+		margin: 188px 0;
+		border: 1px solid #e4e4e4;
+		font-family: LG Smart;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+	}
+	.page-wrapper-form-lg {
+		width: 100%;
+		border: 1px solid #AFAFAF;
+		border-radius: 3px;
+		margin-bottom: 30px;
+
+		.page-content-form {
+			max-width: 386px;
+			margin: 0 auto;
+			padding: 40px 0;
+		}
+		.form-wrap {
+			.registration-form {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				.form-row {
+					margin-bottom: 24px;
+					position: relative;
+					.label {
+						display: block;
+						margin-bottom: 5px;
+						font-family: LG Smart;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 200%;
+
+						em {
+							color: #a50034;
+						}
+					}
+					.form-control{
+						padding: 10px 14px;
+						border: 1px solid #AFAFAF;
+						border-radius: 3px;
+						width: 100%;
+						&::placeholder{
+							font-style: normal;
+							font-weight: 300;
+							font-size: 16px;
+							color: #7A7A7A;
+						}
+						&.invalid {
+							border: 2px solid #A50034;
+						}
+						&.invalid + .form-error {
+							display: block;
+						}
+					}
+					.form-error{
+						color: #A50034;
+						font-weight: 600;
+						font-size: 14px;
+						position: absolute;
+						display: none;
+						left: 20px;
+						bottom: -20px;
+						&:before{
+							content: "";
+							position: absolute;
+							left: -19px;
+							top:2px;
+							display: block;
+							width: 14px;
+							height: 14px;
+							background: url("../img/inv.svg")  no-repeat;
+
+						}
+					}
+				}
+
+				.co-toggable_field {
+					display: block;
+					margin-bottom: 5px;
+					padding-top: 10px;
+
+					&:last-of-type {
+						margin-bottom: 0;
+						padding-top: 0;
+					}
+
+					.label-text {
+						font-family: LG Smart;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 120%;
+						margin-bottom: 5px;
+
+						a {
+							color: #a50034;
+						}
+
+						.checkbox-error{
+							color: #a50034;
+							height: 20px;
+							padding-left: 25px;
+						}
+
+						&.label-active {
+							font-weight: bold;
+							color: #000;
+						}
+					}
+
+					.co-input-checkbox {
+						opacity: 0;
+						position: absolute;
+						width: 14px;
+						height: 14px;
+
+							&:checked + .checkbox-bd {
+								background: url("../img/check.svg") center no-repeat;
+								background-color: #a50034;
+								border: 1px solid #a50034;
+							}
+							&.invalid + .checkbox-bd {
+								border: 1px solid #a50034;
+							}
+					}
+
+					.checkbox-bd {
+						width: 14px;
+						height: 14px;
+						display: inline-block;
+						border: 1px solid #AFAFAF;
+						margin-right: 8px;
+						top: -1px;
+					}
+				}
+
+				.wrapper-button {
+					align-self: center;
+					padding-top: 30px;
+
+
+					.form-button {
+						width: 164px;
+						background: #a50034;
+						border-radius: 3px;
+						border: 1px solid transparent;
+						padding: 12px 24px;
+						color: white;
+						text-align: center;
+						margin: 0 auto;
+						outline: none;
+
+						&:hover {
+							background: #CC0041;
+						}
+					}
+
+					.disabled{
+						//background: #6B6B6B;
+					}
+
+				}
+			}
+		}
+	}
+	.section-questions-answers{
+		padding: 0 20px;
+		.title-style{
+			text-align: left;
+			margin-bottom: 40px;
+		}
+		.title-style:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #AFAFAF;
+		}
+		.list-questions-answers{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: stretch;
+			.accordion{
+				flex:1;
+				cursor: pointer;
+				outline: none;
+				padding: 0 10px 0 0;
+				&:nth-of-type(even){
+					padding: 0 0 0 10px;
+				}
+				& * {
+					pointer-events: none;
+					user-select: none;
+				}
+				.question{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					text-transform: uppercase;
+					color: black;
+					font-size: 18px;
+					border-radius: 3px;
+					padding: 10px;
+					border: 1px solid #ccc;
+					.faq-minus,
+					.faq-plus{
+						fill: #999;
+						width: 24px;
+						height: 24px;
+						margin-right: 10px;
+						min-width: 24px;
+					}
+					.faq-minus {
+						display: none;
+					}
+				}
+				.answer{
+					display: none;
+					transition: 0.4s;
+					padding: 10px;
+				}
+				&.accordion-open .answer {
+					display: block;
+				}
+				&.accordion-open .faq-plus {
+					display: none;
+				}
+				&.accordion-open .faq-minus {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+@media(max-width:768px) {
+	.signature-form-page {
+		.modal-results {
+			text-align: center;
+			padding: 29px 0 35px;
+			margin: 50px 10px;
+			font-size: 20px;
+		}
+
+		.title-style {
+			font-size: 24px;
+			margin-bottom: 10px;
+			line-height: 140%;
+		}
+
+		.subtext-style {
+			margin-bottom: 30px;
+		}
+
+		.page-wrapper-img-lg {
+			margin-bottom: 30px;
+
+			.logo-mobile {
+				display: block;
+			}
+
+			.logo-des {
+				display: none;
+			}
+		}
+
+		.page-wrapper-form-lg {
+			border: none;
+			padding: 0 16px;
+
+			.page-content-form {
+				padding: 0;
+				.form-wrap {
+					.registration-form {
+						.wrapper-button {
+							width: 100%;
+
+							.form-button {
+								width: 100%;
+							}
+						}
+					}
+
+					.co-toggable_field {
+						padding-top: 36px;
+						margin-bottom: 21px;
+
+						&:last-of-type {
+							margin-bottom: 0;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+		}
+
+
+
+			.section-questions-answers {
+				padding: 0 20px;
+
+				.title-style {
+					font-size: 24px;
+					margin-bottom: 35px;
+				}
+
+				.list-questions-answers {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+
+					.accordion {
+						width: 100%;
+						margin-bottom: 10px;
+						padding: 0;
+
+						&:nth-of-type(even) {
+							padding: 0;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OBS Signature Form Page</title>
+	<link rel="stylesheet" href="css/style.css">
+  <style>
+    .signature-form-page,.signature-form-page*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+  </style>
+</head>
+
+<body>
+	<div class="signature-form-page">
+
+    <div class="page-wrapper-img-lg">
+      <img  class="logo-des" src="img/logo-banner.svg">
+      <img class="logo-mobile" src="img/logo-banner-mobile.svg">
+    </div>
+
+    <div id="modal-results" class="modal-results">
+      <img src="img/email-send.svg">
+      <div>Спасибо за регистрацию!</div>
+        <div>Пожалуйста, проверьте информацию о регистрации в письме у Вас на почте </div>
+    </div>
+
+    <div class="page-wrapper-form-lg">
+      <div class="page-content-form">
+        <h1 class="title-style">Зарегистрируйтесь на сайте</h1>
+        <h2 class="subtext-style"> Для участия в акции — введите свои данные, вы получите скидку 5 000 ₽ на указанную почту!</h2>
+
+        <div class="form-wrap">
+
+          <form class="registration-form" name="registration" action="return false">
+            <div class="form-row" >
+              <label for="name" class="label">Имя <em>*</em></label>
+              <input
+                  id="name"
+                  name="name"
+                  title="Имя"
+                  class="form-control"
+                  type="text"
+                  placeholder="Например Владимир"
+              >
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="phone" class="label">Контактный номер<em>*</em></label>
+              <input
+                  id="phone"
+                  name="phone"
+                  title="Телефон"
+                  class="form-control"
+                  type="tel"
+                  placeholder="Например: +7 (999) 999-99-99"
+              >
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-row " >
+              <label for="email" class="label"> E-mail <em>*</em></label>
+              <input
+                  id="email"
+                  name="email"
+                  title="Электронная почта (email)"
+                  class="form-control"
+                  type="email" placeholder="Например: spring@lg.com"
+              >
+              <span class="form-error"></span>
+            </div>
+
+            <label for="promotions" class="co-toggable_field">
+              <span>
+                <input type="checkbox" name="promotions" id="promotions" class="co-input-checkbox">
+                <span class="checkbox-bd"></span>
+              </span>
+                <span class="label-text" id="promotions-label">
+                  Я принимаю <a href="#"> Условия акции</a>
+                  <div id="promotions-error" class="checkbox-error"></div>
+                </span>
+              </span>
+            </label>
+
+            <label for="mailing" class="co-toggable_field">
+              <span>
+                <input type="checkbox" name="mailing" id="mailing" class="co-input-checkbox">
+                <span class="checkbox-bd"></span>
+              </span>
+              <span class="label-text" id="mailing-label">
+                  Согласие с получением маркетинговых рассылок
+                <div id="mailing-error" class="checkbox-error"></div>
+                </span>
+              </span>
+            </label>
+
+              <div class="wrapper-button">
+                <input type='submit' name="submit" value="Участвовать" title="Участвовать" class="form-button">
+              </div>
+
+          </form>
+        </div>
+      </div>
+	</div>
+
+<div class="section-questions-answers">
+  <h3 class="title-style">Вопросы и ответы </h3>
+
+  <div class="list-questions-answers">
+
+      <div class="accordion">
+        <div class="question">
+          <svg version="1.1" class="faq-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" xml:space="preserve">
+            <g>
+              <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+                       S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"></path>
+              <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1
+                       s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z"></path>
+            </g>
+            </svg>
+          <svg version="1.1" class="faq-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" xml:space="preserve">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+                         S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"></path>
+                <path d="M38.5,25H0V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v0c0,0.553,2,1,1,1
+                         s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z"></path>
+              </g>
+            </svg>
+          Какой срок действия  купона на скидку?</div>
+        <div class="answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam animi aspernatur deleniti doloremque dolorum eum illum possimus qui quidem?
+        </div>
+      </div>
+
+
+    <div class="accordion">
+      <div class="question">
+        <svg version="1.1" class="faq-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" xml:space="preserve">
+            <g>
+              <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+                       S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"></path>
+              <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1
+                       s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z"></path>
+            </g>
+            </svg>
+        <svg version="1.1" class="faq-minus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" xml:space="preserve">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+                         S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"></path>
+                <path d="M38.5,25H0V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v0c0,0.553,2,1,1,1
+                         s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z"></path>
+              </g>
+            </svg>
+        Какие действуют ограничения на использование купона?
+      </div>
+      <div class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita non, praesentium. Eligendi incidunt magni praesentium quaerat reprehenderit. Dolorem doloribus ipsa omnis ratione voluptatem.
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
