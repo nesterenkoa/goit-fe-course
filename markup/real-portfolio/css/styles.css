@@ -330,6 +330,7 @@ html {
 
 .wrapper-content-img {
   display: none;
+  object-fit: cover;
   width: 40vw;
   height: 60vw;
   padding-right: 2%;
