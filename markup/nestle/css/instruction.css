@@ -1,0 +1,16 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-instruction-nestle{padding: 30px 64px;font-family: "IBMPlexSans";}
+#stream-container.small-pc.tablet.mobile .stream-instruction-nestle {padding: 20px 0;width: 90%; margin: 0 auto;}
+#stream-container .stream-instruction-nestle .stream-instruction-list {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+#stream-container .stream-instruction-nestle .stream-instruction-list .stream-instruction-item {width: 29%;margin-bottom: 40px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+#stream-container.small-pc .stream-instruction-nestle .stream-instruction-list .stream-instruction-item:nth-last-of-type(-n+3) {margin-bottom: 40px;}
+#stream-container.small-pc .stream-instruction-nestle .stream-instruction-list .stream-instruction-item:last-child {margin: 0;}
+#stream-container.small-pc.tablet .stream-instruction-nestle .stream-instruction-list .stream-instruction-item:last-of-type {margin-bottom: 0;}
+#stream-container.small-pc.tablet.mobile .stream-instruction-nestle .stream-instruction-list .stream-instruction-item {width: 95%;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#stream-container .stream-instruction-nestle .stream-instruction-list .stream-instruction-item .stream-instruction-img {display: block;padding-bottom: 30px;}
+#stream-container .stream-instruction-nestle .stream-instruction-list .stream-instruction-item .stream-instruction-text {font-size: 20px;line-height: 130%;}
+#stream-container.small-pc .stream-instruction-nestle .stream-instruction-list .stream-instruction-item .stream-instruction-text {width:90% ;}
+#stream-container.small-pc.tablet.mobile .stream-instruction-nestle .stream-instruction-list .stream-instruction-item .stream-instruction-text {width: 80%;text-align: center;font-size: 16px;}
+#stream-container .stream-instruction-nestle .stream-instruction-list .stream-instruction-item .stream-instruction-text .stream-selected-text{font-weight: bold;}

@@ -1,0 +1,95 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper{padding: 30px 64px; position: relative}
+#stream-container.small-pc.tablet .stream-reviews-nestle .stream-reviews-wrapper {padding: 20px 20px;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper {padding: 20px 10px;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-title{font-size: 30px;line-height: 102%;text-align: center;padding-bottom: 40px;font-family: "Rotonda";}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-title{font-size: 23px;width: 95%;padding-bottom: 15px;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider {display: block;height: 567px;position: relative;overflow: hidden;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides {position: absolute;left: 0;top: 0;bottom: 0;width: 300%;display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: nowrap;flex-wrap: nowrap;-webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);-o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);-ms-flex-pack: distribute;justify-content: space-around;-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides {width: 450%;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#stream-container.small-pc.tablet .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide {-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio {display: none;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-arrow {position: absolute;top: 50%;z-index: 999;display: none;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;margin: 10px;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;background: #FFF;padding: 60px 5px;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer {padding: 40px 2px;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-image {display: block;width: auto;margin-bottom: 40px;}
+#stream-container.small-pc.tablet .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-image {display: block;width: 40%;margin-bottom: 20px;}
+/*имя на слайде*/
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer .stream-reviewer-name {font-size: 30px;margin-bottom: 15px;font-family: "Rotonda";}
+#stream-container.small-pc.tablet .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-name {font-size: 25px;margin-bottom: 10px;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer .stream-reviewer-name {font-size: 16px;}
+/*звезді на слайде*/
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer .stream-reviewer-rate {display: block;margin-bottom: 15px;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-rate {width: 60%;margin-bottom: 10px;}
+/*текст  слайда*/
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-comment {font-size: 20px;width: 90%;text-align: center;font-family: "IBMPlexSans";}
+#stream-container.small-pc.tablet .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide  .stream-reviewer .stream-reviewer-comment {font-size: 17px;width: 80%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-reviews-slider .stream-slides .stream-slide .stream-reviewer .stream-reviewer-comment {font-size: 14px;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls {display: -webkit-box;display: -ms-flexbox;display: flex;position: absolute;bottom: 5px;height: 10px;left: 50%;z-index: 999;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination {width: 100px;height: 2px;margin: 0 6px;background: #19A53D;display: none;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination {width: 20px;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-reviews-slider .stream-slides {left: 0;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-reviews-slider .stream-slides {left: -33%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-reviews-slider .stream-slides {left: -67%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-reviews-slider .stream-slides {left: -100%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-reviews-slider .stream-slides {left: -133%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-reviews-slider .stream-slides {left: -167%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-reviews-slider .stream-slides {left: -200%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-reviews-slider .stream-slides {left: -241%;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-reviews-slider .stream-slides {left: -274%;}
+
+/* MOBILE */
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-reviews-slider .stream-slides {left: -50%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-reviews-slider .stream-slides {left: -100%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-reviews-slider .stream-slides {left: -150%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-reviews-slider .stream-slides {left: -200%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-reviews-slider .stream-slides {left: -250%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-reviews-slider .stream-slides {left: -300%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-reviews-slider .stream-slides {left: -350%;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-reviews-slider .stream-slides {left: -400%;}
+/* Настраиваем правую стрелку для каждого слайда */
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-slider-arrow:nth-of-type(2),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-slider-arrow:nth-of-type(3),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-slider-arrow:nth-of-type(4),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-slider-arrow:nth-of-type(5),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-slider-arrow:nth-of-type(6),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-slider-arrow:nth-of-type(7),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-slider-arrow:nth-of-type(1),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-slider-arrow:nth-of-type(9),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-slider-arrow:nth-of-type(1) {display: block;right: 10px;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-slider-arrow:nth-of-type(2),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-slider-arrow:nth-of-type(3),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-slider-arrow:nth-of-type(4),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-slider-arrow:nth-of-type(5),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-slider-arrow:nth-of-type(6),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-slider-arrow:nth-of-type(7),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-slider-arrow:nth-of-type(8),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-slider-arrow:nth-of-type(9),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-slider-arrow:nth-of-type(1) {display: block;right: 10px;}
+/* Настраиваем левую стрелку для каждого слайда */
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-slider-arrow:nth-of-type(7),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-slider-arrow:nth-of-type(1),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-slider-arrow:nth-of-type(2),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-slider-arrow:nth-of-type(3),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-slider-arrow:nth-of-type(4),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-slider-arrow:nth-of-type(5),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-slider-arrow:nth-of-type(6),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-slider-arrow:nth-of-type(7),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-slider-arrow:nth-of-type(8) {display: block;left: 10px;-webkit-transform: scaleX(-1);-ms-transform: scaleX(-1);transform: scaleX(-1);}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-slider-arrow:nth-of-type(9),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-2:checked ~ .stream-slider-arrow:nth-of-type(1),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-3:checked ~ .stream-slider-arrow:nth-of-type(2),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-4:checked ~ .stream-slider-arrow:nth-of-type(3),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-5:checked ~ .stream-slider-arrow:nth-of-type(4),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-6:checked ~ .stream-slider-arrow:nth-of-type(5),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-7:checked ~ .stream-slider-arrow:nth-of-type(6),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-8:checked ~ .stream-slider-arrow:nth-of-type(7),
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-9:checked ~ .stream-slider-arrow:nth-of-type(8) {display: block;-webkit-transform: scaleX(-1);-ms-transform: scaleX(-1);transform: scaleX(-1);}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-radio#stream-slider-radio-1:checked ~ .stream-slider-arrow:nth-of-type(7){display: none;}
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination:nth-of-type(1),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination:nth-of-type(4),
+#stream-container .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination:nth-of-type(7){ display: block;}
+#stream-container.small-pc.tablet.mobile .stream-reviews-nestle .stream-reviews-wrapper .stream-slider-pagination-controls .stream-slider-pagination {display: block;}

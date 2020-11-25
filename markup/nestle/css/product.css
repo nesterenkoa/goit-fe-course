@@ -1,0 +1,21 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-product .stream-product-content{padding: 30px 10px ;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content {padding:20px 0; margin: 0 auto;}
+#stream-container .stream-product-title{font-family:"Rotonda";font-size: 30px;text-align: center;margin: 0 auto;padding-bottom: 20px;width: 42%;}
+#stream-container .stream-product .stream-product-content .stream-product-img {width: 100%;display: block;}
+#stream-container .stream-product .stream-product-content .stream-product-subtitle {text-align:center;margin: 0 auto;padding-bottom: 30px;width: 81%;font-family: "IBMPlexSans";font-size: 20px;line-height: 130%;}
+#stream-container .stream-product .stream-product-content .stream-wrapper-fx{display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-pack: distribute;justify-content: space-around;padding:4px;}
+#stream-container.small-pc.tablet .stream-product .stream-product-content .stream-wrapper-fx{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#stream-container .stream-product .stream-product-content .stream-wrapper-fx img{display: block;-o-object-fit: contain;object-fit: contain;}
+#stream-container.small-pc .stream-product .stream-product-content .stream-wrapper-fx img:first-of-type {margin-bottom: 30px;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-wrapper-fx img{width: 40%;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-wrapper-fx img:first-of-type {width: 70%;margin-bottom: 10px;}
+#stream-container.small-pc .stream-product .stream-product-content .stream-product-title {width: 65%;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-product-title {font-size: 23px;width: 95%;padding-bottom: 15px;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-product-subtitle{font-size: 16px;line-height:22px;width: 95%;}
+#stream-container.small-pc.tablet.mobile .stream-product .stream-product-content .stream-wrapper-fx{-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
+}
+
+

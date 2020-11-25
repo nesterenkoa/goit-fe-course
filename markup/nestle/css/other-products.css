@@ -1,0 +1,21 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-other-products-nestle{padding: 30px 64px;}
+#stream-container.small-pc.tablet .stream-other-products-nestle {padding:20px 0;width: 90%;margin: 0 auto;}
+#stream-container .stream-other-products-nestle .stream-other-product-heading {font-size: 30px;line-height: 102%;text-align: center;padding-bottom: 40px;font-family: "Rotonda";}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-heading {font-size: 23px;width: 95%;padding: 15px 0;}
+#stream-container .stream-other-products-nestle .stream-other-product-list {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;padding: 4px;}
+#stream-container .stream-other-products-nestle .stream-other-product-list .stream-other-product-item {width: 30%;margin: 10px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#stream-container.small-pc.tablet .stream-other-products-nestle .stream-other-product-list .stream-other-product-item {margin-bottom: 40px;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item {width: 95%;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item:last-child {margin-bottom: 0;}
+#stream-container .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-img {display: block;width: 100%;padding-bottom: 30px;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-img {width: 50%;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-img {padding-bottom: 10px;}
+#stream-container .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info .stream-other-product-text {font-family: "IBMPlexSans";font-size: 20px;line-height: 130%;}
+#stream-container .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info .stream-other-product-title {font-style: normal;font-weight: bold;font-size: 30px;line-height: 102%;font-family: "IBMPlexSans";padding-bottom: 40px;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info .stream-other-product-title {font-size: 21px;padding-bottom: 12px;}
+#stream-container.small-pc.tablet .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info .stream-other-product-title {font-size: 25px;padding-bottom: 24px;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info {text-align: center;}
+#stream-container.small-pc.tablet.mobile .stream-other-products-nestle .stream-other-product-list .stream-other-product-item .stream-other-product-info .stream-other-product-text {font-size: 16px;}

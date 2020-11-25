@@ -1,0 +1,5 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-logo-wrap-nestle{padding-bottom: 30px;}
+#stream-container .stream-logo-wrap-nestle .stream-logo-img{display: block;width: 100%;}

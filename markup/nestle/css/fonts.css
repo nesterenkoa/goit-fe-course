@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: "Rotonda";
+  src: url("../fonts/rotonda/ofontru-rotonda.eot"), /* IE9 Compat Modes */
+  url("../fonts/rotonda/ofontru-rotonda.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/rotonda/ofontru-rotonda.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/rotonda/ofontru-rotonda.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/rotonda/ofontru-rotonda.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/rotonda/ofontru-rotonda.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/rotonda/ofontru-rotonda.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../fonts/ibmplexsans/ibmplexsans-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/ibmplexsans/ibmplexsans-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/ibmplexsans/ibmplexsans-Regular.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/ibmplexsans/ibmplexsans-Regular.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/ibmplexsans/ibmplexsans-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/ibmplexsans/ibmplexsans-Regular.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/ibmplexsans/ibmplexsans-Regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+

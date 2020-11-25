@@ -1,0 +1,37 @@
+#stream-container{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+#stream-container,#stream-container *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box; -webkit-text-size-adjust: none;}
+#stream-container{max-width: 1200px;margin: 0 auto;}
+#stream-container .stream-components-nestle{padding: 30px 10px;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle{padding: 20px 0;}
+#stream-container .stream-components-nestle .stream-components-content{padding: 10px 64px;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content {padding: 10px 0; width: 90%; margin: 0 auto;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-heading{font-family:"Rotonda";font-style: normal;font-size: 30px;text-align: center;;margin: 0 auto;padding-bottom: 20px;width: 42%;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content .stream-components-heading{font-size: 23px;width: 95%;padding-bottom: 15px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-title{font-family:"IBMPlexSans";font-style: normal;font-size: 20px;text-align: center;margin: 0 auto;padding-bottom: 20px;width: 42%;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content .stream-components-title {width: 95%;font-size: 18px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-subtitle {text-align:center;margin: 0 auto;padding-bottom: 40px;width: 81%;font-family:"IBMPlexSans";font-style: normal;font-size: 20px;line-height: 130%;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content .stream-components-subtitle{font-size: 16px;padding-bottom: 18px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component:nth-of-type(even) {margin-left: 120px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  .stream-component-cell {font-family: IBMPlexSans;color: black;font-style: normal;font-weight: normal;font-size: 20px;line-height: 130%;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  .stream-component-cell {font-size: 16px;padding-bottom: 5px;}
+#stream-container .stream-components-nestle .stream-components-content  .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  .stream-component-cell{width: 14%;}
+#stream-container.small-pc.tablet.mobile  .stream-components-nestle .stream-components-content  .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  .stream-component-cell:not(:first-of-type){width: 18%;text-align: end;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-ingredients .stream-component-ingredient  .stream-component-cell:first-of-type {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;  }
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-title{font-family: "Rotonda";font-size: 30px;line-height: 102%;padding-bottom: 40px;}
+#stream-container.small-pc.tablet.mobile .stream-components-nestle .stream-components-content .stream-components-group .stream-component .stream-component-title {font-size: 20px;padding-bottom: 8px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group {display: -webkit-box;display: -ms-flexbox;display: flex;padding-bottom: 40px;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group:last-of-type {padding-bottom: 0;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-components-group {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;padding-bottom: 20px;}
+#stream-container .stream-components-nestle .stream-components-content  .stream-component .stream-components-row {display: -webkit-box;display: -ms-flexbox;display: flex;}
+#stream-container .stream-components-nestle .stream-components-content  .stream-component .stream-components-row .stream-component-ingredient:first-of-type {margin-right: 120px;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-component .stream-components-row {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+#stream-container .stream-components-nestle .stream-components-content .stream-components-group  .stream-component .stream-components-row .stream-component-ingredient  .stream-component-cell:nth-last-of-type(1) {width: 13%;text-align: end;}
+#stream-container.small-pc .stream-components-nestle .stream-components-content .stream-components-group  .stream-component .stream-components-row .stream-component-ingredient  .stream-component-cell:nth-last-of-type(1) {width: 19%;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-components-group  .stream-component .stream-components-row .stream-component-ingredient  .stream-component-cell:nth-last-of-type(1) {width: 10%;text-align: center;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-components-group .stream-component:nth-of-type(even){margin-left: 0;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-components-group .stream-component{padding-bottom:20px;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-components-group .stream-component:last-of-type{padding-bottom:0;}
+#stream-container.small-pc.tablet .stream-components-nestle .stream-components-content .stream-component .stream-components-row .stream-component-ingredient:first-of-type{margin-right: 0;}
+
