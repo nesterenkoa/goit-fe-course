@@ -650,7 +650,7 @@ html {
     height: 60vw;
   }
   .gallery-item:not(:last-child){
-    margin-bottom:10%
+    margin-bottom:5%
   }
 
   .section-best-project .gallery-item {
